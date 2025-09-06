@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сердце кубани</title>
+
+    <!-- ОБЩИЕ СТИЛИ -->
+    <link rel="stylesheet" href="./styles/variables.css">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/custom.css">
+
+    <link rel="stylesheet" href="./styles/UI/button.css">
+
+    <link rel="stylesheet" href="./styles/components/header.css">
+    <link rel="stylesheet" href="./styles/components/footer.css">
+
+
+    <!-- СТИЛИ СТРАНИЦЫ -->
+    <link rel="stylesheet" href="./styles/pages/main.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="my-container">
+            <div class="flex justify-between desctop-menu">
+                <div class="col-auto header__logo-wrap">
+                    <a href="./index.html" class="header__logo-link">
+                        <img src="./assets/images/logo.png" alt="Логотип">
+                    </a>
+                </div>
+                <div class="col-auto d-none d-lg-flex">
+                    <nav class="header__nav">
+                        <ul class="flex header__menu">
+                            <li class="header__menu-item"><a href="#">О фонде</a></li>
+                            <li class="header__menu-item"><a href="#">Текущие проекты</a></li>
+                            <li class="header__menu-item submenu">
+                                <span>Программы</span>
+                                <div class="submenu__items">
+                                    <ul>
+                                        <li><a href="#">Программа 1</a></li>
+                                        <li><a href="#">Программа 2</a></li>
+                                        <li><a href="#">Программа 3</a></li>
+                                        <li><a href="#">Программа 4</a></li>
+                                        <li><a href="#">Программа 5</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="header__menu-item submenu">
+                                <span>Отчеты</span>
+                                <div class="submenu__items">
+                                    <ul>
+                                        <li><a href="#">Отчет 1</a></li>
+                                        <li><a href="#">Отчет 2</a></li>
+                                        <li><a href="#">Отчет 3</a></li>
+                                        <li><a href="#">Отчет 4</a></li>
+                                        <li><a href="#">Отчет 5</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="header__menu-item"><a href="#">Сотрудничество</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="flex col-auto header__contacts d-none d-sm-flex">
+                    <div class="flex header__soc-links">
+                        <div class="soc-link__wrap">
+                            <a href="#" class="soc-link__tg"></a>
+                        </div>
+                        <div class="soc-link__wrap">
+                            <a href="#" class="soc-link__wa"></a>
+                        </div>
+                        <div class="soc-link__wrap">
+                            <a href="#" class="soc-link__vk"></a>
+                        </div>
+                    </div>
+                    <a href="tel:+79649062340" class="mobile-contact">+7 964 906-23-40</a>
+                </div>
+                <div class="col-auto d-lg-none">
+                    <button class="burger-button">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+            <div class="mobile-menu"></div>
+        </div>
+    </header>
+
+
+    <main class="main">
+        <section class="pt-large"><h2 class="text-center">тут будет блок</h2></section>
+
+        <section class="pt-large we-help">
+            <div class="flex flex-column items-center my-container">
+                <h2 class="text-center" >Кому мы помогаем?</h2>
+                <div class="flex wrap we-help__cards">
+                    <a href="#" class="we-help__card">
+                        <h3 class="we-help__card-title">Дети</h3>
+                        <img src="./assets/images/pages/main/we-help/item-img-1.png" alt="" class="we-help__img">
+                    </a>
+                    <a href="#" class="we-help__card">
+                        <h3 class="we-help__card-title">Пожилые <br> люди</h3>
+                        <img src="./assets/images/pages/main/we-help/item-img-2.png" alt="" class="we-help__img">
+                    </a>
+                    <a href="#" class="we-help__card">
+                        <h3 class="we-help__card-title">Больные <br> люди</h3>
+                        <img src="./assets/images/pages/main/we-help/item-img-3.png" alt="" class="we-help__img">
+                    </a>
+                    <a href="#" class="we-help__card">
+                        <h3 class="we-help__card-title">Участники <br> СВО</h3>
+                        <img src="./assets/images/pages/main/we-help/item-img-4.png" alt="" class="we-help__img">
+                    </a>
+                    <a href="#" class="we-help__card">
+                        <h3 class="we-help__card-title">Малоимущие <br> семьи</h3>
+                        <img src="./assets/images/pages/main/we-help/item-img-5.png" alt="" class="we-help__img">
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="pt-large"><h2 class="text-center">тут будет блок</h2></section>
+        <section class="pt-large"><h2 class="text-center">тут будет блок</h2></section>
+        <section class="pt-large"><h2 class="text-center">тут будет блок</h2></section>
+        <section class="pt-large our-values">
+            <div class="flex flex-column items-center my-container">
+                <h2 class="text-center fixed-mb">Наши ценности</h2>
+                <div class="our-values__items">
+                    <div class="our-values__item">
+                        <div class="our-values__item-img-wrap"><img src="./assets/images/pages/main/our-values/item-img-1.png" alt="#"></div>
+                        <div class="our-values__item-body">
+                            <div class="fz-m-fixed our-values__item-title">Честность&nbsp;и прозрачность в расходовании средств</div>
+                            <p class="fz-s-fixed our-values__item-text">Мы убеждены, что каждый донор имеет право знать, как используются его пожертвования, и уверены в важности максимальной прозрачности всех финансовых операций.</p>
+                        </div>
+                    </div>
+                    <div class="our-values__item">
+                        <div class="our-values__item-img-wrap"><img src="./assets/images/pages/main/our-values/item-img-2.png" alt="#"></div>
+                        <div class="our-values__item-body">
+                            <div class="fz-m-fixed our-values__item-title">Эффективность&nbsp;в реализации благотворительности</div>
+                            <p class="fz-s-fixed our-values__item-text">Мы стремимся к&nbsp;тому, чтобы каждый рубль помощи&nbsp;приносил максимальную пользу тем,кто в&nbsp;ней нуждается.</p>
+                        </div>
+                    </div>
+                    <div class="our-values__item">
+                        <div class="our-values__item-img-wrap"><img src="./assets/images/pages/main/our-values/item-img-3.png" alt="#"></div>
+                        <div class="our-values__item-body">
+                            <div class="fz-m-fixed our-values__item-title">Уважение&nbsp;к достоинству каждого человека</div>
+                            <p class="fz-s-fixed our-values__item-text">Независимо от ситуации, в которой оказался человек, он имеет право на уважительное отношение и заботу.</p>
+                        </div>
+                    </div>
+                    <div class="our-values__item">
+                        <div class="our-values__item-img-wrap"><img src="./assets/images/pages/main/our-values/item-img-4.png" alt="#"></div>
+                        <div class="our-values__item-body">
+                            <div class="fz-m-fixed our-values__item-title">Сотрудничество&nbsp;с партнерами и волонтерами</div>
+                            <p class="fz-s-fixed our-values__item-text">Мы создаем эффективную систему взаимодействия&nbsp;с&nbsp;партнерами и волонтерами, чтобы&nbsp;вместе делать добрые дела и помогать тем,&nbsp;кто&nbsp;в этом нуждается.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="pt-large our-partners">
+            <div class="flex flex-column items-center my-container">
+                <h2 class="text-center">Наши партнеры</h2>
+                <div class="flex justify-between items-center our-partners__items">
+                    <div class="our-partners__item-icon"><img src="./assets/images/pages/main/our-partners/icon-1.png" alt="#"></div>
+                    <div class="our-partners__item-icon"><img src="./assets/images/pages/main/our-partners/icon-2.png" alt="#"></div>
+                    <div class="our-partners__item-icon"><img src="./assets/images/pages/main/our-partners/icon-3.png" alt="#"></div>
+                    <div class="our-partners__item-icon"><img src="./assets/images/pages/main/our-partners/icon-4.png" alt="#"></div>
+                    <div class="our-partners__item-icon"><img src="./assets/images/pages/main/our-partners/icon-5.png" alt="#"></div>
+                    <div class="our-partners__item-icon"><img src="./assets/images/pages/main/our-partners/icon-6.png" alt="#"></div>
+                </div>
+                <a href="#" class="btn btn_color-blue me-auto d-none d-md-flex our-partners__btn">смотреть парнеров</a>
+            </div>
+        </section>
+        <section class="pt-large volunteers">
+            <div class="flex justify-between my-container volunteers__container">
+                <div class="flex flex-column volunteers__body">
+                    <h2 class="volunteers__title">Волонтеры</h2>
+                    <div class="flex flex-column justify-between volunteers__texts">
+                        <div class="flex flex-column volunteers__main-info">
+                            <p class="fz-m"> — это особенные люди с большим сердцем, которые выбирают путь бескорыстной
+                                помощи другим. Они не просто участники благотворительных проектов — они настоящие
+                                двигатели перемен, меняющие мир к лучшему.</p>
+                            <button class="btn btn_oval">Стать волонтером</button>
+                        </div>
+                        <div class="flex flex-column volunteers__pre-info">
+                            <p class="fz-m-fixed">Как волонтер может помочь нашему фонду?</p>
+                            <a href="#" class="btn btn_color-blue btn_oval btn_link-icon">Узнать</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="volunteers__img-wrap"><img src="./assets/images/pages/main/volunteers/block-img.jpg"alt="#"></div>
+            </div>
+        </section>
+        <section class="pt-large news">
+            <div class="flex flex-column my-container">
+                <h2>Новости</h2>
+                <div class="flex flex-column news__cards">
+                    <div class="flex news__card">
+                        <div class="news__img-wrap"><img src="./assets/images/pages/main/news/new-img.jpg"
+                                alt="картинка новости"></div>
+                        <div class="flex flex-column news__card-body">
+                            <a href="#" class="font-medium news__card-title">Новость №1</a>
+                            <p class="news__card-desc">Описание новости №1 Описание новости №1 Описание новости №1
+                                Описание новости №1 Описание новости №1 Описание новости №1 Описание новости №1 Описание
+                                новости №1Описание новости №1 Описание новости №1 Описание новости №1 Описание новости
+                                №1 Описание новости №1 Описание новости №1 Описание новости №1 Описание новости №1
+                                Описание новости №1 Описание новости №1 Описание новости №1 Описание новости №1 Описание
+                                новости №1 Описание новости №1 Описание новости №1 Описание новости №1 Описание новости
+                                №1 Описание новости №1 Описание новости №1 Описание новости №1 Описание новости №1
+                                Описание новости №1 Описание новости №1 Описание новости №1 Описание новости №1 </p>
+                            <div class="news__card-date">17.08.2025</div>
+                        </div>
+                    </div>
+                    <div class="flex news__card">
+                        <div class="news__img-wrap"><img src="./assets/images/pages/main/news/new-img.jpg"
+                                alt="картинка новости"></div>
+                        <div class="flex flex-column news__card-body">
+                            <a href="#" class="font-medium news__card-title">Новость №1</a>
+                            <p class="news__card-desc">Описание новости №1 Описание новости №1 Описание новости №1
+                                Описание новости №1 Описание новости №1 Описание новости №1 Описание новости №1 Описание
+                                новости №1Описание новости №1 Описание новости №1 Описание новости №1 Описание новости
+                                №1 Описание новости №1 Описание новости №1 Описание новости №1 Описание новости №1
+                                Описание новости №1 Описание новости №1 Описание новости №1 Описание новости №1 Описание
+                                новости №1 Описание новости №1 Описание новости №1 Описание новости №1 Описание новости
+                                №1 Описание новости №1 Описание новости №1 Описание новости №1 Описание новости №1
+                                Описание новости №1 Описание новости №1 Описание новости №1 Описание новости №1 </p>
+                            <div class="news__card-date">17.08.2025</div>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn btn_color-blue btn_oval d-none d-md-flex news__btn">Больше новостей</a>
+            </div>
+        </section>
+        <section class="pt-large ask-section">
+            <div class="flex justify-between items-center my-container ask-section__container">
+                <div class="h3 font-medium ask-section__title">Если вы не нашли ответ на свой вопрос, <br> можете задать
+                    его здесь</div>
+                <div class="flex ask-section__contacts">
+                    <button class="btn btn_size-l btn_oval ask-section__btn">Задать вопрос</button>
+                    <div class="flex flex-column ask-section__phone-wrap">
+                        <div class="fz-m-plus ask-section__phone-title">Телефон для связи:</div>
+                        <a href="tel:+79649062340" class="mobile-contact fz-m-plus">+7 964 906-23-40</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <footer class="footer">
+        <div class="my-container">
+            <div class="flex flex-column footer__inner">
+                <div class="col-auto">
+                    <a href="./index.html" class="footer__logo-link"><img src="./assets/images/logo.png" alt=""></a>
+                </div>
+                <div class="col-auto flex footer__contacts">
+                    <div class="footer__address">Адрес: г. Краснодар, Рашпилевская&nbsp;86</div>
+                    <a href="tel:+" class="mobile-contact no-icon">+7 964 906-23-40</a>
+                    <a href="mailto:serdcekubani@mail.ru" class="footer__email">serdcekubani@mail.ru</a>
+                    <div class="flex footer__cmd">
+                        <div class="soc-link__wrap">
+                            <a href="#" class="soc-link__tg"></a>
+                        </div>
+                        <div class="soc-link__wrap">
+                            <a href="#" class="soc-link__wa"></a>
+                        </div>
+                        <div class="soc-link__wrap">
+                            <a href="#" class="soc-link__vk"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex col-auto footer__main">
+                    <nav class="flex footer__menu">
+                        <ul class="footer__menu-wrap">
+                            <span class="footer__menu-title">Программы</span>
+                            <ul class="footer__menu-items">
+                                <li class="footer__menu-item"><a href="#">Программа №1</a></li>
+                                <li class="footer__menu-item"><a href="#">Программа №2</a></li>
+                                <li class="footer__menu-item"><a href="#">Программа №3</a></li>
+                                <li class="footer__menu-item"><a href="#">Программа №4</a></li>
+                                <li class="footer__menu-item"><a href="#">Программа №5</a></li>
+                                <li class="footer__menu-item"><a href="#">Программа №6</a></li>
+                            </ul>
+                        </ul>
+                        <ul class="footer__menu-wrap">
+                            <span class="footer__menu-title">О фонде</span>
+                            <ul class="footer__menu-items">
+                                <li class="footer__menu-item"><a href="#">Миссия фонда</a></li>
+                                <li class="footer__menu-item"><a href="#">История</a></li>
+                                <li class="footer__menu-item"><a href="#">Совет организации</a></li>
+                                <li class="footer__menu-item"><a href="#">Команда</a></li>
+                                <li class="footer__menu-item"><a href="#">Календарь событий</a></li>
+                                <li class="footer__menu-item"><a href="#">Парнеры и доноры</a></li>
+                                <li class="footer__menu-item"><a href="#">Документы</a></li>
+                            </ul>
+                        </ul>
+                        <ul class="footer__menu-wrap">
+                            <span class="footer__menu-title">Сотрудничество</span>
+                            <ul class="footer__menu-items">
+                                <li class="footer__menu-item"><a href="#">Стать донором</a></li>
+                                <li class="footer__menu-item"><a href="#">Стать партнером</a></li>
+                                <li class="footer__menu-item"><a href="#">Стать наставником</a></li>
+                                <li class="footer__menu-item"><a href="#">Пожертвоваоть вещи</a></li>
+                            </ul>
+                        </ul>
+                        <ul class="footer__menu-wrap">
+                            <span class="footer__menu-title">Отчеты</span>
+                            <ul class="footer__menu-items">
+                                <li class="footer__menu-item"><a href="#">Ежемесячные отчеты</a></li>
+                                <li class="footer__menu-item"><a href="#">Годовые отчеты</a></li>
+                                <li class="footer__menu-item"><a href="#">Отчеты в минюст</a></li>
+                                <li class="footer__menu-item"><a href="#">Аудиторские проверки</a></li>
+                                <li class="footer__menu-item"><a href="#">Программа №5</a></li>
+                                <li class="footer__menu-item"><a href="#">Программа №6</a></li>
+                            </ul>
+                        </ul>
+                        <ul class="footer__menu-wrap">
+                            <span class="footer__menu-title">Благотворительный фонд «Сердца Кубани»</span>
+                            <ul class="footer__menu-items">
+                                <li class="footer__menu-item">ОГРН 2842460294692</li>
+                                <li class="footer__menu-item">ИНН 4086720476024</li>
+                                <li class="footer__menu-item"><a href="#">Договор оферты</a></li>
+                                <li class="footer__menu-item"><a href="#">Политика конфиденциальности</a></li>
+                            </ul>
+                        </ul>
+                    </nav>
+                    <div class="map-wrap">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- СКРИПТЫ БИБЛИОТЕК -->
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=f028c4f8-776d-4ba3-b079-94a909b9cca1&lang=ru_RU"></script>
+
+
+    <!-- ОБЩИЕ СКРИПТЫ -->
+    <script src="./assets/scripts/header.js"></script>
+    <script src="./assets/scripts/map.js"></script>
+</body>
+
+</html>

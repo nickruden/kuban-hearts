@@ -1,0 +1,173 @@
+/* ZERO STYLES */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+* {
+  transition: opacity 0.2s ease, visibility 0.2s ease, background 0.2s ease, color 0.2s ease;
+}
+
+@font-face {
+  font-family: "Inter Tight";
+  font-weight: 400;
+  src: url("../assets/fonts/Inter_Tight/InterTight-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Inter Tight";
+  font-weight: 500;
+  src: url("../assets/fonts/Inter_Tight/InterTight-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Inter Tight";
+  font-weight: 600;
+  src: url("../assets/fonts/Inter_Tight/InterTight-SemiBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Bicubik";
+  font-weight: 400;
+  src: url("../assets/fonts/Bicubik/Bicubik-Regular.otf") format("opentype");
+}
+
+html {
+  font-size: 10px;
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  font-family: "Inter Tight", sans-serif;
+  font-size: var(--fz-m);
+  font-weight: 400;
+  line-height: 1.2;
+  color: var(--color-text);
+  background-color: #FAFAFA;
+}
+
+body.menu-active {
+  height: 100dvh;
+  overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+p:first-child {
+  margin-top: 0;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: var(--color-orange);
+}
+
+a:focus-visible {
+  outline: none;
+}
+
+a[data-fancybox] {
+  display: block;
+}
+
+ol,
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+img,
+iframe {
+  vertical-align: bottom;
+}
+
+img {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+input {
+  margin: 0;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+}
+
+input::-moz-placeholder {
+  color: inherit;
+}
+
+input:-ms-input-placeholder {
+  color: inherit;
+}
+
+input::placeholder {
+  color: inherit;
+}
+
+input[type="checkbox"],
+button {
+  cursor: pointer;
+}
+
+button {
+  border: none;
+  background: transparent;
+  padding: 0;
+}
+
+.main {
+  flex: 1 1 auto;
+}
+
+main> :first-child {
+  padding-top: var(--header-height);
+}
+
+.my-container {
+  margin: 0 auto;
+  max-width: 100%;
+  width: 1240px;
+  padding: 0 var(--padding);
+}
+
+@media (max-width: 1199px) {
+  .my-container {
+    width: 990px;
+  }
+}
+
+@media (max-width: 575px) {
+  .my-container {
+    width: 100%;
+  }
+}
