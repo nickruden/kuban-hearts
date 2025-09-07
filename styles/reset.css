@@ -70,6 +70,10 @@ p {
   margin-top: 0px;
 }
 
+p {
+  line-height: 150%;
+}
+
 p:first-child {
   margin-top: 0;
 }
