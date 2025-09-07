@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Сердце кубани</title>
 
+
+    <!-- БИБЛИОТЕКИ -->
+    <link rel="stylesheet" href="./assets/libs/swiper/swiper-bundle.min.css">
+
     <!-- ОБЩИЕ СТИЛИ -->
     <link rel="stylesheet" href="./styles/variables.css">
     <link rel="stylesheet" href="./styles/reset.css">
@@ -94,10 +98,12 @@
         <section class="pt-large hero-section hidden">
             <div class="flex my-container hero-section__container">
                 <div class="flex flex-column hero-section__body">
-                    <div class="h3">Благотворительный фонд</div>
+                    <div class="h3 h3_type2">Благотворительный фонд</div>
                     <h1>Сердца Кубани</h1>
                     <div class="flex flex-column hero-section__info">
-                        <p class="fz-m-fixed">— это команда неравнодушных людей, объединенных общей целью: помогать тем, кто в этом нуждается. Мы верим, что каждый человек заслуживает достойной жизни, заботы и внимания.</p>
+                        <p class="fz-m-fixed">— это команда неравнодушных людей, объединенных общей целью: помогать тем,
+                            кто в этом нуждается. Мы верим, что каждый человек заслуживает достойной жизни, заботы и
+                            внимания.</p>
                         <div class="flex hero-section__btns">
                             <button class="btn">Хочу помочь</button>
                             <button class="btn btn_color-blue">Мне нужна помощь</button>
@@ -105,73 +111,255 @@
                     </div>
                 </div>
                 <div class="hero-section__img-wrap">
-                <img src="./assets/images/pages/main/hero-section/block-img.png" alt="#" class="hero-section__img">
+                    <img src="./assets/images/pages/main/hero-section/block-img.png" alt="#" class="hero-section__img">
                 </div>
             </div>
             <div class="hero-section__ribbon"></div>
         </section>
-
         <section class="pt-large we-help">
             <div class="flex flex-column items-center my-container">
-                <h2 class="text-center" >Кому мы помогаем?</h2>
+                <h2 class="text-center">Кому мы помогаем?</h2>
                 <div class="flex wrap we-help__cards">
                     <a href="#" class="we-help__card">
-                        <h3 class="we-help__card-title">Дети</h3>
+                        <h3 class="h3_type2 we-help__card-title">Дети</h3>
                         <img src="./assets/images/pages/main/we-help/item-img-1.png" alt="" class="we-help__img">
                     </a>
                     <a href="#" class="we-help__card">
-                        <h3 class="we-help__card-title">Пожилые <br> люди</h3>
+                        <h3 class="h3_type2 we-help__card-title">Пожилые <br> люди</h3>
                         <img src="./assets/images/pages/main/we-help/item-img-2.png" alt="" class="we-help__img">
                     </a>
                     <a href="#" class="we-help__card">
-                        <h3 class="we-help__card-title">Больные <br> люди</h3>
+                        <h3 class="h3_type2 we-help__card-title">Больные <br> люди</h3>
                         <img src="./assets/images/pages/main/we-help/item-img-3.png" alt="" class="we-help__img">
                     </a>
                     <a href="#" class="we-help__card">
-                        <h3 class="we-help__card-title">Участники <br> СВО</h3>
+                        <h3 class="h3_type2 we-help__card-title">Участники <br> СВО</h3>
                         <img src="./assets/images/pages/main/we-help/item-img-4.png" alt="" class="we-help__img">
                     </a>
                     <a href="#" class="we-help__card">
-                        <h3 class="we-help__card-title">Малоимущие <br> семьи</h3>
+                        <h3 class="h3_type2 we-help__card-title">Малоимущие <br> семьи</h3>
                         <img src="./assets/images/pages/main/we-help/item-img-5.png" alt="" class="we-help__img">
                     </a>
                 </div>
             </div>
         </section>
-
-        <section class="pt-large"><h2 class="text-center">тут будет блок</h2></section>
-        <section class="pt-large"><h2 class="text-center">тут будет блок</h2></section>
-        <section class="pt-large"><h2 class="text-center">тут будет блок</h2></section>
+        <section class="pt-large current-projects">
+            <div class="flex flex-column items-center my-container">
+                <h2 class="text-center">текущие проекты</h2>
+                <div class="flex wrap current-projects__cards">
+                    <div class="current-projects__card">
+                        <div class="flex flex-column current-projects__card-inner">
+                            <div class="current-projects__card-image">
+                                <img src="./assets/images/pages/main/current-projects/card-img-1.jpg" alt="#">
+                                <div class="fz-m font-medium current-projects__card-city">г. <span>Краснодар</span>
+                                </div>
+                            </div>
+                            <div class="flex flex-column current-projects__card-body">
+                                <h3>Сбор средств на покупку мебели для&nbsp;кризисного центра «Мать&nbsp;и&nbsp;дитя»
+                                </h3>
+                                <div class="flex flex-column range-item current-projects__price-info"
+                                    data-total="300000" data-collected="75000">
+                                    <div class="h3 range-item__main-number"><span>300.000</span>₽</div>
+                                    <div class="range-item__line"></div>
+                                    <div class="fz-m font-medium range-item__second-number">Собрано:
+                                        </span>75.000</span>₽</div>
+                                </div>
+                                <div class="flex current-projects__btns">
+                                    <button class="btn">Сделать пожертвование</button>
+                                    <a href="#" class="btn btn_color-blue">Подробнее</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="current-projects__card">
+                        <div class="flex flex-column current-projects__card-inner">
+                            <div class="current-projects__card-image">
+                                <img src="./assets/images/pages/main/current-projects/card-img-2.jpg" alt="#">
+                                <div class="fz-m font-medium current-projects__card-city">г. <span>Краснодар</span>
+                                </div>
+                            </div>
+                            <div class="flex flex-column current-projects__card-body">
+                                <h3>Сбор средств на инвалидной коляски для Ольги из Краснодара</h3>
+                                <div class="flex flex-column range-item current-projects__price-info" data-total="68500"
+                                    data-collected="45300">
+                                    <div class="h3 range-item__main-number"><span>68.500</span>₽</div>
+                                    <div class="range-item__line"></div>
+                                    <div class="fz-m font-medium range-item__second-number">Собрано:
+                                        </span>45.300</span>₽</div>
+                                </div>
+                                <div class="flex current-projects__btns">
+                                    <button class="btn">Сделать пожертвование</button>
+                                    <a href="#" class="btn btn_color-blue">Подробнее</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="pt-large fund-program">
+            <div class="flex flex-column items-center my-container">
+                <h2>программы фонда</h2>
+                <div class="fund-program__slider">
+                    <div class="swiper-buttons">
+                        <div class="swiper-btn-prev"> <-- </div>
+                        <div class="swiper-btn-next"> --> </div>
+                    </div>
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="fund-program__slide hidden">
+                                    <div class="flex fund-program__slide-inner">
+                                        <div class="fund-program__slide-img hidden"><img
+                                                src="./assets/images/pages/main/fund-program/slide-img.jpg" alt="#">
+                                        </div>
+                                        <div class="fund-program__slide-body">
+                                            <div class="fund-program__slide-top-info">
+                                                <h3>Программа «Дорога к жизни»</h3>
+                                                <p class="fz-m">
+                                                    Комплексный проект благотворительного фонда, направленный на
+                                                    поддержку детей с онкологическими заболеваниями и их семей.
+                                                </p>
+                                            </div>
+                                            <div class="fund-program__slide-main-info">
+                                                <div>
+                                                    <p class="fz-s color-lightGray list-title">Миссия:</p>
+                                                    <ul class="fz-s list-standart">
+                                                        <li>Спасти жизни детей, страдающих онкологическими заболеваниями
+                                                        </li>
+                                                        <li>Обеспечить комплексную поддержку семей, столкнувшихся с
+                                                            болезнью</li>
+                                                        <li>Создать условия для полноценной жизни детей после лечения
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div>
+                                                    <p class="fz-s color-lightGray list-title">Цели:</p>
+                                                    <ul class="fz-s list-standart">
+                                                        <li>Обеспечение своевременного доступа к качественному лечению
+                                                        </li>
+                                                        <li>Организация психологической поддержки для детей и их семей
+                                                        </li>
+                                                        <li>Помощь в покрытии расходов на лечение и реабилитацию</li>
+                                                        <li>Создание комфортной среды пребывания в медицинских
+                                                            учреждениях</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <a href="" class="btn btn_color-blue d-none d-md-flex">Подробнее</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="fund-program__slide hidden">
+                                    <div class="flex fund-program__slide-inner">
+                                        <div class="fund-program__slide-img hidden"><img
+                                                src="./assets/images/pages/main/fund-program/slide-img.jpg" alt="#">
+                                        </div>
+                                        <div class="fund-program__slide-body">
+                                            <div class="fund-program__slide-top-info">
+                                                <h3>Программа «Дорога к жизни»</h3>
+                                                <p class="fz-m">
+                                                    Комплексный проект благотворительного фонда, направленный на
+                                                    поддержку детей с онкологическими заболеваниями и их семей.
+                                                </p>
+                                            </div>
+                                            <div class="fund-program__slide-main-info">
+                                                <div>
+                                                    <p class="fz-s color-lightGray list-title">Миссия:</p>
+                                                    <ul class="fz-s list-standart">
+                                                        <li>Спасти жизни детей, страдающих онкологическими заболеваниями
+                                                        </li>
+                                                        <li>Обеспечить комплексную поддержку семей, столкнувшихся с
+                                                            болезнью</li>
+                                                        <li>Создать условия для полноценной жизни детей после лечения
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div>
+                                                    <p class="fz-s color-lightGray list-title">Цели:</p>
+                                                    <ul class="fz-s list-standart">
+                                                        <li>Обеспечение своевременного доступа к качественному лечению
+                                                        </li>
+                                                        <li>Организация психологической поддержки для детей и их семей
+                                                        </li>
+                                                        <li>Помощь в покрытии расходов на лечение и реабилитацию</li>
+                                                        <li>Создание комфортной среды пребывания в медицинских
+                                                            учреждениях</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <a href="" class="btn btn_color-blue d-none d-md-flex">Подробнее</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <section class="pt-large thanks-section hidden">
+            <div class="flex flex-column items-center my-container text-center thanks-section__container">
+                <h2>Большое спасибо!</h2>
+                <p class="fz-m color-lightGray">Спасибо каждому, кто вносит свой вклад в наше общее дело милосердия и заботы!</p>
+                <div class="bg-item_small d-none d-lg-flex"><span class="fz-s">Новороссийк</span></div>
+                <div class="bg-item"><span class="fz-s">Краснодар</span></div>
+                <div class="bg-item_small"><span class="fz-s">Анапа</span></div>
+                <div class="bg-item_big"><span class="fz-s">Геленджик</span></div>
+                <div class="bg-item_small d-none d-lg-flex"><span class="fz-s">Краснодар</span></div>
+                <div class="bg-item_small"><span class="fz-s">Сочи</span></div>
+                <div class="bg-item d-none d-lg-flex"><span class="fz-s">Краснодар</span></div>
+                <div class="bg-item_small"><span class="fz-s">Адлер</span></div>
+                <div class="bg-item"><span class="fz-s">Краснодар</span></div>
+                <div class="bg-item_small"><span class="fz-s">Абинск</span></div>
+                <div class="bg-item"><span class="fz-s">Ейск</span></div>
+            </div>
+        </section>
         <section class="pt-large our-values">
             <div class="flex flex-column items-center my-container">
                 <h2 class="text-center fixed-mb">Наши ценности</h2>
                 <div class="our-values__items">
                     <div class="our-values__item">
-                        <div class="our-values__item-img-wrap"><img src="./assets/images/pages/main/our-values/item-img-1.png" alt="#"></div>
+                        <div class="our-values__item-img-wrap"><img
+                                src="./assets/images/pages/main/our-values/item-img-1.png" alt="#"></div>
                         <div class="our-values__item-body">
-                            <div class="fz-m-fixed our-values__item-title">Честность&nbsp;и прозрачность в расходовании средств</div>
-                            <p class="fz-s-fixed our-values__item-text">Мы убеждены, что каждый донор имеет право знать, как используются его пожертвования, и уверены в важности максимальной прозрачности всех финансовых операций.</p>
+                            <div class="fz-m-fixed our-values__item-title">Честность&nbsp;и прозрачность в расходовании
+                                средств</div>
+                            <p class="fz-s-fixed our-values__item-text">Мы убеждены, что каждый донор имеет право знать,
+                                как используются его пожертвования, и уверены в важности максимальной прозрачности всех
+                                финансовых операций.</p>
                         </div>
                     </div>
                     <div class="our-values__item">
-                        <div class="our-values__item-img-wrap"><img src="./assets/images/pages/main/our-values/item-img-2.png" alt="#"></div>
+                        <div class="our-values__item-img-wrap"><img
+                                src="./assets/images/pages/main/our-values/item-img-2.png" alt="#"></div>
                         <div class="our-values__item-body">
-                            <div class="fz-m-fixed our-values__item-title">Эффективность&nbsp;в реализации благотворительности</div>
-                            <p class="fz-s-fixed our-values__item-text">Мы стремимся к&nbsp;тому, чтобы каждый рубль помощи&nbsp;приносил максимальную пользу тем,кто в&nbsp;ней нуждается.</p>
+                            <div class="fz-m-fixed our-values__item-title">Эффективность&nbsp;в реализации
+                                благотворительности</div>
+                            <p class="fz-s-fixed our-values__item-text">Мы стремимся к&nbsp;тому, чтобы каждый рубль
+                                помощи&nbsp;приносил максимальную пользу тем,кто в&nbsp;ней нуждается.</p>
                         </div>
                     </div>
                     <div class="our-values__item">
-                        <div class="our-values__item-img-wrap"><img src="./assets/images/pages/main/our-values/item-img-3.png" alt="#"></div>
+                        <div class="our-values__item-img-wrap"><img
+                                src="./assets/images/pages/main/our-values/item-img-3.png" alt="#"></div>
                         <div class="our-values__item-body">
-                            <div class="fz-m-fixed our-values__item-title">Уважение&nbsp;к достоинству каждого человека</div>
-                            <p class="fz-s-fixed our-values__item-text">Независимо от ситуации, в которой оказался человек, он имеет право на уважительное отношение и заботу.</p>
+                            <div class="fz-m-fixed our-values__item-title">Уважение&nbsp;к достоинству каждого человека
+                            </div>
+                            <p class="fz-s-fixed our-values__item-text">Независимо от ситуации, в которой оказался
+                                человек, он имеет право на уважительное отношение и заботу.</p>
                         </div>
                     </div>
                     <div class="our-values__item">
-                        <div class="our-values__item-img-wrap"><img src="./assets/images/pages/main/our-values/item-img-4.png" alt="#"></div>
+                        <div class="our-values__item-img-wrap"><img
+                                src="./assets/images/pages/main/our-values/item-img-4.png" alt="#"></div>
                         <div class="our-values__item-body">
-                            <div class="fz-m-fixed our-values__item-title">Сотрудничество&nbsp;с партнерами и волонтерами</div>
-                            <p class="fz-s-fixed our-values__item-text">Мы создаем эффективную систему взаимодействия&nbsp;с&nbsp;партнерами и волонтерами, чтобы&nbsp;вместе делать добрые дела и помогать тем,&nbsp;кто&nbsp;в этом нуждается.</p>
+                            <div class="fz-m-fixed our-values__item-title">Сотрудничество&nbsp;с партнерами и
+                                волонтерами</div>
+                            <p class="fz-s-fixed our-values__item-text">Мы создаем эффективную систему
+                                взаимодействия&nbsp;с&nbsp;партнерами и волонтерами, чтобы&nbsp;вместе делать добрые
+                                дела и помогать тем,&nbsp;кто&nbsp;в этом нуждается.</p>
                         </div>
                     </div>
                 </div>
@@ -181,12 +369,18 @@
             <div class="flex flex-column items-center my-container">
                 <h2 class="text-center">Наши партнеры</h2>
                 <div class="flex justify-between items-center our-partners__items">
-                    <div class="our-partners__item-icon"><img src="./assets/images/pages/main/our-partners/icon-1.png" alt="#"></div>
-                    <div class="our-partners__item-icon"><img src="./assets/images/pages/main/our-partners/icon-2.png" alt="#"></div>
-                    <div class="our-partners__item-icon"><img src="./assets/images/pages/main/our-partners/icon-3.png" alt="#"></div>
-                    <div class="our-partners__item-icon"><img src="./assets/images/pages/main/our-partners/icon-4.png" alt="#"></div>
-                    <div class="our-partners__item-icon"><img src="./assets/images/pages/main/our-partners/icon-5.png" alt="#"></div>
-                    <div class="our-partners__item-icon"><img src="./assets/images/pages/main/our-partners/icon-6.png" alt="#"></div>
+                    <div class="our-partners__item-icon"><img src="./assets/images/pages/main/our-partners/icon-1.png"
+                            alt="#"></div>
+                    <div class="our-partners__item-icon"><img src="./assets/images/pages/main/our-partners/icon-2.png"
+                            alt="#"></div>
+                    <div class="our-partners__item-icon"><img src="./assets/images/pages/main/our-partners/icon-3.png"
+                            alt="#"></div>
+                    <div class="our-partners__item-icon"><img src="./assets/images/pages/main/our-partners/icon-4.png"
+                            alt="#"></div>
+                    <div class="our-partners__item-icon"><img src="./assets/images/pages/main/our-partners/icon-5.png"
+                            alt="#"></div>
+                    <div class="our-partners__item-icon"><img src="./assets/images/pages/main/our-partners/icon-6.png"
+                            alt="#"></div>
                 </div>
                 <a href="#" class="btn btn_color-blue me-auto d-none d-md-flex our-partners__btn">смотреть парнеров</a>
             </div>
@@ -208,7 +402,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="volunteers__img-wrap"><img src="./assets/images/pages/main/volunteers/block-img.jpg"alt="#"></div>
+                <div class="volunteers__img-wrap"><img src="./assets/images/pages/main/volunteers/block-img.jpg"
+                        alt="#"></div>
             </div>
         </section>
         <section class="pt-large news">
@@ -354,12 +549,36 @@
 
 
     <!-- СКРИПТЫ БИБЛИОТЕК -->
+    <script src="./assets/libs/swiper/swiper-bundle.min.js"></script>
+
     <script src="https://api-maps.yandex.ru/2.1/?apikey=f028c4f8-776d-4ba3-b079-94a909b9cca1&lang=ru_RU"></script>
 
 
     <!-- ОБЩИЕ СКРИПТЫ -->
     <script src="./assets/scripts/header.js"></script>
     <script src="./assets/scripts/map.js"></script>
+    <script src="./assets/scripts/range.js"></script>
+
+
+    <!-- ИНИЦИАЛИЗАЦИЯ СЛАЙДЕРА -->
+    <script>
+        const swiper1 = new Swiper(".fund-program .swiper", {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            navigation: {
+                nextEl: '.fund-program .swiper-btn-next',
+                prevEl: '.fund-program .swiper-btn-prev',
+            },
+            breakpoints: {
+                768: {
+                    spaceBetween: 20,
+                },
+                992: {
+                    spaceBetween: 24,
+                },
+            },
+        });
+    </script>
 </body>
 
 </html>

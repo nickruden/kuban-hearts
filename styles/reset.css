@@ -15,25 +15,25 @@
 @font-face {
   font-family: "Inter Tight";
   font-weight: 400;
-  src: url("../assets/fonts/Inter_Tight/InterTight-Regular.ttf") format("truetype");
+  src: url("../assets/fonts/Inter_Tight/InterTight-Regular.woff2") format("woff2"), url("../assets/fonts/Inter_Tight/InterTight-Regular.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Inter Tight";
   font-weight: 500;
-  src: url("../assets/fonts/Inter_Tight/InterTight-Medium.ttf") format("truetype");
+  src: url("../assets/fonts/Inter_Tight/InterTight-Medium.woff2") format("woff2"), url("../assets/fonts/Inter_Tight/InterTight-Medium.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Inter Tight";
   font-weight: 600;
-  src: url("../assets/fonts/Inter_Tight/InterTight-SemiBold.ttf") format("truetype");
+  src: url("../assets/fonts/Inter_Tight/InterTight-SemiBold.woff2") format("woff2"), url("../assets/fonts/Inter_Tight/InterTight-SemiBold.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Bicubik";
   font-weight: 400;
-  src: url("../assets/fonts/Bicubik/Bicubik-Regular.otf") format("opentype");
+  src: url("../assets/fonts/Bicubik/Bicubik-Regular.woff2") format("woff2"), url("../assets/fonts/Bicubik/Bicubik-Regular.otf") format("opentype");
 }
 
 html {
@@ -47,6 +47,7 @@ body {
   flex-direction: column;
   margin: 0;
   font-family: "Inter Tight", sans-serif;
+  font-display: swap;
   font-size: var(--fz-m);
   font-weight: 400;
   line-height: 1.2;

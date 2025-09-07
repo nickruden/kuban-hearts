@@ -1,7 +1,6 @@
 /* ЗАГОЛОВКИ */
 h1,
 h2,
-h3,
 .h1,
 .h2 {
   font-family: "Bicubik";
@@ -31,11 +30,13 @@ h3,
   font-size: var(--fz-xl);
   line-height: 130%;
   font-weight: 600;
-}
-
-.h3 {
   font-family: "Inter Tight";
   color: var(--color-text);
+}
+
+.h3_type2 {
+  font-family: "Bicubik" !important;
+  font-weight: 400 !important;
 }
 
 @media (max-width: 1199px) {
@@ -88,6 +89,12 @@ h3,
 /* ТЕКСТА */
 .fz-s {
   font-size: var(--fz-s);
+}
+
+@media (max-width: 350px) {
+  .fz-s {
+    font-size: 1rem;
+  }
 }
 
 .fz-s-fixed {
@@ -144,6 +151,32 @@ h3,
 
 .text-center {
   text-align: center;
+}
+
+.color-lightGray {
+  color: var(--color-lightGray);
+}
+
+
+/* СПИСКИ */
+ul.list-standart,
+ol.list-standart {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  line-height: 130%;
+}
+
+ul.list-standart li,
+.list-standart ul li {
+  list-style-type: disc;
+  margin-left: 2rem;
+}
+
+ol.list-standart li,
+.list-standart ol li {
+  list-style-type: decimal;
+  margin-left: 2rem;
 }
 
 
@@ -338,4 +371,41 @@ main>*:first-child {
 
 .mobile-contact.no-icon::before {
   display: none;
+}
+
+
+/* СЛАЙДЕР */
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+[class*=swiper-btn] {
+  cursor: pointer;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: 2px solid var(--color-orange);
+  background-color: var(--color-orange);
+  color: var(--color-white);
+  user-select: none;
+}
+
+[class*=swiper-btn]:hover {
+  background-color: transparent;
+  color: var(--color-orange);
+}
+
+[class*=swiper-btn].swiper-button-disabled {
+  cursor: default;
+  opacity: 0.5;
+}
+
+.swiper-buttons {
+  display: inline-flex;
+  z-index: 5;
+  gap: 1.5rem;
 }

@@ -20,7 +20,7 @@
 @media (max-width: 768px) {
     .btn {
         font-size: var(--fz-xs);
-        padding: 1.35rem 1.8rem;
+        padding: 1.35rem 1.4rem;
         border-radius: 1.2rem;
         width: 100%;
     }
