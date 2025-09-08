@@ -174,6 +174,76 @@
 }
 
 
+/* БЛОК - КОМУ МЫ ПОМОГАЕМ */
+.we-help {}
+
+.we-help__cards {
+    gap: 4rem 2.5rem;
+    justify-content: center;
+}
+
+@media (max-width: 769px) {
+    .we-help__cards {
+        gap: 3rem 2.5rem;
+    }
+}
+
+@media (max-width: 575px) {
+    .we-help__cards {
+        gap: 1.5rem;
+    }
+}
+
+.we-help__card {
+    position: relative;
+    background-color: var(--color-white);
+    border-radius: 2rem;
+    overflow: hidden;
+    width: 373px;
+    height: 270px;
+    display: flex;
+    align-items: flex-end;
+    padding: 1.5rem;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+}
+
+@media (max-width: 992px) {
+    .we-help__card {
+        flex: 0 1 calc(50% - 4rem);
+        width: auto;
+        height: auto;
+        aspect-ratio: 373 / 270;
+    }
+}
+
+@media (max-width: 769px) {
+    .we-help__card {
+        flex: 0 1 100%;
+        max-height: 270px;
+    }
+}
+
+.we-help__card:hover {
+    background-color: var(--color-orange);
+    color: var(--color-white);
+}
+
+.we-help__card-title {}
+
+.we-help__card:hover h3 {
+    color: var(--color-white);
+}
+
+.we-help__img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    object-fit: contain;
+}
+
+
 /* БЛОК - ТЕКУЩИЕ ПРОЕКТЫ */
 .current-projects {}
 
@@ -1031,85 +1101,6 @@
         right: auto;
         left: 10px;
     }
-}
-
-
-/* БЛОК - КОМУ МЫ ПОМОГАЕМ */
-.we-help {}
-
-.we-help__cards {
-    gap: 4rem 2.5rem;
-    justify-content: center;
-}
-
-@media (max-width: 769px) {
-    .we-help__cards {
-        gap: 3rem 2.5rem;
-    }
-}
-
-@media (max-width: 575px) {
-    .we-help__cards {
-        gap: 1.5rem;
-    }
-}
-
-.we-help__card {
-    position: relative;
-    background-color: var(--color-white);
-    border-radius: 2rem;
-    overflow: hidden;
-    width: 373px;
-    height: 270px;
-    display: flex;
-    align-items: flex-end;
-    padding: 1.5rem;
-    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.05);
-    cursor: pointer;
-}
-
-@media (max-width: 992px) {
-    .we-help__card {
-        flex: 0 1 calc(50% - 4rem);
-        width: auto;
-        height: auto;
-        aspect-ratio: 373 / 270;
-    }
-}
-
-@media (max-width: 769px) {
-    .we-help__card {
-        flex: 0 1 100%;
-        max-height: 270px;
-    }
-}
-
-.we-help__card:nth-of-type(1) {
-    background-color: var(--color-orange);
-    color: var(--color-white);
-}
-
-.we-help__card:hover {
-    background-color: var(--color-orange);
-    color: var(--color-white);
-}
-
-.we-help__card-title {}
-
-.we-help__card:nth-of-type(1) h3 {
-    color: var(--color-white);
-}
-
-.we-help__card:hover h3 {
-    color: var(--color-white);
-}
-
-.we-help__img {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    height: 100%;
-    object-fit: contain;
 }
 
 
