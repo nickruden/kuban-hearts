@@ -135,10 +135,35 @@
     gap: 1rem;
 }
 
+@media (max-width: 769px) {
+    .footer__menu-items {
+        gap: 1rem 2rem;
+    }
+}
+
 .footer__menu-item {
     font-size: 12px;
     line-height: 130%;
     color: rgba(37, 37, 37, 0.7);
+    min-width: 167px;
+}
+
+@media (max-width: 992px) {
+    .footer__menu-item {
+        min-width: 133px;
+    }
+}
+
+@media (max-width: 769px) {
+    .footer__menu-item {
+        min-width: auto;
+    }
+}
+
+@media (max-width: 575px) {
+    .footer__menu-item {
+        min-width: 140px;
+    }
 }
 
 .footer__menu-item a:hover {

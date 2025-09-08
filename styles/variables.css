@@ -24,6 +24,7 @@
 @media (max-width: 1199px) {
     :root {
         --padding: 1.5rem;
+        --header-height: 9.2rem;
     }
 }
 
