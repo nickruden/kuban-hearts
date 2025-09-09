@@ -32,7 +32,7 @@
     flex: none;
 }
 
-@media (max-width: 1201px) {
+@media (max-width: 1199px) {
     .hero-section__body {
         width: 433px;
         padding: 0rem;
@@ -99,11 +99,18 @@
     flex: none;
 }
 
-@media (max-width: 1201px) {
+@media (max-width: 1300px) {
+    .hero-section__img-wrap {
+        width: 648px;
+        height: 439px;
+        margin-top: auto;
+    }
+}
+
+@media (max-width: 1199px) {
     .hero-section__img-wrap {
         width: 516px;
         height: 353px;
-        margin-top: auto;
     }
 }
 
