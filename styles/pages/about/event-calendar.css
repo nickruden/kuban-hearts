@@ -1,0 +1,117 @@
+.event-calendar {}
+
+.event-calendar h1 {
+    margin-bottom: 2.5rem;
+}
+
+.event-calendar__event-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem 4rem;
+}
+
+@media (max-width: 1199px) {
+    .event-calendar__event-cards {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2.5rem 3rem;
+    }
+}
+
+@media (max-width: 769px) {
+    .event-calendar__event-cards {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 575px) {
+    .event-calendar__event-cards {
+        gap: 1.5rem 3rem;
+    }
+}
+
+.event-calendar__card {
+    padding: 1rem 1rem 1.5rem;
+    background-color: var(--color-white);
+}
+
+.event-calendar__card:hover h3 {
+    color: var(--color-orange);
+}
+
+.event-calendar__card-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    height: 100%;
+}
+
+.event-calendar__card-img-wrap {
+    border-radius: 8px;
+    overflow: hidden;
+    height: 230px;
+    display: flex;
+    align-items: center;
+}
+
+.event-calendar__card-img-wrap img {
+    width: 100%;
+    height: 100%;
+}
+
+.event-calendar__card-body {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 0px 5px;
+    flex: 1;
+}
+
+.event-calendar__card-texts {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.event-calendar__card-texts h3 {
+    font-size: var(--fz-m-plus);
+    font-weight: 500;
+    line-height: 150%;
+    color: #303030;
+}
+
+@media (max-width: 575px) {
+    .event-calendar__card-texts h3 {
+        font-size: var(--fz-m);
+    }
+}
+
+.event-calendar__card-texts p {
+    font-size: var(--fz-xs);
+    line-height: 150%;
+    color: rgba(48, 48, 48, 0.7);
+}
+
+@media (max-width: 575px) {
+    .event-calendar__card-texts p {
+        font-size: var(--fz-s);
+    }
+}
+
+.event-calendar__card-texts {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.event-calendar__event-date {
+    font-size: 1rem;
+    line-height: 150%;
+    color: rgba(48, 48, 48, 0.7);
+    margin-top: auto;
+}
+
+@media (max-width: 769px) {
+    .event-calendar__event-date {
+        padding-top: 1.5rem;
+    }
+}
