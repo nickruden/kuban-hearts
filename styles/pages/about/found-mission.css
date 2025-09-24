@@ -1,0 +1,383 @@
+/* БЛОК - ПЕРВЫЙ */
+.hero-section__wrapper {
+    background: url('../../../assets/images/pages/found-mission/hero-bg.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.hero-section__wrapper .my-container {
+    padding-bottom: 23.5rem;
+    position: relative;
+}
+
+@media (max-width: 992px) {
+    .hero-section__wrapper .my-container {
+        padding-bottom: 25.5rem;
+    }
+}
+
+@media (max-width: 769px) {
+    .hero-section__wrapper .my-container {
+        padding-bottom: 0rem;
+    }
+}
+
+.hero-section__content {
+    max-width: 580px;
+    position: relative;
+}
+
+@media (max-width: 992px) {
+    .hero-section__content {
+        max-width: 475px;
+        position: static;
+    }
+}
+
+.hero-section__img {
+    height: 450px;
+    width: 404px;
+    position: absolute;
+    right: -460px;
+    bottom: -235px;
+}
+
+@media (max-width: 1199px) {
+    .hero-section__img {
+        height: 391px;
+        width: 356px;
+        right: -414px;
+    }
+}
+
+@media (max-width: 992px) {
+    .hero-section__img {
+        height: auto;
+        width: 350px;
+        right: 0;
+        bottom: 0;
+    }
+}
+
+@media (max-width: 769px) {
+    .hero-section__img {
+        height: auto;
+        width: 350px;
+        position: static;
+        margin-left: 30px;
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 575px) {
+    .hero-section__img {
+        height: auto;
+        width: 350px;
+        position: static;
+        margin-left: 30px;
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 470px) {
+    .hero-section__img {
+        width: 230px;
+        display: block;
+        margin: 0 auto;
+        margin-top: 18px;
+    }
+}
+
+.hero-section__content h1 {
+    margin-bottom: 1.5rem;
+}
+
+@media (max-width: 575px) {
+    .hero-section__content h1 {
+        margin-bottom: 2.5rem;
+    }
+}
+
+.hero-section__pre-title {
+    line-height: 150%;
+}
+
+
+/* БЛОК - НЕСЕМ СВЕТ ПЕРЕМЕН */
+.change-light {}
+
+.change-light .inner-h2 {
+    margin-bottom: 1.5rem;
+}
+
+@media (max-width: 769px) {
+    .change-light .inner-h2 {
+        margin-bottom: 2rem;
+    }
+}
+
+.change-light__content {
+    display: flex;
+    gap: 4rem;
+    padding-top: 3rem;
+}
+
+@media (max-width: 769px) {
+    .change-light__content {
+        gap: 4.5rem;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 575px) {
+    .change-light__content {
+        padding-top: 2.5rem;
+    }
+}
+
+.change-light__content * {
+    line-height: 150%;
+}
+
+.change-light__items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem 4rem;
+}
+
+@media (max-width: 992px) {
+    .change-light__items {
+        grid-template-columns: 1fr;
+    }
+}
+
+.change-light__item {
+    border-radius: 1.4rem;
+    padding: 2.5rem 2rem;
+    box-shadow: 0px 0px 21.9px 0px rgba(0, 0, 0, 0.05);
+}
+
+
+@media (max-width: 992px) {
+    .change-light__item {
+        padding: 2rem;
+    }
+}
+
+.change-light__item__inner {}
+
+.change-light__img-wrap {
+    max-width: 373px;
+    width: 100%;
+    max-height: 215px;
+    border-radius: 1.4rem;
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 992px) {
+    .change-light__img-wrap {
+        max-height: none;
+    }
+}
+
+@media (max-width: 769px) {
+    .change-light__img-wrap {
+        max-width: none;
+        max-height: 300px;
+    }
+}
+
+@media (max-width: 575px) {
+    .change-light__img-wrap {
+        height: 200px;
+    }
+}
+
+.change-light__img-wrap img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* БЛОК - ЦЕННОСТИ */
+.org-values {}
+
+.org-values .my-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 787 783'><ellipse cx='393.5' cy='391.5' rx='392.5' ry='391.5' stroke='black' stroke-opacity='0.09' stroke-dasharray='19 19' fill='none'/><circle cx='393.5' cy='391.5' r='337.5' stroke='black' stroke-opacity='0.4' stroke-dasharray='19 19' fill='none'/><circle cx='394.5' cy='391.5' r='283.5' stroke='black' stroke-dasharray='19 19' fill='none'/></svg>");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 769px) {
+    .org-values .my-container {
+        align-items: start;
+        background: none;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .org-values .my-container::after {
+        content: "";
+        display: block;
+        width: 650px;
+        height: 520px;
+        background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 787 783'><ellipse cx='393.5' cy='391.5' rx='392.5' ry='391.5' stroke='black' stroke-opacity='0.09' stroke-dasharray='19 19' fill='none'/><circle cx='393.5' cy='391.5' r='337.5' stroke='black' stroke-opacity='0.4' stroke-dasharray='19 19' fill='none'/><circle cx='394.5' cy='391.5' r='283.5' stroke='black' stroke-dasharray='19 19' fill='none'/></svg>");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        position: absolute;
+        top: 56px;
+        left: -177px;
+    }
+}
+
+@media (max-width: 575px) {
+    .org-values .my-container::after {
+        top: 72px;
+        left: -318px;
+    }
+}
+
+@media (max-width: 380px) {
+    .org-values .my-container::after {
+        width: 658px;
+        height: 514px;
+        top: 131px;
+        left: -375px;
+    }
+}
+
+.org-values__body {
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 27rem 0rem;
+    position: relative;
+}
+
+@media (max-width: 1199px) {
+    .org-values__body {
+        max-width: 460px;
+        padding: 25rem 0rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .org-values__body {
+        max-width: 370px;
+        padding: 20rem 0rem;
+    }
+}
+
+@media (max-width: 769px) {
+    .org-values__body {
+        max-width: none;
+        padding: 0rem 0rem 6.1rem;
+        width: 100%;
+        align-items: flex-start;
+    }
+}
+
+.org-values__pre-title {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.org-values h2 {
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+@media (max-width: 769px) {
+    .org-values h2 {
+        text-align: start;
+        margin-bottom: 3.5rem;
+    }
+}
+
+.org-values__items {
+    position: absolute;
+    width: 100%;
+}
+
+@media (max-width: 769px) {
+    .org-values__items {
+        position: static;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
+
+.org-values__item {
+    position: absolute;
+    padding: 1rem 2rem;
+    font-size: var(--fz-s);
+    border: 1px solid #E3E3E3;
+    border-radius: 100px;
+    cursor: pointer;
+    background-color: #FAFAFA;
+}
+
+@media (max-width: 769px) {
+    .org-values__item {
+        position: static;
+        width: fit-content;
+        padding: 1.15;
+        align-self: flex-end;
+    }
+}
+
+.org-values__item:nth-child(1) {
+    top: -139px;
+    left: -132px;
+}
+
+.org-values__item:nth-child(2) {
+    top: -130px;
+    right: -170px;
+}
+
+.org-values__item:nth-child(3) {
+    top: 96px;
+    left: -214px;
+}
+
+@media (max-width: 992px) {
+    .org-values__item:nth-child(3) {
+        top: 96px;
+        left: -190px;
+    }
+}
+
+.org-values__item:nth-child(4) {
+    top: 102px;
+    right: -168px;
+}
+
+.org-values__item:nth-child(5) {
+    top: 316px;
+    left: -121px;
+}
+
+.org-values__item:nth-child(6) {
+    top: 370px;
+    right: -30px;
+}
+
+.org-values__item:hover {
+    border: 1px solid var(--color-orange);
+    background-color: var(--color-orange);
+    color: var(--color-white);
+}
