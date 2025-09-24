@@ -1,0 +1,112 @@
+.donate-banner {}
+
+.donate-banner__inner {
+    padding: 4rem;
+    position: relative;
+    border-radius: 2.4rem;
+    overflow: hidden;
+}
+
+@media (max-width: 769px) {
+    .donate-banner__inner {
+        padding: 3rem;
+        border-radius: 1.2rem;
+    }
+}
+
+@media (max-width: 575px) {
+    .donate-banner__inner {
+        padding: 1.9rem;
+    }
+}
+
+.donate-banner__inner::after {
+    content: "";
+    background: url('../../assets/images/donate-banner/main-img.png') center/contain no-repeat;
+    ;
+    display: block;
+    height: 100%;
+    width: 623px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+@media (max-width: 1199px) {
+    .donate-banner__inner::after {
+        height: 76%;
+        width: 440px;
+    }
+}
+
+@media (max-width: 992px) {
+    .donate-banner__inner::after {
+        right: -140px;
+    }
+}
+
+@media (max-width: 769px) {
+    .donate-banner__inner::after {
+        display: none;
+    }
+}
+
+.donate-banner__content {}
+
+.donate-banner__texts {
+    max-width: 638px;
+}
+
+@media (max-width: 769px) {
+    .donate-banner__texts {
+        max-width: none;
+    }
+}
+
+.donate-banner__texts .inner-h2 {
+    margin-bottom: 1.5rem;
+    line-height: 120%;
+}
+
+@media (max-width: 575px) {
+    .donate-banner__texts .inner-h2 {
+        font-size: 2.4rem;
+    }
+}
+
+.donate-banner .btn {
+    margin-top: 7.2rem;
+    min-width: 382px;
+}
+
+@media (max-width: 769px) {
+    .donate-banner .btn {
+        margin-top: 5.2rem;
+        min-width: 0px;
+    }
+}
+
+@media (max-width: 575px) {
+    .donate-banner .btn {
+        margin-top: 3.4rem;
+    }
+}
+
+/* .donate-banner__img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+}
+
+@media (max-width: 1199px) {
+    .donate-banner__img {
+        height: 76%;
+    }
+}
+
+@media (max-width: 992px) {
+    .donate-banner__img {
+        right: -140px;
+    }
+} */

@@ -26,6 +26,7 @@ h2,
 }
 
 .inner-h2 {
+  font-family: "Bicubik";
   font-size: 4.2rem;
   line-height: 110%;
   margin-bottom: 3.5rem;
@@ -463,4 +464,14 @@ main>*:first-child {
   display: inline-flex;
   z-index: 5;
   gap: 1.5rem;
+}
+
+.blue-bg {
+  background: url('../assets/images/donate-banner/blue-bg.webp');
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.blue-bg * {
+  color: var(--color-white);
 }

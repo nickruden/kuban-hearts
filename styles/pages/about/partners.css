@@ -69,6 +69,7 @@
 
 .collaboration h2 {
     overflow-wrap: break-word;
+    margin-bottom: 2.5rem;
 }
 
 .collaboration__cards {
