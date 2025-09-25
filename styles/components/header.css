@@ -115,12 +115,13 @@
   overflow: hidden;
 }
 
-.header__menu-item.submenu>.submenu__items>ul>li {
+.header__menu-item.submenu>.submenu__items>ul>li>a {
+  display: block;
   padding: 1rem 1.5rem;
   transition: all 0.3s ease;
 }
 
-.header__menu-item.submenu>.submenu__items>ul>li:hover {
+.header__menu-item.submenu>.submenu__items>ul>li>a:hover {
   background-color: #f2910018;
 }
 

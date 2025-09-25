@@ -1,0 +1,126 @@
+.my-accordion {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 4rem;
+}
+
+@media (max-width: 769px) {
+    .my-accordion {
+        grid-template-columns: 1fr;
+    }
+}
+
+.my-accordion__item {
+    padding-top: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+    border-top: 1px solid #D4D4D4;
+}
+
+@media (max-width: 769px) {
+    .my-accordion__item {
+        padding-top: 1.5rem;
+        gap: 1.3rem;
+    }
+}
+
+.my-accordion__item:last-child {
+    border-bottom: 1px solid #D4D4D4;
+}
+
+.my-accordion-header {
+    font-weight: 400;
+    line-height: 150%;
+    cursor: pointer;
+    padding-right: 6rem;
+    position: relative;
+    min-height: 34px;
+    display: flex;
+    align-items: center;
+    font-size: var(--fz-m);
+}
+
+@media (max-width: 769px) {
+    .my-accordion-header {
+        padding-right: 8rem;
+    }
+}
+
+@media (max-width: 575px) {
+    .my-accordion-header {
+        font-size: var(--fz-xs);
+        padding-right: 6rem;
+    }
+}
+
+.my-accordion-header::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 34px;
+    height: 34px;
+    border-radius: 8px;
+    background-color: #F29200;
+}
+
+.my-accordion-header::after {
+    content: "";
+    position: absolute;
+    right: -1.5px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 18px;
+    height: 18px;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 18 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10.1101 0.564106L7.89 0.564105L7.89 7.88995L0.564149 7.88995V10.11L7.89 10.11L7.89 17.4359L10.1101 17.4359L10.1101 10.11H17.4359V7.88995H10.1101L10.1101 0.564106Z' fill='white'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: transform 0.2s ease;
+}
+
+.my-accordion-header.active::after {
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.my-accordion-header.active+.my-accordion-content {
+    margin-bottom: 1.8rem;
+}
+
+@media (max-width: 769px) {
+    .my-accordion-header.active+.my-accordion-content {
+        margin-bottom: 2rem;
+    }
+}
+
+.my-accordion-header span {
+    display: block;
+    max-width: 1276px;
+}
+
+.my-accordion-content {
+    line-height: 150%;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.2s ease;
+    gap: 1rem;
+    font-size: var(--fz-s);
+    padding-right: 2rem;
+    line-height: 150%;
+}
+
+@media (max-width: 350px) {
+    .my-accordion-content * {
+        font-size: 1rem;
+    }
+}
+
+.my-accordion-header span {
+    display: block;
+    max-width: 1276px;
+}
+
+.my-accordion-content p {
+    max-width: 1276px;
+}

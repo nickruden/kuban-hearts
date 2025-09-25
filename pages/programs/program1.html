@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="../../styles/components/header.css">
     <link rel="stylesheet" href="../../styles/components/footer.css">
     <link rel="stylesheet" href="../../styles/components/breadcrumbs.css">
+    <link rel="stylesheet" href="../../styles/components/my-accordion.css">
 
 
     <!-- СТИЛИ СТРАНИЦЫ -->
@@ -42,14 +43,14 @@
                                 <span>О фонде</span>
                                 <div class="submenu__items">
                                     <ul>
-                                        <li><a href="./found-mission.html">Миссия фонда</a></li>
+                                        <li><a href="../about/found-mission.html">Миссия фонда</a></li>
                                         <li><a href="#">История</a></li>
-                                        <li><a href="./organization-sovet.html">Совет организации</a></li>
-                                        <li><a href="./team.html">Команда</a></li>
-                                        <li><a href="./vacancies.html">Вакансии</a></li>
-                                        <li><a href="./event-calendar.html">Календарь событий</a></li>
-                                        <li><a href="./partners.html">Парнеры и доноры</a></li>
-                                        <li><a href="./documents.html">Документы</a></li>
+                                        <li><a href="../about/organization-sovet.html">Совет организации</a></li>
+                                        <li><a href="../about/team.html">Команда</a></li>
+                                        <li><a href="../about/vacancies.html">Вакансии</a></li>
+                                        <li><a href="../about/event-calendar.html">Календарь событий</a></li>
+                                        <li><a href="../about/partners.html">Парнеры и доноры</a></li>
+                                        <li><a href="../about/documents.html">Документы</a></li>
                                     </ul>
                                 </div>
                             </li>
@@ -116,11 +117,13 @@
                     <div class="h3 h3_type2">Программа</div>
                     <h1 class="inner-h1">Дорога жизни</h1>
                     <div class="flex flex-column hero-section__info">
-                        <p class="fz-m">Комплексный проект благотворительного фонда, направленный на поддержку детей с&nbsp;онкологическими заболеваниями и их семей.</p>
+                        <p class="fz-m">Комплексный проект благотворительного фонда, направленный на поддержку детей
+                            с&nbsp;онкологическими заболеваниями и их семей.</p>
                         <div class="hero-section__buttons"><button class="btn">сделать пожертвование</button></div>
                     </div>
                 </div>
-                <div class="hero-section__img-wrap hidden"><img src="../../assets/images/pages/program1/hero-section-img.jpg" alt="#"></div>
+                <div class="hero-section__img-wrap hidden"><img
+                        src="../../assets/images/pages/program1/hero-section-img.jpg" alt="#"></div>
             </div>
             <div class="decor-ribbon"></div>
         </section>
@@ -153,9 +156,65 @@
             </div>
         </section>
 
+
+        <!-- тут есть аккордион, вынес стили отдельно, можно использовать, где хотите с любым контентом, он шаблонный -->
+        <section class="pb-large support">
+            <div class="my-container">
+                <h2 class="inner-h2">оказываем <br> поддержку людям</h2>
+                <div class="my-accordion support__accordion">
+                    <div class="my-accordion__item open">
+                        <h3 class="my-accordion-header active">Медицинская поддержка</h3>
+                        <div class="flex flex-column my-accordion-content list-standart">
+                            <p>Мы помогаем с оплатой диагностики и лечения, организуем консультации ведущих
+                                специалистов, предоставляем возможность получить второе мнение от опытных врачей.
+                                Благотворительный фонд также занимается медицинской маршрутизацией — помогает найти
+                                лучших специалистов и медучреждения для лечения.</p>
+                        </div>
+                    </div>
+                    <div class="my-accordion__item">
+                        <h3 class="fz-m my-accordion-header">Реабилитационные программы</h3>
+                        <div class="flex flex-column my-accordion-content">
+                            <p>Мы помогаем с оплатой диагностики и лечения, организуем консультации ведущих
+                                специалистов, предоставляем возможность получить второе мнение от опытных врачей.
+                                Благотворительный фонд также занимается медицинской маршрутизацией — помогает найти
+                                лучших специалистов и медучреждения для лечения.</p>
+                        </div>
+                    </div>
+                    <div class="my-accordion__item">
+                        <h3 class="fz-m my-accordion-header">Юридическая помощь</h3>
+                        <div class="flex flex-column my-accordion-content">
+                            <p>Мы помогаем с оплатой диагностики и лечения, организуем консультации ведущих
+                                специалистов, предоставляем возможность получить второе мнение от опытных врачей.
+                                Благотворительный фонд также занимается медицинской маршрутизацией — помогает найти
+                                лучших специалистов и медучреждения для лечения.</p>
+                        </div>
+                    </div>
+                    <div class="my-accordion__item">
+                        <h3 class="fz-m my-accordion-header">Образовательная деятельность</h3>
+                        <div class="flex flex-column my-accordion-content">
+                            <p>Мы помогаем с оплатой диагностики и лечения, организуем консультации ведущих
+                                специалистов, предоставляем возможность получить второе мнение от опытных врачей.
+                                Благотворительный фонд также занимается медицинской маршрутизацией — помогает найти
+                                лучших специалистов и медучреждения для лечения.</p>
+                        </div>
+                    </div>
+                    <div class="my-accordion__item">
+                        <h3 class="fz-m my-accordion-header">Психологическая помощь</h3>
+                        <div class="flex flex-column my-accordion-content">
+                            <p>Мы помогаем с оплатой диагностики и лечения, организуем консультации ведущих
+                                специалистов, предоставляем возможность получить второе мнение от опытных врачей.
+                                Благотворительный фонд также занимается медицинской маршрутизацией — помогает найти
+                                лучших специалистов и медучреждения для лечения.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
         <section class="pb-large reviews">
             <div class="my-container">
-                <h2 class="inner-h2">отзывы тех, кому мы помогли</h2>
+                <h2 class="inner-h2">отзывы тех, <br> кому мы помогли</h2>
                 <div class="reviews__cards">
                     <div class="reviews__card">
                         <div class="reviews__card-inner">
@@ -165,7 +224,11 @@
                                 </div>
                                 <h3>Евгений</h3>
                             </div>
-                            <p>Никогда не думал, что столкнусь с такой бедой. Диагноз прозвучал как приговор. Но благодаря фонду я понял, что не одинок в этой борьбе. Они помогли мне найти лучшего специалиста, организовали второе мнение, помогли с документами. Отдельное спасибо за группы поддержки — там я встретил людей, которые понимают меня как никто другой. Сейчас я в ремиссии, и это во многом благодаря помощи фонда.</p>
+                            <p>Никогда не думал, что столкнусь с такой бедой. Диагноз прозвучал как приговор. Но
+                                благодаря фонду я понял, что не одинок в этой борьбе. Они помогли мне найти лучшего
+                                специалиста, организовали второе мнение, помогли с документами. Отдельное спасибо за
+                                группы поддержки — там я встретил людей, которые понимают меня как никто другой. Сейчас
+                                я в ремиссии, и это во многом благодаря помощи фонда.</p>
                         </div>
                     </div>
                     <div class="reviews__card">
@@ -176,7 +239,12 @@
                                 </div>
                                 <h3>Елена</h3>
                             </div>
-                            <p>Я мама двоих детей, и когда узнала о своём диагнозе, думала, что не справлюсь. Фонд стал для меня настоящей опорой. Они не только помогли с оплатой лечения, но и взяли на себя часть бытовых забот — организовали доставку продуктов, помогли с транспортом. Особенно хочу отметить работу социальных работников — они всегда на связи, готовы помочь в любой ситуации. Благодаря фонду я смогла сосредоточиться на лечении и верить в выздоровление.</p>
+                            <p>Я мама двоих детей, и когда узнала о своём диагнозе, думала, что не справлюсь. Фонд стал
+                                для меня настоящей опорой. Они не только помогли с оплатой лечения, но и взяли на себя
+                                часть бытовых забот — организовали доставку продуктов, помогли с транспортом. Особенно
+                                хочу отметить работу социальных работников — они всегда на связи, готовы помочь в любой
+                                ситуации. Благодаря фонду я смогла сосредоточиться на лечении и верить в выздоровление.
+                            </p>
                         </div>
                     </div>
                     <div class="reviews__card">
@@ -187,7 +255,11 @@
                                 </div>
                                 <h3>Александр</h3>
                             </div>
-                            <p>В моём возрасте сложно справляться с такими проблемами, но фонд окружил меня заботой и вниманием. Они помогли с диагностикой, нашли лучших врачей, организовали лечение. Особенно хочу отметить юридическую поддержку — помогли разобраться с льготами и пособиями. Теперь я знаю, что даже в такой сложной ситуации есть люди, готовые прийти на помощь.</p>
+                            <p>В моём возрасте сложно справляться с такими проблемами, но фонд окружил меня заботой и
+                                вниманием. Они помогли с диагностикой, нашли лучших врачей, организовали лечение.
+                                Особенно хочу отметить юридическую поддержку — помогли разобраться с льготами и
+                                пособиями. Теперь я знаю, что даже в такой сложной ситуации есть люди, готовые прийти на
+                                помощь.</p>
                         </div>
                     </div>
                 </div>
@@ -202,7 +274,11 @@
                                 alt="картинка новости"></div>
                         <div class="flex flex-column history__card-body">
                             <div class="font-medium history__card-title">История человека №1</div>
-                            <p class="history__card-desc">История №1 История №1 История №1 История №1 История №1 История №1 История №1 История №1 История №1 История №1 История №1 История №1 История №1 История №1 История №1 История №1 История №1 История №1 История №1 История №1 История №1 История №1 История №1 История №1 История №1 История №1 История №1 История №1 История №1 История №1 История №1</p>
+                            <p class="history__card-desc">История №1 История №1 История №1 История №1 История №1 История
+                                №1 История №1 История №1 История №1 История №1 История №1 История №1 История №1 История
+                                №1 История №1 История №1 История №1 История №1 История №1 История №1 История №1 История
+                                №1 История №1 История №1 История №1 История №1 История №1 История №1 История №1 История
+                                №1 История №1</p>
                             <div class="history__card-date">17.08.2025</div>
                         </div>
                     </div>
@@ -221,7 +297,8 @@
         <section class="pb-large program-manager">
             <div class="flex my-container">
                 <div class="flex program-manager__main-info">
-                    <div class="program-manager__img-wrap"><img src="../../assets/images/pages/organization-sovet/card-1.jpg" alt="#"></div>
+                    <div class="program-manager__img-wrap"><img
+                            src="../../assets/images/pages/organization-sovet/card-1.jpg" alt="#"></div>
                     <div class="flex flex-column program-manager__texts">
                         <h3 class="fz-l-fixed">Надежда Иванова</h3>
                         <p class="fz-xs-fixed">Руководитель программы “Дорога жизни”</p>
@@ -233,7 +310,8 @@
                 </div>
                 <div class="flex flex-column program-manager__banner blue-bg">
                     <div class="h3">Оказать помощь может каждый</div>
-                    <p class="fz-m">Выберите программу фонда и оформите ежемесячные пожертвования на 195 ₽, 450 ₽ или любую другую сумму.</p>
+                    <p class="fz-m">Выберите программу фонда и оформите ежемесячные пожертвования на 195 ₽, 450 ₽ или
+                        любую другую сумму.</p>
                     <button class="btn">Сделать пожертвование</button>
                 </div>
             </div>
@@ -280,15 +358,18 @@
                         <ul class="footer__menu-wrap">
                             <span class="footer__menu-title">О фонде</span>
                             <ul class="footer__menu-items">
-                                <li class="footer__menu-item"><a href="./found-mission.html">Миссия фонда</a></li>
-                                <li class="footer__menu-item"><a href="#">История</a></li>
-                                <li class="footer__menu-item"><a href="./organization-sovet.html">Совет организации</a>
+                                <li class="footer__menu-item"><a href="../about/found-mission.html">Миссия фонда</a>
                                 </li>
-                                <li class="footer__menu-item"><a href="./team.html">Команда</a></li>
-                                <li class="footer__menu-item"><a href="./vacancies.html">Вакансии</a></li>
-                                <li class="footer__menu-item"><a href="./event-calendar.html">Календарь событий</a></li>
-                                <li class="footer__menu-item"><a href="./partners.html">Парнеры и доноры</a></li>
-                                <li class="footer__menu-item"><a href="./documents.html">Документы</a></li>
+                                <li class="footer__menu-item"><a href="#">История</a></li>
+                                <li class="footer__menu-item"><a href="../about/organization-sovet.html">Совет
+                                        организации</a>
+                                </li>
+                                <li class="footer__menu-item"><a href="../about/team.html">Команда</a></li>
+                                <li class="footer__menu-item"><a href="../about/vacancies.html">Вакансии</a></li>
+                                <li class="footer__menu-item"><a href="../about/event-calendar.html">Календарь
+                                        событий</a></li>
+                                <li class="footer__menu-item"><a href="../about/partners.html">Парнеры и доноры</a></li>
+                                <li class="footer__menu-item"><a href="../about/documents.html">Документы</a></li>
                             </ul>
                         </ul>
                         <ul class="footer__menu-wrap">
@@ -340,6 +421,7 @@
     <script src="../../assets/scripts/header.js"></script>
     <script src="../../assets/scripts/map.js"></script>
     <script src="../../assets/scripts/range.js"></script>
+    <script src="../../assets/scripts/accordion.js"></script>
 </body>
 
 </html>
