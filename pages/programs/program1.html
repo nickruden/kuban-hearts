@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Календарь событий</title>
+    <title>Документы</title>
 
 
     <!-- БИБЛИОТЕКИ -->
@@ -23,7 +23,7 @@
 
 
     <!-- СТИЛИ СТРАНИЦЫ -->
-    <link rel="stylesheet" href="../../styles/pages/about/event-calendar.css">
+    <link rel="stylesheet" href="../../styles/pages/programs/program1.css">
 </head>
 
 <body>
@@ -58,7 +58,7 @@
                                 <span>Программы</span>
                                 <div class="submenu__items">
                                     <ul>
-                                        <li><a href="../programs/program1.html">Программа 1</a></li>
+                                        <li><a href="./program1.html">Программа 1</a></li>
                                         <li><a href="#">Программа 2</a></li>
                                         <li><a href="#">Программа 3</a></li>
                                         <li><a href="#">Программа 4</a></li>
@@ -112,52 +112,7 @@
     <main class="main">
         <section class="hero-section">
             <div class="my-container">
-                <div class="breadcrumbs">
-                    <ul class="breadcrumbs__path">
-                        <li class="breadcrumbs__path-item fz-s"><a href="../../index.html">Главная</a></li>
-                        <li class="breadcrumbs__path-item fz-s">Календарь событий</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
 
-        <section class="pb-large event-calendar">
-            <div class="my-container">
-                <h1 class="inner-h1">Календарь событий</h1>
-                <div class="event-calendar__event-cards">
-                    <a href="#" class="event-calendar__card">
-                        <div class="event-calendar__card-inner">
-                            <div class="event-calendar__card-img-wrap">
-                                <img src="../../assets/images/pages/event-calendar/card-1.png" alt="#">
-                            </div>
-                            <div class="event-calendar__card-body">
-                                <div class="event-calendar__card-texts">
-                                    <h3>Сбор гуманитарной помощи на СВО</h3>
-                                    <p>Объявляем акцию по сбору гуманитарной помощи для участников СВО. Регион отправил в Донбасс уже несколько десятков тонн груза Объявляем акцию по сбору гуманитарной помощи для участников СВО. Регион отправил в Донбасс уже несколько десятков тонн груза</p>
-                                </div>
-                                <div class="event-calendar__event-date">
-                                    15.09.2025
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="#" class="event-calendar__card">
-                        <div class="event-calendar__card-inner">
-                            <div class="event-calendar__card-img-wrap">
-                                <img src="../../assets/images/pages/event-calendar/card-2.png" alt="#">
-                            </div>
-                            <div class="event-calendar__card-body">
-                                <div class="event-calendar__card-texts">
-                                    <h3>Посещение центра реабилитации во Внуково</h3>
-                                    <p>Наша команда посетила реабилитационный центр во Внуково, чтобы лично увидеть, как меняется жизнь людей, получивших шанс, дальше продолжение</p>
-                                </div>
-                                <div class="event-calendar__event-date">
-                                    04.09.2025
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
             </div>
         </section>
     </main>
@@ -191,7 +146,7 @@
                         <ul class="footer__menu-wrap">
                             <span class="footer__menu-title">Программы</span>
                             <ul class="footer__menu-items">
-                                <li class="footer__menu-item"><a href="../programs/program1.html">Программа №1</a></li>
+                                <li class="footer__menu-item"><a href="./program1.html">Программа №1</a></li>
                                 <li class="footer__menu-item"><a href="#">Программа №2</a></li>
                                 <li class="footer__menu-item"><a href="#">Программа №3</a></li>
                                 <li class="footer__menu-item"><a href="#">Программа №4</a></li>
@@ -262,13 +217,6 @@
     <script src="../../assets/scripts/header.js"></script>
     <script src="../../assets/scripts/map.js"></script>
     <script src="../../assets/scripts/range.js"></script>
-    <script src="../../assets/scripts/cut-text.js"></script>
-
-
-    <!-- скрипт среза текста в карточках(если будет удобно, можно перенести вызов в файл cut-text.js) -->
-    <script>
-        cutTextForSymbols(".event-calendar__card-texts p", 123)
-    </script>
 </body>
 
 </html>
