@@ -25,6 +25,15 @@
 
     <!-- СТИЛИ СТРАНИЦЫ -->
     <link rel="stylesheet" href="../../styles/pages/programs.css">
+
+    <!-- ВОТ ЭТОТ КОНФУЗ ТУТ ТОЛЬКО ПОТОМУ ЧТО В МАКЕТАХ НА МОБЛКЕ НАДО ЧТОБ h1 БЫЛ В ДВЕ СТРОКИ -->
+    <style>
+        @media (max-width: 360px) {
+            .hero-section__body h1 {
+                max-width: 280px;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -111,68 +120,54 @@
 
 
     <main class="main">
-        <section class="pb-large hero-section">
+        <section class="pb-large hero-section no-ribbon-mobile">
             <div class="flex my-container">
                 <div class="flex flex-column hero-section__body">
-                    <div class="h3 h3_type2">Программа</div>
-                    <h1 class="inner-h1">Дорога жизни</h1>
+                    <div class="h3 h3_type2">программа Забота о&nbsp;детях в&nbsp;больницах&nbsp;и&nbsp;на&nbsp;дому.</div>
+                    <h1 class="inner-h1">БУДУ РЯДОМ</h1>
                     <div class="flex flex-column hero-section__info">
-                        <p class="fz-m">Комплексный проект благотворительного фонда, направленный на поддержку детей
-                            с&nbsp;онкологическими заболеваниями и их семей.</p>
+                        <p class="fz-m-fixed">Мы предоставляем круглосуточное профессиональное сопровождение детей, оставшихся без родителей в медицинских учреждениях, а&nbsp;также оказываем услуги по патронажному уходу на дому для детей с особенностями развития.</p>
                         <div class="hero-section__buttons"><button class="btn">сделать пожертвование</button></div>
                     </div>
                 </div>
                 <div class="hero-section__img-wrap hidden"><img
-                        src="../../assets/images/pages/program1/hero-section-img.jpg" alt="#"></div>
+                        src="../../assets/images/pages/program2/hero-section/block-img.png" alt="#"></div>
             </div>
             <div class="decor-ribbon"></div>
         </section>
-        <section class="pb-large missions">
+
+        <section class="pb-large nannies-care">
             <div class="my-container">
-                <h2 class="inner-h2">миссия и&nbsp;цели <br> программы</h2>
-                <div class="missions__body">
-                    <div class="missions__content">
-                        <ul class="list-standart">
-                            <li>Спасти жизни детей, страдающих онкологическими заболеваниями</li>
-                            <li>Обеспечить комплексную поддержку семей, столкнувшихся с болезнью</li>
-                            <li>Создать условия для полноценной жизни детей после лечения</li>
-                        </ul>
-                        <div class="missions__img-wrap">
-                            <img src="../../assets/images/pages/program1/missions/img-1.jpg" alt="#">
-                        </div>
-                    </div>
-                    <div class="missions__content">
-                        <ul class="list-standart">
-                            <li>Обеспечение своевременного доступа к качественному лечению</li>
-                            <li>Организация психологической поддержки для детей и их семей</li>
-                            <li>Помощь в покрытии расходов на лечение и реабилитацию</li>
-                            <li>Создание комфортной среды пребывания в медицинских учреждениях</li>
-                        </ul>
-                        <div class="missions__img-wrap">
-                            <img src="../../assets/images/pages/program1/missions/img-2.jpg" alt="#">
-                        </div>
-                    </div>
+                <h2 class="inner-h2">няни заботятся <br> О&nbsp;ДЕТЯХ В&nbsp;БОЛЬНИЦАХ И&nbsp;НА&nbsp;ДОМУ</h2>
+                <div class="nannies-care__content">
+                    
                 </div>
             </div>
         </section>
 
+        <section class="pb-large nannies-support">
+            <div class="my-container">
+                <h2 class="inner-h2">ВНИМАНИЕ И ПОДДЕРЖКА НЯНИ ЛЕЧИТ ЛУЧШЕ&nbsp;ЛЕКАРСТВ и улучшает качество жизни</h2>
+                <div class="nanny-support__content fz-m">
+                    <div class="nanny-support__img-wrap hidden"><img src="../../assets/images/pages/program2/nanny-support/block-img.jpg" alt="#"></div>
+                    <p>Уход за ребёнком с особенностями развития — это круглосуточная работа. Наши услуги присмотра на дому дают родителям возможность перевести дух, заняться своими делами или просто отдохнуть. Это простая истина: отдохнувшие родители — счастливый ребёнок. Мы помогаем всей семье восстановить силы, чтобы дарить детям ещё больше заботы и качественного общения.</p>
+                </div>
+            </div>
+        </section>
 
         <!-- тут есть аккордион, вынес стили отдельно, можно использовать, где хотите с любым контентом, он шаблонный -->
         <section class="pb-large support">
             <div class="my-container">
-                <h2 class="inner-h2">оказываем <br> поддержку людям</h2>
+                <h2 class="inner-h2-m">няня — спасение от&nbsp;Страха, <br> одиночества и&nbsp;беспомощности</h2>
                 <div class="my-accordion support__accordion">
                     <div class="my-accordion__item open">
-                        <h3 class="my-accordion-header active">Медицинская поддержка</h3>
+                        <h3 class="my-accordion-header active">Уход и выполнение предписаний врача</h3>
                         <div class="flex flex-column my-accordion-content list-standart">
-                            <p>Мы помогаем с оплатой диагностики и лечения, организуем консультации ведущих
-                                специалистов, предоставляем возможность получить второе мнение от опытных врачей.
-                                Благотворительный фонд также занимается медицинской маршрутизацией — помогает найти
-                                лучших специалистов и медучреждения для лечения.</p>
+                            <p>Cоблюдают режим дня, график приема лекарств и проведение процедур, осуществляют профилактику опрелостей, пролежней и атрофии мышц, размещают и перемещают тяжелобольных в постели, обслуживают зонд и катетер, выхаживают после операции и др.</p>
                         </div>
                     </div>
                     <div class="my-accordion__item">
-                        <h3 class="fz-m my-accordion-header">Реабилитационные программы</h3>
+                        <h3 class="fz-m my-accordion-header">Контроль сосотояния</h3>
                         <div class="flex flex-column my-accordion-content">
                             <p>Мы помогаем с оплатой диагностики и лечения, организуем консультации ведущих
                                 специалистов, предоставляем возможность получить второе мнение от опытных врачей.
@@ -181,7 +176,7 @@
                         </div>
                     </div>
                     <div class="my-accordion__item">
-                        <h3 class="fz-m my-accordion-header">Юридическая помощь</h3>
+                        <h3 class="fz-m my-accordion-header">Питание</h3>
                         <div class="flex flex-column my-accordion-content">
                             <p>Мы помогаем с оплатой диагностики и лечения, организуем консультации ведущих
                                 специалистов, предоставляем возможность получить второе мнение от опытных врачей.
@@ -190,7 +185,7 @@
                         </div>
                     </div>
                     <div class="my-accordion__item">
-                        <h3 class="fz-m my-accordion-header">Образовательная деятельность</h3>
+                        <h3 class="fz-m my-accordion-header">Материальная помощь</h3>
                         <div class="flex flex-column my-accordion-content">
                             <p>Мы помогаем с оплатой диагностики и лечения, организуем консультации ведущих
                                 специалистов, предоставляем возможность получить второе мнение от опытных врачей.
@@ -199,7 +194,16 @@
                         </div>
                     </div>
                     <div class="my-accordion__item">
-                        <h3 class="fz-m my-accordion-header">Психологическая помощь</h3>
+                        <h3 class="fz-m my-accordion-header">Досуг и сопровождение</h3>
+                        <div class="flex flex-column my-accordion-content">
+                            <p>Мы помогаем с оплатой диагностики и лечения, организуем консультации ведущих
+                                специалистов, предоставляем возможность получить второе мнение от опытных врачей.
+                                Благотворительный фонд также занимается медицинской маршрутизацией — помогает найти
+                                лучших специалистов и медучреждения для лечения.</p>
+                        </div>
+                    </div>
+                    <div class="my-accordion__item">
+                        <h3 class="fz-m my-accordion-header">Дружеское отношение и эмоциональная поддержка</h3>
                         <div class="flex flex-column my-accordion-content">
                             <p>Мы помогаем с оплатой диагностики и лечения, организуем консультации ведущих
                                 специалистов, предоставляем возможность получить второе мнение от опытных врачей.
@@ -211,83 +215,25 @@
             </div>
         </section>
 
-        
-        <section class="pb-large reviews">
-            <div class="my-container">
-                <h2 class="inner-h2">отзывы тех, <br> кому мы помогли</h2>
-                <div class="reviews__cards">
-                    <div class="reviews__card">
-                        <div class="reviews__card-inner">
-                            <div class="reviews__author">
-                                <div class="reviews__author-img-wrap">
-                                    <img src="" alt="#">
-                                </div>
-                                <h3>Евгений</h3>
-                            </div>
-                            <p>Никогда не думал, что столкнусь с такой бедой. Диагноз прозвучал как приговор. Но
-                                благодаря фонду я понял, что не одинок в этой борьбе. Они помогли мне найти лучшего
-                                специалиста, организовали второе мнение, помогли с документами. Отдельное спасибо за
-                                группы поддержки — там я встретил людей, которые понимают меня как никто другой. Сейчас
-                                я в ремиссии, и это во многом благодаря помощи фонда.</p>
-                        </div>
-                    </div>
-                    <div class="reviews__card">
-                        <div class="reviews__card-inner">
-                            <div class="reviews__author">
-                                <div class="reviews__author-img-wrap">
-                                    <img src="" alt="#">
-                                </div>
-                                <h3>Елена</h3>
-                            </div>
-                            <p>Я мама двоих детей, и когда узнала о своём диагнозе, думала, что не справлюсь. Фонд стал
-                                для меня настоящей опорой. Они не только помогли с оплатой лечения, но и взяли на себя
-                                часть бытовых забот — организовали доставку продуктов, помогли с транспортом. Особенно
-                                хочу отметить работу социальных работников — они всегда на связи, готовы помочь в любой
-                                ситуации. Благодаря фонду я смогла сосредоточиться на лечении и верить в выздоровление.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="reviews__card">
-                        <div class="reviews__card-inner">
-                            <div class="reviews__author">
-                                <div class="reviews__author-img-wrap">
-                                    <img src="" alt="#">
-                                </div>
-                                <h3>Александр</h3>
-                            </div>
-                            <p>В моём возрасте сложно справляться с такими проблемами, но фонд окружил меня заботой и
-                                вниманием. Они помогли с диагностикой, нашли лучших врачей, организовали лечение.
-                                Особенно хочу отметить юридическую поддержку — помогли разобраться с льготами и
-                                пособиями. Теперь я знаю, что даже в такой сложной ситуации есть люди, готовые прийти на
-                                помощь.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
         <section class="pb-large history">
             <div class="flex flex-column my-container">
-                <h2 class="inner-h2">истории людей</h2>
+                <h2 class="inner-h2">истории детей</h2>
                 <div class="flex flex-column history__cards">
                     <div class="flex history__card">
-                        <div class="history__img-wrap"><img src="../../assets/images/pages/main/news/new-img.jpg"
+                        <div class="history__img-wrap"><img src="../../assets/images/pages/program2/history/card-1-img.jpg"
                                 alt="картинка новости"></div>
                         <div class="flex flex-column history__card-body">
-                            <div class="font-medium history__card-title">История человека №1</div>
-                            <p class="history__card-desc">История №1 История №1 История №1 История №1 История №1 История
-                                №1 История №1 История №1 История №1 История №1 История №1 История №1 История №1 История
-                                №1 История №1 История №1 История №1 История №1 История №1 История №1 История №1 История
-                                №1 История №1 История №1 История №1 История №1 История №1 История №1 История №1 История
-                                №1 История №1</p>
+                            <div class="font-medium history__card-title">Присмотр и уход на дому: история Ксюши</div>
+                            <p class="history__card-desc">Этой историей делится няня фонда «Сердца кубани». Уже несколько месяцев она помогает семье Ксюши. Семья обратилась в фонд за помощью в тот момент, когда маме девочки было особенно трудно — после операции она не могла ухаживать за детьми и нуждалась в поддержке</p>
                             <div class="history__card-date">17.08.2025</div>
                         </div>
                     </div>
                     <div class="flex history__card">
-                        <div class="history__img-wrap"><img src="../../assets/images/pages/main/news/new-img.jpg"
+                        <div class="history__img-wrap"><img src="../../assets/images/pages/program2/history/card-2-img.jpg"
                                 alt="картинка новости"></div>
                         <div class="flex flex-column history__card-body">
-                            <div class="font-medium history__card-title">История человека №2</div>
-                            <p class="history__card-desc">История №2 </p>
+                            <div class="font-medium history__card-title">21 день под присмотром: история Ростислава</div>
+                            <p class="history__card-desc">Ростиславу еще нет и года, и впереди у него 21 день в больнице. Как и любому малышу, ему необходимы забота и поддержка, особенно в таких непростых условиях.</p>
                             <div class="history__card-date">15.08.2025</div>
                         </div>
                     </div>

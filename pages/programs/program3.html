@@ -25,6 +25,25 @@
 
     <!-- СТИЛИ СТРАНИЦЫ -->
     <link rel="stylesheet" href="../../styles/pages/programs.css">
+
+    <!-- ВОТ ЭТОТ КОНФУЗ ТУТ ТОЛЬКО ПОТОМУ ЧТО В МАКЕТАХ РАЗНЫЕ РАЗМЕРЫ ШРИФТОВ h1 ДЛЯ НЕКОТОРЫХ ПРОГРАММ, ЧТОБЫ НЕ СБИВАТЬ ШАБЛОННОСТЬ h1 ЗАГОЛОВКА ПОДОБНЫХ СТРАНИЦ, СДЕЛАЛ ВОТ ТАКУЮ ШТУКУ, ЕСЛИ ВЫ БУДЕТЕ СОЗДАВАТЬ РАЗНЫЕ СТРАНИЦЫ ДЛЯ КАЖДОЙ ПРОГРАММЫ, А НЕ ИСПОЛЬЗОВАТЬ ОДИН ШАБЛОН, ТО НА СТРАНИЦАХ, ГДЕ ЕСТЬ ВОТ ТАКАЯ ВСТАВКА ДЛЯ УМЕНЬШЕННОЙ ВЕРСИИ h1, ПОДСТАВЬТЕ В h1 КЛАСС inner-h1-m(для программы 3 и 4) -->
+    <style>
+        .hero-section__body h1 {
+            font-size: 5.2rem;
+        }
+
+        @media (max-width: 992px) {
+            .hero-section__body h1 {
+                font-size: 4.8rem;
+            }
+        }
+
+        @media (max-width: 575px) {
+            .hero-section__body h1 {
+                font-size: 2.7rem;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -111,68 +130,72 @@
 
 
     <main class="main">
-        <section class="pb-large hero-section">
+        <section class="pb-large hero-section no-ribbon-mobile">
             <div class="flex my-container">
                 <div class="flex flex-column hero-section__body">
-                    <div class="h3 h3_type2">Программа</div>
-                    <h1 class="inner-h1">Дорога жизни</h1>
+                    <div class="h3 h3_type2">Поддержка и&nbsp;помощь, чтобы изменить траекторию жизни к&nbsp;лучшему
+                    </div>
+                    <h1 class="inner-h1">Наставничество</h1>
                     <div class="flex flex-column hero-section__info">
-                        <p class="fz-m">Комплексный проект благотворительного фонда, направленный на поддержку детей
-                            с&nbsp;онкологическими заболеваниями и их семей.</p>
+                        <p class="fz-m-fixed">Всесторонне поддерживаем воспитанников и&nbsp;выпускников детских домов
+                            через наставничество, чтобы повысить уровень социальной адаптации и&nbsp;интеграции
+                            в&nbsp;общество</p>
                         <div class="hero-section__buttons"><button class="btn">сделать пожертвование</button></div>
                     </div>
                 </div>
                 <div class="hero-section__img-wrap hidden"><img
-                        src="../../assets/images/pages/program1/hero-section-img.jpg" alt="#"></div>
+                        src="../../assets/images/pages/program3/hero-section/block-img.jpg" alt="#"></div>
             </div>
             <div class="decor-ribbon"></div>
         </section>
-        <section class="pb-large missions">
+        <section class="pb-large mentee">
             <div class="my-container">
-                <h2 class="inner-h2">миссия и&nbsp;цели <br> программы</h2>
-                <div class="missions__body">
-                    <div class="missions__content">
-                        <ul class="list-standart">
-                            <li>Спасти жизни детей, страдающих онкологическими заболеваниями</li>
-                            <li>Обеспечить комплексную поддержку семей, столкнувшихся с болезнью</li>
-                            <li>Создать условия для полноценной жизни детей после лечения</li>
-                        </ul>
-                        <div class="missions__img-wrap">
-                            <img src="../../assets/images/pages/program1/missions/img-1.jpg" alt="#">
+                <h2 class="inner-h2">ПОДОПЕЧНЫЕ ПРОГРАММЫ</h2>
+                <div class="mentee__content">
+                    <div class="mentee__card">
+                        <div class="mentee__card-inner">
+                            <div class="mentee__card__img-wrap hidden"><img
+                                    src="../../assets/images/pages/program3/mentee/card-1-img.png" alt="#"></div>
+                            <div class="mentee__card-texts">
+                                <p>Воспианники детских домов Краснодарского края от 12 до 18 лет</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="missions__content">
-                        <ul class="list-standart">
-                            <li>Обеспечение своевременного доступа к качественному лечению</li>
-                            <li>Организация психологической поддержки для детей и их семей</li>
-                            <li>Помощь в покрытии расходов на лечение и реабилитацию</li>
-                            <li>Создание комфортной среды пребывания в медицинских учреждениях</li>
-                        </ul>
-                        <div class="missions__img-wrap">
-                            <img src="../../assets/images/pages/program1/missions/img-2.jpg" alt="#">
+                    <div class="mentee__card">
+                        <div class="mentee__card-inner">
+                            <div class="mentee__card__img-wrap hidden"><img
+                                    src="../../assets/images/pages/program3/mentee/card-2-img.png" alt="#"></div>
+                            <div class="mentee__card-texts">
+                                <p>Дети, которые остались без попечения родителей</p>
+                            </div>
                         </div>
+                    </div>
+                    <div class="mentee__banner mini-banner blue-bg">
+                        <div class="h3">Нужна помощь?</div>
+                        <div class="mini-banner__texts">
+                            <p class="fz-m">Заполни анкету, если тебе нужна поддержка фонда</p>
+                        </div>
+                        <button class="btn">заполнить анкету</button>
                     </div>
                 </div>
             </div>
         </section>
-
 
         <!-- тут есть аккордион, вынес стили отдельно, можно использовать, где хотите с любым контентом, он шаблонный -->
         <section class="pb-large support">
             <div class="my-container">
-                <h2 class="inner-h2">оказываем <br> поддержку людям</h2>
+                <h2 class="inner-h2">Наставник — помощник ребенка <br> во&nbsp;всех&nbsp;сферах</h2>
                 <div class="my-accordion support__accordion">
                     <div class="my-accordion__item open">
-                        <h3 class="my-accordion-header active">Медицинская поддержка</h3>
+                        <h3 class="my-accordion-header active">Проводит досуг с ребенком</h3>
                         <div class="flex flex-column my-accordion-content list-standart">
-                            <p>Мы помогаем с оплатой диагностики и лечения, организуем консультации ведущих
-                                специалистов, предоставляем возможность получить второе мнение от опытных врачей.
-                                Благотворительный фонд также занимается медицинской маршрутизацией — помогает найти
-                                лучших специалистов и медучреждения для лечения.</p>
+                            <p>Регулярно общается с ребенком и проводит вместе время — разговаривает на разные темы,
+                                гуляет, играет в настольные игры, готовит что-то вкусное, ходит в кафе или кино,
+                                посещает выезды для наставнических пар и т. д.</p>
                         </div>
                     </div>
                     <div class="my-accordion__item">
-                        <h3 class="fz-m my-accordion-header">Реабилитационные программы</h3>
+                        <h3 class="fz-m my-accordion-header">Поддерживает ребенка эмоционально</h3>
                         <div class="flex flex-column my-accordion-content">
                             <p>Мы помогаем с оплатой диагностики и лечения, организуем консультации ведущих
                                 специалистов, предоставляем возможность получить второе мнение от опытных врачей.
@@ -181,7 +204,7 @@
                         </div>
                     </div>
                     <div class="my-accordion__item">
-                        <h3 class="fz-m my-accordion-header">Юридическая помощь</h3>
+                        <h3 class="fz-m my-accordion-header">Помогает выстраивать общение с окружающими</h3>
                         <div class="flex flex-column my-accordion-content">
                             <p>Мы помогаем с оплатой диагностики и лечения, организуем консультации ведущих
                                 специалистов, предоставляем возможность получить второе мнение от опытных врачей.
@@ -190,16 +213,7 @@
                         </div>
                     </div>
                     <div class="my-accordion__item">
-                        <h3 class="fz-m my-accordion-header">Образовательная деятельность</h3>
-                        <div class="flex flex-column my-accordion-content">
-                            <p>Мы помогаем с оплатой диагностики и лечения, организуем консультации ведущих
-                                специалистов, предоставляем возможность получить второе мнение от опытных врачей.
-                                Благотворительный фонд также занимается медицинской маршрутизацией — помогает найти
-                                лучших специалистов и медучреждения для лечения.</p>
-                        </div>
-                    </div>
-                    <div class="my-accordion__item">
-                        <h3 class="fz-m my-accordion-header">Психологическая помощь</h3>
+                        <h3 class="fz-m my-accordion-header">Делится бытовыми навыками и жизненным опытом</h3>
                         <div class="flex flex-column my-accordion-content">
                             <p>Мы помогаем с оплатой диагностики и лечения, организуем консультации ведущих
                                 специалистов, предоставляем возможность получить второе мнение от опытных врачей.
@@ -211,55 +225,66 @@
             </div>
         </section>
 
-        
-        <section class="pb-large reviews">
+        <section class="pb-large help-for">
             <div class="my-container">
-                <h2 class="inner-h2">отзывы тех, <br> кому мы помогли</h2>
-                <div class="reviews__cards">
-                    <div class="reviews__card">
-                        <div class="reviews__card-inner">
-                            <div class="reviews__author">
-                                <div class="reviews__author-img-wrap">
-                                    <img src="" alt="#">
-                                </div>
-                                <h3>Евгений</h3>
+                <div class="help-for__items">
+                    <div class="help-for__item">
+                        <h2 class="inner-h2">Помощь воспитанникам <br> детских&nbsp;домов
+                            от&nbsp;12&nbsp;до&nbsp;18&nbsp;лет</h2>
+                        <div class="help-for__item-content">
+                            <div class="help-for__item-texts list-standart fz-m">
+                                <p><strong>Индивидуальная форма:</strong></p>
+                                <ul>
+                                    <li>Регулярно встречаться&nbsp;с вашим подопечным (1-2 раза в неделю).</li>
+                                    <li>Стать для него надежным другом&nbsp;и примером для подражания.</li>
+                                    <li>Помогать раскрывать таланты&nbsp;и интересы через совместные увлечения: спорт,
+                                        творчество, прогулки.</li>
+                                    <li>Поддерживать в учебе&nbsp;и профориентации, помогая определиться с планами на
+                                        будущее.</li>
+                                    <li>Учить простым, но таким важным вещам&nbsp;для самостоятельной жизни: планировать
+                                        бюджет, готовить, ставить и достигать цели.</li>
+                                </ul>
+                                <p>&nbsp;</p>
+                                <p><strong>Групповая форма:</strong></p>
+                                <ul>
+                                    <li>Проведение мастер-классов&nbsp;и тематических встреч для небольшой группы ребят
+                                        (5-7 человек).</li>
+                                    <li>Организация совместных активностей:&nbsp;походы в музеи, спортивные игры, квизы,
+                                        походы в кафе.</li>
+                                    <li>Обучение через игру и дискуссии&nbsp;жизненным и социальным навыкам:
+                                        командообразованию, коммуникации, разрешению конфликтов.</li>
+                                    <li>Создание поддерживающего сообщества, где каждый чувствует себя частью команды.
+                                    </li>
+                                </ul>
                             </div>
-                            <p>Никогда не думал, что столкнусь с такой бедой. Диагноз прозвучал как приговор. Но
-                                благодаря фонду я понял, что не одинок в этой борьбе. Они помогли мне найти лучшего
-                                специалиста, организовали второе мнение, помогли с документами. Отдельное спасибо за
-                                группы поддержки — там я встретил людей, которые понимают меня как никто другой. Сейчас
-                                я в ремиссии, и это во многом благодаря помощи фонда.</p>
+                            <div class="help-for__item-img-wrap hidden"><img src="../../assets/images/pages/program3/help-for/item-1-img.png" alt=#""></div>
                         </div>
                     </div>
-                    <div class="reviews__card">
-                        <div class="reviews__card-inner">
-                            <div class="reviews__author">
-                                <div class="reviews__author-img-wrap">
-                                    <img src="" alt="#">
-                                </div>
-                                <h3>Елена</h3>
+                    <div class="help-for__item">
+                        <h2 class="inner-h2">Помощь для выпускников <br> детских&nbsp;домов
+                            от&nbsp;16&nbsp;до&nbsp;23&nbsp;лет</h2>
+                        <div class="help-for__item-content">
+                            <div class="help-for__item-texts list-standart fz-m">
+                                <p><strong>Индивидуальная форма:</strong></p>
+                                <ul>
+                                    <li>Анкетирование выпускников детских домов</li>
+                                    <li>Сопровождение выпускников, в&nbsp;т.ч.&nbsp;по&nbsp;вопросам получения
+                                        образования и трудоустройства, решения социально-бытовых проблем</li>
+                                    <li>Консультации и&nbsp;сопровождение юриста в&nbsp;защите имущественных прав,
+                                        получении жилья, субсидий, льгот и&nbsp;др.</li>
+                                    <li>Консультации психолога</li>
+                                    <li>Адресная помощь</li>
+                                </ul>
+                                <p>&nbsp;</p>
+                                <p><strong>Групповая форма:</strong></p>
+                                <ul>
+                                    <li>Тренинги по&nbsp;социализации</li>
+                                    <li>Тематические мастер-классы</li>
+                                    <li>Тематические тренинги с&nbsp;помощью привлеченных&nbsp;экспертов</li>
+                                    <li>Досуг: праздники, настольные игры и&nbsp;др.</li>
+                                </ul>
                             </div>
-                            <p>Я мама двоих детей, и когда узнала о своём диагнозе, думала, что не справлюсь. Фонд стал
-                                для меня настоящей опорой. Они не только помогли с оплатой лечения, но и взяли на себя
-                                часть бытовых забот — организовали доставку продуктов, помогли с транспортом. Особенно
-                                хочу отметить работу социальных работников — они всегда на связи, готовы помочь в любой
-                                ситуации. Благодаря фонду я смогла сосредоточиться на лечении и верить в выздоровление.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="reviews__card">
-                        <div class="reviews__card-inner">
-                            <div class="reviews__author">
-                                <div class="reviews__author-img-wrap">
-                                    <img src="" alt="#">
-                                </div>
-                                <h3>Александр</h3>
-                            </div>
-                            <p>В моём возрасте сложно справляться с такими проблемами, но фонд окружил меня заботой и
-                                вниманием. Они помогли с диагностикой, нашли лучших врачей, организовали лечение.
-                                Особенно хочу отметить юридическую поддержку — помогли разобраться с льготами и
-                                пособиями. Теперь я знаю, что даже в такой сложной ситуации есть люди, готовые прийти на
-                                помощь.</p>
+                            <div class="help-for__item-img-wrap hidden"><img src="../../assets/images/pages/program3/help-for/item-2-img.png" alt=#""></div>
                         </div>
                     </div>
                 </div>
@@ -267,27 +292,30 @@
         </section>
         <section class="pb-large history">
             <div class="flex flex-column my-container">
-                <h2 class="inner-h2">истории людей</h2>
+                <h2 class="inner-h2">истории подопечных программы</h2>
                 <div class="flex flex-column history__cards">
                     <div class="flex history__card">
-                        <div class="history__img-wrap"><img src="../../assets/images/pages/main/news/new-img.jpg"
-                                alt="картинка новости"></div>
+                        <div class="history__img-wrap"><img
+                                src="../../assets/images/pages/program3/history/card-1-img.png" alt="картинка новости">
+                        </div>
                         <div class="flex flex-column history__card-body">
-                            <div class="font-medium history__card-title">История человека №1</div>
-                            <p class="history__card-desc">История №1 История №1 История №1 История №1 История №1 История
-                                №1 История №1 История №1 История №1 История №1 История №1 История №1 История №1 История
-                                №1 История №1 История №1 История №1 История №1 История №1 История №1 История №1 История
-                                №1 История №1 История №1 История №1 История №1 История №1 История №1 История №1 История
-                                №1 История №1</p>
+                            <div class="font-medium history__card-title">Два года в вагончике у кочегарки: история
+                                Андрея</div>
+                            <p class="history__card-desc">Андрей — выпускник детского дома. После выпуска он оказался
+                                один: без поддержки, без понимания своих прав, без жилья. Два года он прожил в вагончике
+                                у кочегарки. Просто не знал — забыл, что по закону ему положена квартира.</p>
                             <div class="history__card-date">17.08.2025</div>
                         </div>
                     </div>
                     <div class="flex history__card">
-                        <div class="history__img-wrap"><img src="../../assets/images/pages/main/news/new-img.jpg"
-                                alt="картинка новости"></div>
+                        <div class="history__img-wrap"><img
+                                src="../../assets/images/pages/program3/history/card-2-img.png" alt="картинка новости">
+                        </div>
                         <div class="flex flex-column history__card-body">
-                            <div class="font-medium history__card-title">История человека №2</div>
-                            <p class="history__card-desc">История №2 </p>
+                            <div class="font-medium history__card-title">Новый год, который вдохновляет: сироты
+                                организовали праздник своими силами</div>
+                            <p class="history__card-desc">Это история, которая трогает до глубины души и напоминает, что
+                                настоящая сила — в единстве и вере в себя.</p>
                             <div class="history__card-date">15.08.2025</div>
                         </div>
                     </div>
@@ -308,10 +336,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="flex flex-column program-manager__banner blue-bg">
+                <div class="program-manager__banner mini-banner blue-bg">
                     <div class="h3">Оказать помощь может каждый</div>
-                    <p class="fz-m">Выберите программу фонда и оформите ежемесячные пожертвования на 195 ₽, 450 ₽ или
-                        любую другую сумму.</p>
+                    <div class="mini-banner__texts">
+                        <p class="fz-m">Выберите программу фонда и оформите ежемесячные пожертвования на 195 ₽, 450 ₽
+                            или любую другую сумму.</p>
+                    </div>
                     <button class="btn">Сделать пожертвование</button>
                 </div>
             </div>

@@ -1,4 +1,15 @@
+/* == ОБЩИЕ БЛОКИ ДЛЯ ВСЕХ ПРОГРАММ == */
 .hero-section {}
+
+.hero-section.no-ribbon .decor-ribbon {
+    display: none;
+}
+
+@media (max-width: 800px) {
+    .hero-section.no-ribbon-mobile .decor-ribbon {
+        display: none;
+    }
+}
 
 .hero-section .my-container {
     padding-top: 5.6rem;
@@ -12,12 +23,18 @@
     }
 }
 
-@media (max-width: 769px) {
+@media (max-width: 992px) {
     .hero-section .my-container {
         flex-direction: column;
         padding-top: 5rem;
         padding-bottom: 4rem;
         gap: 4rem;
+    }
+}
+
+@media (max-width: 800px) {
+    .hero-section.no-ribbon-mobile .my-container {
+        padding-bottom: 0rem;
     }
 }
 
@@ -28,10 +45,38 @@
     }
 }
 
-.hero-section__body {}
+.hero-section__body {
+    max-width: 580px;
+    flex-basis: 50%;
+}
+
+@media (max-width: 992px) {
+    .hero-section__body {
+        max-width: 700px;
+        flex-basis: 100%;
+    }
+}
+
+@media (max-width: 769px) {
+    .hero-section__body {
+        max-width: 580px;
+    }
+}
 
 .hero-section__body .h3 {
     margin-bottom: 1.5rem;
+    color: var(--color-lightGray);
+    max-width: 490px;
+}
+
+@media (max-width: 992px) {
+    .hero-section__body .h3 {
+        max-width: none;
+    }
+}
+
+.hero-section__body .h3:empty {
+    margin-bottom: 0;
 }
 
 .hero-section__info {
@@ -45,7 +90,7 @@
     }
 }
 
-@media (max-width: 769px) {
+@media (max-width: 992px) {
     .hero-section__info {
         gap: 2.5rem;
     }
@@ -60,19 +105,22 @@
 .hero-section__buttons {}
 
 .hero-section__buttons .btn {
-    min-width: 382px;
+    padding-right: 4.5rem;
+    padding-left: 4.5rem;
 }
 
 @media (max-width: 992px) {
     .hero-section__buttons .btn {
         min-width: 0px;
+        padding-right: 2rem;
+        padding-left: 2rem;
     }
 }
 
 .hero-section__img-wrap {
     border-radius: 1.6rem;
     max-width: 580px;
-    max-height: 350px;
+    width: 100%;
 }
 
 @media (max-width: 1199px) {
@@ -81,17 +129,18 @@
     }
 }
 
-@media (max-width: 992px) {
+/* @media (max-width: 992px) {
     .hero-section__img-wrap {
         max-width: 418px;
     }
-}
+} */
 
-@media (max-width: 769px) {
+@media (max-width: 992px) {
     .hero-section__img-wrap {
         max-width: none;
         display: flex;
         align-items: center;
+        max-height: 350px;
     }
 }
 
@@ -107,6 +156,249 @@
 }
 
 
+/* БЛОК - ИСТОРИИ ЛЮДЕЙ */
+.history {}
+
+.history__cards {
+    gap: 2rem;
+}
+
+@media (max-width: 575px) {
+    .history__cards {
+        gap: 1.5rem;
+    }
+}
+
+.history__card {
+    gap: 3rem;
+    position: relative;
+    padding-bottom: 2rem;
+    display: flex;
+}
+
+@media (max-width: 768px) {
+    .history__card {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 575px) {
+    .history__card {
+        gap: 2rem;
+        position: relative;
+        padding-bottom: 1.5rem;
+    }
+}
+
+/* .history__card:hover .history__card-title {
+    color: var(--color-orange);
+} */
+
+.history__card::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #D4D4D4;
+    position: absolute;
+    bottom: 0;
+}
+
+.history__img-wrap {
+    overflow: hidden;
+    border-radius: 2rem;
+    max-width: 320px;
+}
+
+@media (max-width: 768px) {
+    .history__img-wrap {
+        border-radius: 1.2rem;
+        max-width: none;
+        height: 300px;
+    }
+}
+
+@media (max-width: 575px) {
+    .history__img-wrap {
+        height: 200px;
+    }
+}
+
+.history__img-wrap>img {
+    height: 100%;
+    width: 100%;
+}
+
+.history__card-body {
+    height: auto;
+    width: 100%;
+    gap: 2rem;
+    padding: 2rem 0rem;
+    line-height: 150%;
+}
+
+@media (max-width: 768px) {
+    .history__card-body {
+        gap: 1.8rem;
+        padding: 0rem;
+    }
+}
+
+@media (max-width: 575px) {
+    .history__card-body {
+        gap: 1.5rem;
+    }
+}
+
+.history__card-title {
+    font-size: var(--fz-l);
+    color: #303030;
+}
+
+.history__card-desc {
+    font-size: var(--fz-xs);
+    color: #303030;
+
+    /* если испольузете скрипт, это надо убрать */
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+@media (max-width: 575px) {
+    .history__card-desc {
+        -webkit-line-clamp: 7;
+    }
+}
+
+.history__card-date {
+    font-size: var(--fz-xs);
+    color: rgba(48, 48, 48, 0.5);
+    margin-top: auto;
+}
+
+.history__btn {
+    margin-top: 5rem;
+    align-self: center;
+}
+
+@media (max-width: 768px) {
+    .history__btn {
+        margin-top: 4rem;
+    }
+}
+
+
+/* БЛОК - РУКОВОДИТЕЛЬ ПРОГРАММЫ */
+.program-manager {}
+
+.program-manager .my-container {
+    gap: 4rem;
+}
+
+@media (max-width: 992px) {
+    .program-manager .my-container {
+        gap: 3rem;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 769px) {
+    .program-manager .my-container {
+        gap: 2.5rem;
+    }
+}
+
+.program-manager .my-container>* {
+    flex: 1;
+}
+
+.program-manager__main-info {
+    padding: 1.5rem;
+    border-radius: 1.2rem;
+    gap: 4rem;
+    align-items: center;
+    background-color: var(--color-white);
+}
+
+@media (max-width: 769px) {
+    .program-manager__main-info {
+        gap: 3rem;
+    }
+}
+
+@media (max-width: 575px) {
+    .program-manager__main-info {
+        gap: 1.5rem;
+        align-items: flex-start;
+        padding: 1rem;
+        flex-direction: column;
+    }
+}
+
+.program-manager__img-wrap {
+    border-radius: 7px;
+    overflow: hidden;
+    max-width: 193px;
+    width: 100%;
+}
+
+@media (max-width: 575px) {
+    .program-manager__img-wrap {
+        max-width: none;
+        height: 300px;
+    }
+}
+
+@media (max-width: 400px) {
+    .program-manager__img-wrap {
+        height: 275px;
+    }
+}
+
+.program-manager__img-wrap img {
+    width: 100%;
+    height: 100%;
+}
+
+.program-manager__texts {
+    gap: 1.5rem;
+    color: #303030;
+}
+
+@media (max-width: 575px) {
+    .program-manager__texts {
+        padding: 0rem 5px 5px;
+    }
+}
+
+.program-manager__texts h3 {
+    font-weight: 500;
+    color: #303030;
+}
+
+.program-manager__texts h3+p {
+    color: rgba(48, 48, 48, 0.5);
+}
+
+.program-manager__contacts {
+    line-height: 150%;
+}
+
+.program-manager__banner {
+    max-width: 580px;
+}
+
+@media (max-width: 992px) {
+    .program-manager__banner {
+        max-width: none;
+    }
+}
+
+
+
+/* == ПРОГРАММА 1 - УНИКАЛЬНЫЕ БЛОКИ == */
 /* БЛОК - МИССИЯ И ЦЕЛИ ПРОГРАММЫ */
 .missions {}
 
@@ -286,276 +578,235 @@
 }
 
 
-/* БЛОК - ИСТОРИИ ЛЮДЕЙ */
-.history {}
 
-.history__cards {
-    gap: 2rem;
+/* == ПРОГРАММА 2 - УНИКАЛЬНЫЕ БЛОКИ == */
+/* БЛОК - ВНИМАНИЕ И ПОДДЕРЖКА НЯНИ */
+.nannies-support {}
+
+.nannies-support h2 {
+    margin-bottom: 3.5rem;
 }
 
-@media (max-width: 575px) {
-    .history__cards {
-        gap: 1.5rem;
-    }
+.nanny-support__content {}
+
+.nanny-support__img-wrap {
+    border-radius: 1.2rem;
+    height: 375px;
+    margin-bottom: 3.5rem;
 }
 
-.history__card {
-    gap: 3rem;
-    position: relative;
-    padding-bottom: 2rem;
-    display: flex;
-}
-
-@media (max-width: 768px) {
-    .history__card {
-        flex-direction: column;
+@media (max-width: 769px) {
+    .nanny-support__img-wrap {
+        border-radius: 7px;
+        height: 318px;
     }
 }
 
 @media (max-width: 575px) {
-    .history__card {
+    .nanny-support__img-wrap {
+        height: 295px;
+    }
+}
+
+.nanny-support__img-wrap img {
+    width: 100%;
+    height: 100%;
+}
+
+.nanny-support__content p {
+    line-height: 150%;
+}
+
+.nanny-support__content p:not(:last-child) {
+    margin-bottom: 1rem;
+}
+
+
+
+/* == ПРОГРАММА 3 - УНИКАЛЬНЫЕ БЛОКИ == */
+/* БЛОК - ПОДОПЕЧНЫЕ ПРОГРАММЫ */
+.mentee {}
+
+.mentee__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 500px;
+    gap: 4rem;
+}
+
+@media (max-width: 1199px) {
+    .mentee__content {
+        grid-template-columns: 1fr 1fr 1fr;
         gap: 2rem;
-        position: relative;
-        padding-bottom: 1.5rem;
     }
-}
-
-/* .history__card:hover .history__card-title {
-    color: var(--color-orange);
-} */
-
-.history__card::after {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 1px;
-    background-color: #D4D4D4;
-    position: absolute;
-    bottom: 0;
-}
-
-.history__img-wrap {
-    overflow: hidden;
-    border-radius: 2rem;
-    max-width: 320px;
-}
-
-@media (max-width: 768px) {
-    .history__img-wrap {
-        border-radius: 1.2rem;
-        max-width: none;
-        height: 300px;
-    }
-}
-
-@media (max-width: 575px) {
-    .history__img-wrap {
-        height: 200px;
-    }
-}
-
-.history__img-wrap>img {
-    height: 100%;
-    width: 100%;
-}
-
-.history__card-body {
-    height: auto;
-    width: 100%;
-    gap: 2rem;
-    padding: 2rem 0rem;
-    line-height: 150%;
-}
-
-@media (max-width: 768px) {
-    .history__card-body {
-        gap: 1.8rem;
-        padding: 0rem;
-    }
-}
-
-@media (max-width: 575px) {
-    .history__card-body {
-        gap: 1.5rem;
-    }
-}
-
-.history__card-title {
-    font-size: var(--fz-l);
-    color: #303030;
-}
-
-.history__card-desc {
-    font-size: var(--fz-xs);
-    color: #303030;
-
-    /* если испольузете скрипт, это надо убрать */
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-}
-
-@media (max-width: 575px) {
-    .history__card-desc {
-        -webkit-line-clamp: 6;
-    }
-}
-
-.history__card-date {
-    font-size: var(--fz-xs);
-    color: rgba(48, 48, 48, 0.5);
-    margin-top: auto;
-}
-
-.history__btn {
-    margin-top: 5rem;
-    align-self: center;
-}
-
-@media (max-width: 768px) {
-    .history__btn {
-        margin-top: 4rem;
-    }
-}
-
-
-/* БЛОК - РУКОВОДИТЕЛЬ ПРОГРАММЫ */
-.program-manager {}
-
-.program-manager .my-container {
-    gap: 4rem;
 }
 
 @media (max-width: 992px) {
-    .program-manager .my-container {
+    .mentee__content {
+        grid-template-columns: 1fr 1fr;
         gap: 3rem;
-        flex-direction: column;
     }
 }
 
 @media (max-width: 769px) {
-    .program-manager .my-container {
-        gap: 2.5rem;
+    .mentee__content {
+        gap: 2rem;
     }
 }
 
-.program-manager .my-container>* {
-    flex: 1;
+@media (max-width: 575px) {
+    .mentee__content {
+        grid-template-columns: 1fr;
+    }
 }
 
-.program-manager__main-info {
-    padding: 1.5rem;
-    border-radius: 1.2rem;
-    gap: 4rem;
-    align-items: center;
+.mentee__card {
+    padding: 1rem;
+    border-radius: 1.6rem;
     background-color: var(--color-white);
+    box-shadow: 0px 0px 21.9px 0px rgba(0, 0, 0, 0.05);
 }
 
 @media (max-width: 769px) {
-    .program-manager__main-info {
-        gap: 3rem;
+    .mentee__card {
+        border-radius: 1.4rem;
     }
 }
 
-@media (max-width: 575px) {
-    .program-manager__main-info {
-        gap: 1.5rem;
-        align-items: flex-start;
-        padding: 1rem;
-        flex-direction: column;
-    }
+.mentee__card-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 
-.program-manager__img-wrap {
-    border-radius: 7px;
-    overflow: hidden;
-    max-width: 193px;
+.mentee__card__img-wrap {
+    border-radius: 8px;
     width: 100%;
+    height: 272px;
 }
 
-@media (max-width: 575px) {
-    .program-manager__img-wrap {
-        max-width: none;
-        height: 300px;
-    }
-}
-
-@media (max-width: 400px) {
-    .program-manager__img-wrap {
-        height: 275px;
-    }
-}
-
-.program-manager__img-wrap img {
+.mentee__card__img-wrap img {
     width: 100%;
     height: 100%;
 }
 
-.program-manager__texts {
-    gap: 1.5rem;
-    color: #303030;
+.mentee__card-texts {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: var(--fz-m);
+    padding: 0px 1rem 1rem;
 }
 
-@media (max-width: 575px) {
-    .program-manager__texts {
-        padding: 0rem 5px 5px;
+@media (max-width: 769px) {
+    .mentee__card-texts {
+        font-size: var(--fz-xs);
     }
 }
 
-.program-manager__texts h3 {
-    font-weight: 500;
-    color: #303030;
+.mentee__banner {}
+
+@media (max-width: 992px) {
+    .mentee__banner {
+        grid-column: span 2;
+    }
 }
 
-.program-manager__texts h3+p {
-    color: rgba(48, 48, 48, 0.5);
+@media (max-width: 575px) {
+    .mentee__banner {
+        grid-column: span 1;
+    }
 }
 
-.program-manager__contacts {
-    line-height: 150%;
-}
 
-.program-manager__banner {
-    padding: 2.5rem;
-    border-radius: 1.2rem;
-    max-width: 580px;
-    gap: 1.5rem;
+/* БЛОК - ПОМОЩЬ ДЛЯ */
+.help-for {}
+
+.help-for__items {
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
 }
 
 @media (max-width: 992px) {
-    .program-manager__banner {
-        max-width: none;
+    .help-for__items {
+        gap: 8rem;
     }
 }
 
 @media (max-width: 575px) {
-    .program-manager__banner {
-        padding: 1.5rem;
+    .help-for__items {
+        gap: 5rem;
     }
 }
 
-.program-manager__banner .h3 {
-    font-weight: 500;
+.help-for__item {}
+
+.help-for__item h2 {
+    margin-bottom: 3.5rem;
 }
 
-@media (max-width: 575px) {
-    .program-manager__banner .h3 {
-        font-size: var(--fz-m-plus);
+.help-for__item-content {
+    display: flex;
+    gap: 4rem;
+}
+
+@media (max-width: 992px) {
+    .help-for__item-content {
+        flex-direction: column;
     }
 }
 
-.program-manager__banner .h3+p {
-    line-height: 150%;
+@media (max-width: 769px) {
+    .help-for__item-content {
+        gap: 3.5rem;
+    }
 }
 
-.program-manager__banner .btn {
+.help-for__item-content>* {
+    flex: 1 1 50%;
+}
+
+@media (max-width: 992px) {
+    .help-for__item-content>* {
+        flex: auto;
+    }
+}
+
+.help-for__item-texts {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+@media (max-width: 992px) {
+    .help-for__item-texts {
+        order: 2;
+    }
+}
+
+.help-for__item-img-wrap {
+    max-width: 580px;
     width: 100%;
-    margin-top: 5rem;
+    border-radius: 1.2rem;
+    min-height: 450px;
+}
+
+@media (max-width: 992px) {
+    .help-for__item-img-wrap {
+        max-width: none;
+        min-height: 0px;
+        max-height: 400px;
+        order: 1;
+    }
 }
 
 @media (max-width: 575px) {
-    .program-manager__banner .btn {
-        margin-top: 1rem;
+    .help-for__item-img-wrap {
+        height: 295px;
     }
+}
+
+.help-for__item-img-wrap img {
+    width: 100%;
+    height: 100%;
 }

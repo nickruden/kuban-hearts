@@ -25,6 +25,25 @@
 
     <!-- СТИЛИ СТРАНИЦЫ -->
     <link rel="stylesheet" href="../../styles/pages/programs.css">
+
+    <!-- ВОТ ЭТОТ КОНФУЗ ТУТ ТОЛЬКО ПОТОМУ ЧТО В МАКЕТАХ РАЗНЫЕ РАЗМЕРЫ ШРИФТОВ ДЛЯ НЕКОТОРЫХ ПРОГРАММ, ЧТОБЫ НЕ СБИВАТЬ ШАБЛОННОСТЬ h1 ЗАГОЛОВКА ПОДОБНЫХ СТРАНИЦ, СДЕЛАЛ ВОТ ТАКУЮ ШТУКУ, ЕСЛИ ВЫ БУДЕТЕ СОЗДАВАТЬ РАЗНЫЕ СТРАНИЦЫ ДЛЯ КАЖДОЙ ПРОГРАММЫ, ТО ДЛЯ УМЕНЬШЕННОЙ ВЕРСИИ h1 Я СДЕЛАЛ КЛАСС inner-h1-m(для программы 3 и 4) -->
+    <style>
+        .hero-section__body h1 {
+            font-size: 5.2rem;
+        }
+
+        @media (max-width: 992px) {
+            .hero-section__body h1 {
+                font-size: 4.8rem;
+            }
+        }
+
+        @media (max-width: 575px) {
+            .hero-section__body h1 {
+                font-size: 3.2rem;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -111,49 +130,20 @@
 
 
     <main class="main">
-        <section class="pb-large hero-section">
+        <section class="pb-large hero-section no-ribbon-mobile">
             <div class="flex my-container">
                 <div class="flex flex-column hero-section__body">
-                    <div class="h3 h3_type2">Программа</div>
-                    <h1 class="inner-h1">Дорога жизни</h1>
+                    <div class="h3 h3_type2"></div>
+                    <h1 class="inner-h1">Школа <br> осознанного <br> родительства</h1>
                     <div class="flex flex-column hero-section__info">
-                        <p class="fz-m">Комплексный проект благотворительного фонда, направленный на поддержку детей
-                            с&nbsp;онкологическими заболеваниями и их семей.</p>
-                        <div class="hero-section__buttons"><button class="btn">сделать пожертвование</button></div>
+                        <p class="fz-m-fixed">Гармоничные отношения с собой, детьми и близкими</p>
+                        <div class="hero-section__buttons"><button class="btn">вступить в школу</button></div>
                     </div>
                 </div>
                 <div class="hero-section__img-wrap hidden"><img
                         src="../../assets/images/pages/program1/hero-section-img.jpg" alt="#"></div>
             </div>
             <div class="decor-ribbon"></div>
-        </section>
-        <section class="pb-large missions">
-            <div class="my-container">
-                <h2 class="inner-h2">миссия и&nbsp;цели <br> программы</h2>
-                <div class="missions__body">
-                    <div class="missions__content">
-                        <ul class="list-standart">
-                            <li>Спасти жизни детей, страдающих онкологическими заболеваниями</li>
-                            <li>Обеспечить комплексную поддержку семей, столкнувшихся с болезнью</li>
-                            <li>Создать условия для полноценной жизни детей после лечения</li>
-                        </ul>
-                        <div class="missions__img-wrap">
-                            <img src="../../assets/images/pages/program1/missions/img-1.jpg" alt="#">
-                        </div>
-                    </div>
-                    <div class="missions__content">
-                        <ul class="list-standart">
-                            <li>Обеспечение своевременного доступа к качественному лечению</li>
-                            <li>Организация психологической поддержки для детей и их семей</li>
-                            <li>Помощь в покрытии расходов на лечение и реабилитацию</li>
-                            <li>Создание комфортной среды пребывания в медицинских учреждениях</li>
-                        </ul>
-                        <div class="missions__img-wrap">
-                            <img src="../../assets/images/pages/program1/missions/img-2.jpg" alt="#">
-                        </div>
-                    </div>
-                </div>
-            </div>
         </section>
 
 
@@ -212,59 +202,6 @@
         </section>
 
         
-        <section class="pb-large reviews">
-            <div class="my-container">
-                <h2 class="inner-h2">отзывы тех, <br> кому мы помогли</h2>
-                <div class="reviews__cards">
-                    <div class="reviews__card">
-                        <div class="reviews__card-inner">
-                            <div class="reviews__author">
-                                <div class="reviews__author-img-wrap">
-                                    <img src="" alt="#">
-                                </div>
-                                <h3>Евгений</h3>
-                            </div>
-                            <p>Никогда не думал, что столкнусь с такой бедой. Диагноз прозвучал как приговор. Но
-                                благодаря фонду я понял, что не одинок в этой борьбе. Они помогли мне найти лучшего
-                                специалиста, организовали второе мнение, помогли с документами. Отдельное спасибо за
-                                группы поддержки — там я встретил людей, которые понимают меня как никто другой. Сейчас
-                                я в ремиссии, и это во многом благодаря помощи фонда.</p>
-                        </div>
-                    </div>
-                    <div class="reviews__card">
-                        <div class="reviews__card-inner">
-                            <div class="reviews__author">
-                                <div class="reviews__author-img-wrap">
-                                    <img src="" alt="#">
-                                </div>
-                                <h3>Елена</h3>
-                            </div>
-                            <p>Я мама двоих детей, и когда узнала о своём диагнозе, думала, что не справлюсь. Фонд стал
-                                для меня настоящей опорой. Они не только помогли с оплатой лечения, но и взяли на себя
-                                часть бытовых забот — организовали доставку продуктов, помогли с транспортом. Особенно
-                                хочу отметить работу социальных работников — они всегда на связи, готовы помочь в любой
-                                ситуации. Благодаря фонду я смогла сосредоточиться на лечении и верить в выздоровление.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="reviews__card">
-                        <div class="reviews__card-inner">
-                            <div class="reviews__author">
-                                <div class="reviews__author-img-wrap">
-                                    <img src="" alt="#">
-                                </div>
-                                <h3>Александр</h3>
-                            </div>
-                            <p>В моём возрасте сложно справляться с такими проблемами, но фонд окружил меня заботой и
-                                вниманием. Они помогли с диагностикой, нашли лучших врачей, организовали лечение.
-                                Особенно хочу отметить юридическую поддержку — помогли разобраться с льготами и
-                                пособиями. Теперь я знаю, что даже в такой сложной ситуации есть люди, готовые прийти на
-                                помощь.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
         <section class="pb-large history">
             <div class="flex flex-column my-container">
                 <h2 class="inner-h2">истории людей</h2>
