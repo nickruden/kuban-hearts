@@ -104,7 +104,6 @@
     max-height: 0;
     overflow: hidden;
     transition: all 0.2s ease;
-    gap: 1rem;
     font-size: var(--fz-s);
     padding-right: 2rem;
     line-height: 150%;
@@ -129,4 +128,36 @@
 
 .my-accordion-content p {
     max-width: 1276px;
+}
+
+.my-accordion-content p:not(:last-child),
+.my-accordion-content ul:not(:last-child),
+.my-accordion-content ol:not(:last-child) {
+    margin-bottom: 5px;
+}
+
+.my-accordion-content ul,
+.my-accordion-content ol {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    line-height: 130%;
+}
+
+.my-accordion-content ul li {
+    list-style-type: none;
+    margin-left: 1.8rem;
+    position: relative;
+}
+
+.my-accordion-content ul li::before {
+    content: "—";
+    position: absolute;
+    left: -1.8rem;
+    color: var(--color-text);
+}
+
+.my-accordion-content ol li {
+    list-style-type: decimal;
+    margin-left: 2rem;
 }
