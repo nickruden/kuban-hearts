@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Буду рядом</title>
+    <title>Осознанное родительство</title>
 
 
     <!-- БИБЛИОТЕКИ -->
@@ -26,11 +26,58 @@
     <!-- СТИЛИ СТРАНИЦЫ -->
     <link rel="stylesheet" href="../../styles/pages/programs.css">
 
-    <!-- ВОТ ЭТОТ КОНФУЗ ТУТ ТОЛЬКО ПОТОМУ, ЧТО В МАКЕТАХ НА МОБИЛКЕ НАДО ЧТОБ h1 БЫЛ В ДВЕ СТРОКИ -->
+    <!-- ВОТ ЭТОТ КОНФУЗ ТУТ ТОЛЬКО ПОТОМУ, ЧТО В ПРОГРАММЕ 7 КАРТИНКА ПЕРВОГО БЛОКА НЕ СООТВУСТВУЮТ СТИЛИЗАЦИИ ШАБЛОНА ОСТАЛЬНЫХ ПРОГРАММ -->
     <style>
-        @media (max-width: 360px) {
-            .hero-section__body h1 {
-                max-width: 240px;
+        .hero-section__img-wrap {
+            overflow: visible;
+            position: relative;
+            align-items: flex-end;
+        }
+
+        @media (max-width: 1199px) {
+            .hero-section__img-wrap {
+                max-height: none;
+                align-items: flex-end;
+            }
+        }
+
+        @media (max-width: 992px) {
+            .hero-section__img-wrap {
+                width: 100%;
+                max-width: 800px;
+                display: flex;
+                justify-content: center;
+                height: auto;
+            }
+        }
+
+        @media (max-width: 575px) {
+            .hero-section__img-wrap {
+                height: auto;
+            }
+        }
+
+        .hero-section__img-wrap img {
+            height: auto;
+        }
+
+        @media (max-width: 1199px) {
+            .hero-section__img-wrap img {
+                top: auto;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero-section__img-wrap img {
+                width: auto;
+                height: 100%;
+            }
+        }
+
+        @media (max-width: 575px) {
+            .hero-section__img-wrap img {
+                width: 100%;
+                height: 100%;
             }
         }
     </style>
@@ -125,150 +172,85 @@
         <section class="pb-large hero-section no-ribbon-mobile">
             <div class="flex my-container">
                 <div class="flex flex-column hero-section__body">
-                    <div class="h3 h3_type2">программа Забота о&nbsp;детях в&nbsp;больницах&nbsp;и&nbsp;на&nbsp;дому.
-                    </div>
-                    <h1 class="inner-h1">БУДУ РЯДОМ</h1>
+                    <div class="h3 h3_type2"></div>
+                    <h1 class="inner-h1">Адресная помощь <br> «сердца кубани»</h1>
                     <div class="flex flex-column hero-section__info">
-                        <p class="fz-m-fixed">Мы предоставляем круглосуточное профессиональное сопровождение детей,
-                            оставшихся без родителей в медицинских учреждениях, а&nbsp;также оказываем услуги по
-                            патронажному уходу на дому для детей с особенностями развития.</p>
-                        <div class="hero-section__buttons"><button class="btn">сделать пожертвование</button></div>
+                        <p class="fz-m-fixed">Улучшаем качество жизни семей с детьми Красноярского края в кризисной
+                            и трудной жизненной ситуации в виде предоставления необходимых материальных ценностей
+                            или оказание услуг</p>
+                        <div class="hero-section__buttons"><button class="btn">Сделать пожертвование</button></div>
                     </div>
                 </div>
                 <div class="hero-section__img-wrap hidden"><img
-                        src="../../assets/images/pages/program2/hero-section/block-img.png" alt="#"></div>
+                        src="../../assets/images/pages/main/hero-section/block-img.png" alt="#"></div>
             </div>
             <div class="decor-ribbon"></div>
         </section>
-        <section class="pb-large nannies-care">
+        <section class="pb-large meeting-dates">
             <div class="my-container">
-                <h2 class="inner-h2">няни заботятся <br> О&nbsp;ДЕТЯХ В&nbsp;БОЛЬНИЦАХ И&nbsp;НА&nbsp;ДОМУ</h2>
-                <div class="nannies-care__content">
-                    <div class="nannies-care__text-item fz-m">Медицинская поддержка</div>
-                    <div class="nannies-care__text-item fz-m">Дети, которые остались без попечения родителей</div>
-                    <div class="nannies-care__text-item fz-m">Дети, которых изъяли из&nbsp;неблагополучных семей</div>
-                    <div class="nannies-care__text-item fz-m">Домашние дети, которые остались одни в&nbsp;больницах
-                    </div>
-                    <div class="nannies-care__text-item fz-m">Дети с&nbsp;тяжелыми заболеваниями, инвалидностью</div>
-                    <div class="nannies-care__text-item fz-m">Домашние дети с&nbsp;особенностями развития, которым нужен
-                        уход на&nbsp;дому</div>
-                    <div class="nannies-care__img-wrap hidden"><img
-                            src="../../assets/images/pages/program2/nannies-care/block-img.jpg" alt="#"></div>
-                    <div class="nannies-care__banner mini-banner blue-bg">
-                        <div class="h3">Нужна помощь?</div>
-                        <p class="fz-m">Заполни анкету, если нужна няня для ребенка</p>
-                        <button class="btn">Сделать пожертвование</button>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="pb-large nannies-support">
-            <div class="my-container">
-                <h2 class="inner-h2">ВНИМАНИЕ И ПОДДЕРЖКА НЯНИ ЛЕЧИТ ЛУЧШЕ&nbsp;ЛЕКАРСТВ и улучшает качество жизни</h2>
-                <div class="nanny-support__content fz-m">
-                    <div class="nanny-support__img-wrap hidden"><img
-                            src="../../assets/images/pages/program2/nanny-support/block-img.jpg" alt="#"></div>
-                    <p>Уход за ребёнком с особенностями развития — это круглосуточная работа. Наши услуги присмотра на
-                        дому дают родителям возможность перевести дух, заняться своими делами или просто отдохнуть. Это
-                        простая истина: отдохнувшие родители — счастливый ребёнок. Мы помогаем всей семье восстановить
-                        силы, чтобы дарить детям ещё больше заботы и качественного общения.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- тут есть аккордион, вынес стили отдельно, можно использовать, где хотите с любым контентом, он шаблонный -->
-        <section class="pb-large support accordion-section">
-            <div class="my-container">
-                <div class="accordion-section__header">
-                    <h2 class="inner-h2-m">няня — спасение от&nbsp;Страха, <br> одиночества и&nbsp;беспомощности</h2>
-                </div>
-                <div class="my-accordion support__accordion">
-                    <div class="my-accordion__item open">
-                        <h3 class="my-accordion-header active">Уход и выполнение предписаний врача</h3>
-                        <div class="flex flex-column my-accordion-content">
-                            <p>Cоблюдают режим дня, график приема лекарств и проведение процедур, осуществляют
-                                профилактику опрелостей, пролежней и атрофии мышц, размещают и перемещают тяжелобольных
-                                в постели, обслуживают зонд и катетер, выхаживают после операции и др.</p>
+                <h2 class="inner-h2 mb-35">СЛЕДУЮЩАЯ ВСТРЕЧА ШКОЛЫ в сентябре</h2>
+                <div class="flex meeting-dates__cards">
+                    <div class="meeting-dates__card">
+                        <div class="meeting-dates__location loc-icon">Краснодар</div>
+                        <div class="meeting-dates__desc fz-m">
+                            Дата: 18 октября 11:00 <br>
+                            Тема: «Как улучшить коммуникацию с подростком» <br>
+                            Адрес: ул. Партизана Железняка 18, оф. 412 <br>
+                            Модератор: психолог фонда Надежда Богдашина
                         </div>
+                        <button class="btn btn_color-blue">записаться</button>
                     </div>
-                    <div class="my-accordion__item">
-                        <h3 class="fz-m my-accordion-header">Контроль сосотояния</h3>
-                        <div class="flex flex-column my-accordion-content">
-                            <p>Мы помогаем с оплатой диагностики и лечения, организуем консультации ведущих
-                                специалистов, предоставляем возможность получить второе мнение от опытных врачей.
-                                Благотворительный фонд также занимается медицинской маршрутизацией — помогает найти
-                                лучших специалистов и медучреждения для лечения.</p>
+                    <div class="meeting-dates__card">
+                        <div class="meeting-dates__location loc-icon">Краснодар</div>
+                        <div class="meeting-dates__desc fz-m">
+                            Дата: 27 сентября, 10:00 <br>
+                            Тема: «Кик офф встреча: знакомство и обсуждение целей, планов, кейсов, ожиданий» <br>
+                            Адрес: ул. Ленинского Комсомола 29 <br>
+                            Модератор: психолог школы осознанного родительства Иван Иванов
                         </div>
-                    </div>
-                    <div class="my-accordion__item">
-                        <h3 class="fz-m my-accordion-header">Питание</h3>
-                        <div class="flex flex-column my-accordion-content">
-                            <p>Мы помогаем с оплатой диагностики и лечения, организуем консультации ведущих
-                                специалистов, предоставляем возможность получить второе мнение от опытных врачей.
-                                Благотворительный фонд также занимается медицинской маршрутизацией — помогает найти
-                                лучших специалистов и медучреждения для лечения.</p>
-                        </div>
-                    </div>
-                    <div class="my-accordion__item">
-                        <h3 class="fz-m my-accordion-header">Материальная помощь</h3>
-                        <div class="flex flex-column my-accordion-content">
-                            <p>Мы помогаем с оплатой диагностики и лечения, организуем консультации ведущих
-                                специалистов, предоставляем возможность получить второе мнение от опытных врачей.
-                                Благотворительный фонд также занимается медицинской маршрутизацией — помогает найти
-                                лучших специалистов и медучреждения для лечения.</p>
-                        </div>
-                    </div>
-                    <div class="my-accordion__item">
-                        <h3 class="fz-m my-accordion-header">Досуг и сопровождение</h3>
-                        <div class="flex flex-column my-accordion-content">
-                            <p>Мы помогаем с оплатой диагностики и лечения, организуем консультации ведущих
-                                специалистов, предоставляем возможность получить второе мнение от опытных врачей.
-                                Благотворительный фонд также занимается медицинской маршрутизацией — помогает найти
-                                лучших специалистов и медучреждения для лечения.</p>
-                        </div>
-                    </div>
-                    <div class="my-accordion__item">
-                        <h3 class="fz-m my-accordion-header">Дружеское отношение и эмоциональная поддержка</h3>
-                        <div class="flex flex-column my-accordion-content">
-                            <p>Мы помогаем с оплатой диагностики и лечения, организуем консультации ведущих
-                                специалистов, предоставляем возможность получить второе мнение от опытных врачей.
-                                Благотворительный фонд также занимается медицинской маршрутизацией — помогает найти
-                                лучших специалистов и медучреждения для лечения.</p>
-                        </div>
+                        <button class="btn btn_color-blue">записаться</button>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="pb-large history">
-            <div class="flex flex-column my-container">
-                <h2 class="inner-h2">истории детей</h2>
-                <div class="flex flex-column history__cards">
-                    <div class="flex history__card">
-                        <div class="history__img-wrap"><img
-                                src="../../assets/images/pages/program2/history/card-1-img.jpg" alt="картинка новости">
-                        </div>
-                        <div class="flex flex-column history__card-body">
-                            <div class="font-medium history__card-title">Присмотр и уход на дому: история Ксюши</div>
-                            <p class="history__card-desc">Этой историей делится няня фонда «Сердца кубани».
-                                Уже несколько месяцев она помогает семье Ксюши. Семья обратилась в фонд за помощью в тот
-                                момент, когда маме девочки было особенно трудно — после операции она не могла ухаживать
-                                за детьми и нуждалась в поддержке</p>
-                            <div class="history__card-date">17.08.2025</div>
-                        </div>
+        <section class="pb-large program-supports">
+            <div class="my-container">
+                <header>
+                    <h2 class="inner-h2">Программа поддерживает</h2>
+                    <p>Помощь получают семьи с несовершеннолетними детьми в кризисных и трудных жизненных ситуациях</p>
+                </header>
+                <div class="program-supports__items">
+                    <div class="program-supports__image-item"><img src="../../assets/images/pages/program7/program-supports/item-1-img.png" alt="#"></div>
+                    <div class="program-supports__image-item"><img src="../../assets/images/pages/program7/program-supports/item-2-img.jpg" alt="#"></div>
+                    <div class="program-supports__image-item"><img src="../../assets/images/pages/program7/program-supports/item-3-img.jpg" alt="#"></div>
+                    <div class="program-supports__image-item"><img src="../../assets/images/pages/program7/program-supports/item-4-img.jpg" alt="#"></div>
+                </div>
+            </div>
+        </section>
+        <section class="pb-large help-format">
+            <div class="my-container">
+                <h2 class="inner-h2 mb-35">Фонд предоставляет семьям с&nbsp;детьми</h2>
+                <div class="help-format__items">
+                    <div class="help-format__item">
+                        <div class="help-format__title fz-m">Продуктовые <br> наборы</div>
                     </div>
-                    <div class="flex history__card">
-                        <div class="history__img-wrap"><img
-                                src="../../assets/images/pages/program2/history/card-2-img.jpg" alt="картинка новости">
-                        </div>
-                        <div class="flex flex-column history__card-body">
-                            <div class="font-medium history__card-title">21 день под присмотром: история Ростислава
-                            </div>
-                            <p class="history__card-desc">Ростиславу еще нет и года, и впереди у него 21 день
-                                в больнице. Как и любому малышу, ему необходимы забота и поддержка, особенно в таких
-                                непростых условиях.</p>
-                            <div class="history__card-date">15.08.2025</div>
-                        </div>
+                    <div class="help-format__item">
+                        <div class="help-format__title fz-m">Средства гигиены и <br> ухода</div>
+                        <p></p>
+                    </div>
+                    <div class="help-format__item">
+                        <div class="help-format__title fz-m">Канцелярские наборы</div>
+                    </div>
+                    <div class="help-format__item">
+                        <div class="help-format__title fz-m">Игрушки</div>
+                    </div>
+                    <div class="help-format__item">
+                        <div class="help-format__title fz-m">Строительные материалы <br> для улучшения условий</div>
+                        <p></p>
+                    </div>
+                    <div class="help-format__item">
+                        <div class="help-format__title fz-m">Одежду и обувь</div>
                     </div>
                 </div>
             </div>
@@ -280,7 +262,7 @@
                             src="../../assets/images/pages/organization-sovet/card-1.jpg" alt="#"></div>
                     <div class="flex flex-column program-manager__texts">
                         <h3 class="fz-l-fixed">Надежда Иванова</h3>
-                        <p class="fz-xs-fixed">Руководитель программы “Дорога жизни”</p>
+                        <p class="fz-xs-fixed">Руководитель программы <br> «Адресная помощь „Сердца Кубани“»</p>
                         <div class="program-manager__contacts">
                             <a href="tel:+79999999999" class="fz-xs-fixed">+7 (999) 999 99 99</a> <br>
                             <a href="mailto:dorogajizni@mail.ru" class="fz-xs-fixed">dorogajizni@mail.ru</a>

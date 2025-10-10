@@ -26,18 +26,8 @@
     <!-- СТИЛИ СТРАНИЦЫ -->
     <link rel="stylesheet" href="../../styles/pages/programs.css">
 
-    <!-- ВОТ ЭТОТ КОНФУЗ ТУТ ТОЛЬКО ПОТОМУ ЧТО В МАКЕТАХ РАЗНЫЕ РАЗМЕРЫ ШРИФТОВ h1 ДЛЯ НЕКОТОРЫХ ПРОГРАММ, ЧТОБЫ НЕ СБИВАТЬ ШАБЛОННОСТЬ h1 ЗАГОЛОВКА ПОДОБНЫХ СТРАНИЦ, СДЕЛАЛ ВОТ ТАКУЮ ШТУКУ, ЕСЛИ ВЫ БУДЕТЕ СОЗДАВАТЬ РАЗНЫЕ СТРАНИЦЫ ДЛЯ КАЖДОЙ ПРОГРАММЫ, А НЕ ИСПОЛЬЗОВАТЬ ОДИН ШАБЛОН, ТО НА СТРАНИЦАХ, ГДЕ ЕСТЬ ВОТ ТАКАЯ ВСТАВКА ДЛЯ УМЕНЬШЕННОЙ ВЕРСИИ h1, ПОДСТАВЬТЕ В h1 КЛАСС inner-h1-m(для программы 3 и 4) -->
+    <!-- ВОТ ЭТОТ КОНФУЗ ТУТ ТОЛЬКО ПОТОМУ, ЧТО h1 НЕ ВЛЕЗАЕТ БЕЗ ПЕРЕНОСА В МОБИЛКЕ И В МАКЕТЕ ЕГО СДЕЛАЛИ МЕНЬШЕ -->
     <style>
-        .hero-section__body h1 {
-            font-size: 5.2rem;
-        }
-
-        @media (max-width: 992px) {
-            .hero-section__body h1 {
-                font-size: 4.8rem;
-            }
-        }
-
         @media (max-width: 575px) {
             .hero-section__body h1 {
                 font-size: 2.7rem;
@@ -82,7 +72,9 @@
                                         <li><a href="./program2.html">Программа 2</a></li>
                                         <li><a href="./program3.html">Программа 3</a></li>
                                         <li><a href="./program4.html">Программа 4</a></li>
-                                        <li><a href="#">Программа 5</a></li>
+                                        <li><a href="./program5.html">Программа 5</a></li>
+                                        <li><a href="./program6.html">Программа 6</a></li>
+                                        <li><a href="./program7.html">Программа 7</a></li>
                                     </ul>
                                 </div>
                             </li>
@@ -182,9 +174,12 @@
         </section>
 
         <!-- тут есть аккордион, вынес стили отдельно, можно использовать, где хотите с любым контентом, он шаблонный -->
-        <section class="pb-large support">
+        <section class="pb-large support accordion-section">
             <div class="my-container">
-                <h2 class="inner-h2">Наставник — помощник ребенка <br> во&nbsp;всех&nbsp;сферах</h2>
+                <div class="accordion-section__header">
+                    <h2 class="inner-h2">Наставник — помощник ребенка <br> во&nbsp;всех&nbsp;сферах</h2>
+                    <p></p>
+                </div>
                 <div class="my-accordion support__accordion">
                     <div class="my-accordion__item open">
                         <h3 class="my-accordion-header active">Проводит досуг с ребенком</h3>
@@ -257,7 +252,8 @@
                                     </li>
                                 </ul>
                             </div>
-                            <div class="help-for__item-img-wrap hidden"><img src="../../assets/images/pages/program3/help-for/item-1-img.png" alt=#""></div>
+                            <div class="help-for__item-img-wrap hidden"><img
+                                    src="../../assets/images/pages/program3/help-for/item-1-img.png" alt=#""></div>
                         </div>
                     </div>
                     <div class="help-for__item">
@@ -284,7 +280,8 @@
                                     <li>Досуг: праздники, настольные игры и&nbsp;др.</li>
                                 </ul>
                             </div>
-                            <div class="help-for__item-img-wrap hidden"><img src="../../assets/images/pages/program3/help-for/item-2-img.png" alt=#""></div>
+                            <div class="help-for__item-img-wrap hidden"><img
+                                    src="../../assets/images/pages/program3/help-for/item-2-img.png" alt=#""></div>
                         </div>
                     </div>
                 </div>
@@ -381,8 +378,9 @@
                                 <li class="footer__menu-item"><a href="./program2.html">Программа №2</a></li>
                                 <li class="footer__menu-item"><a href="./program3.html">Программа №3</a></li>
                                 <li class="footer__menu-item"><a href="./program4.html">Программа №4</a></li>
-                                <li class="footer__menu-item"><a href="#">Программа №5</a></li>
-                                <li class="footer__menu-item"><a href="#">Программа №6</a></li>
+                                <li class="footer__menu-item"><a href="./program5.html">Программа №5</a></li>
+                                <li class="footer__menu-item"><a href="./program6.html">Программа №6</a></li>
+                                <li class="footer__menu-item"><a href="./program7.html">Программа №7</a></li>
                             </ul>
                         </ul>
                         <ul class="footer__menu-wrap">
