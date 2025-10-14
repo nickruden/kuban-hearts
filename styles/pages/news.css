@@ -1,0 +1,135 @@
+/* БЛОК - НОВОСТИ */
+.news {}
+
+.news h1 {
+    margin-bottom: 2.5rem;
+}
+
+.news__cards {
+    gap: 2rem;
+}
+
+@media (max-width: 575px) {
+    .news__cards {
+        gap: 1.5rem;
+    }
+}
+
+.news__card {
+    gap: 3rem;
+    position: relative;
+    padding-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+    .news__card {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 575px) {
+    .news__card {
+        gap: 2rem;
+        position: relative;
+        padding-bottom: 1.5rem;
+    }
+}
+
+.news__card::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #D4D4D4;
+    position: absolute;
+    bottom: 0;
+}
+
+.news__card:hover .news__card-title {
+    color: var(--color-orange);
+}
+
+.news__img-wrap {
+    overflow: hidden;
+    border-radius: 2rem;
+    max-width: 320px;
+}
+
+@media (max-width: 768px) {
+    .news__img-wrap {
+        border-radius: 1.2rem;
+        max-width: none;
+        height: 300px;
+    }
+}
+
+@media (max-width: 575px) {
+    .news__img-wrap {
+        height: 200px;
+    }
+}
+
+.news__img-wrap>img {
+    height: 100%;
+    width: 100%;
+}
+
+.news__card-body {
+    height: auto;
+    width: 100%;
+    gap: 2rem;
+    padding: 2rem 0rem;
+    line-height: 150%;
+}
+
+@media (max-width: 768px) {
+    .news__card-body {
+        gap: 1.8rem;
+        padding: 0rem;
+    }
+}
+
+@media (max-width: 575px) {
+    .news__card-body {
+        gap: 1.5rem;
+    }
+}
+
+.news__card-title {
+    font-size: var(--fz-l);
+    color: #303030;
+}
+
+.news__card-desc {
+    font-size: var(--fz-xs);
+    color: #303030;
+
+    /* если испольузете скрипт, это надо убрать */
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+@media (max-width: 575px) {
+    .news__card-desc {
+        -webkit-line-clamp: 6;
+    }
+}
+
+.news__card-date {
+    font-size: var(--fz-xs);
+    color: rgba(48, 48, 48, 0.5);
+    margin-top: auto;
+}
+
+.news__btn {
+    margin-top: 5rem;
+    align-self: center;
+}
+
+@media (max-width: 768px) {
+    .news__btn {
+        margin-top: 4rem;
+    }
+}

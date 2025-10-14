@@ -29,6 +29,10 @@
     position: relative;
 }
 
+.breadcrumbs__path-item::first-letter, .breadcrumbs__path-item a::first-letter {
+    text-transform: uppercase;
+}
+
 .breadcrumbs__path-item:not(:last-child) {
     padding-right: 8px;
 }

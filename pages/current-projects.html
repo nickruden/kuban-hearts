@@ -4,26 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Календарь событий</title>
+    <title>Текущие проекты</title>
 
 
     <!-- БИБЛИОТЕКИ -->
-    <link rel="stylesheet" href="../../assets/libs/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="../assets/libs/swiper/swiper-bundle.min.css">
 
     <!-- ОБЩИЕ СТИЛИ -->
-    <link rel="stylesheet" href="../../styles/variables.css">
-    <link rel="stylesheet" href="../../styles/reset.css">
-    <link rel="stylesheet" href="../../styles/custom.css">
+    <link rel="stylesheet" href="../styles/variables.css">
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/custom.css">
 
-    <link rel="stylesheet" href="../../styles/UI/button.css">
+    <link rel="stylesheet" href="../styles/UI/button.css">
 
-    <link rel="stylesheet" href="../../styles/components/header.css">
-    <link rel="stylesheet" href="../../styles/components/footer.css">
-    <link rel="stylesheet" href="../../styles/components/breadcrumbs.css">
+    <link rel="stylesheet" href="../styles/components/header.css">
+    <link rel="stylesheet" href="../styles/components/footer.css">
+    <link rel="stylesheet" href="../styles/components/breadcrumbs.css">
 
 
     <!-- СТИЛИ СТРАНИЦЫ -->
-    <link rel="stylesheet" href="../../styles/pages/about/event-calendar.css">
+    <link rel="stylesheet" href="../styles/pages/current-projects.css">
 </head>
 
 <body>
@@ -31,8 +31,8 @@
         <div class="my-container">
             <div class="flex justify-between desctop-menu">
                 <div class="col-auto header__logo-wrap">
-                    <a href="../../index.html" class="header__logo-link">
-                        <img src="../../assets/images/logo.png" alt="Логотип">
+                    <a href="../index.html" class="header__logo-link">
+                        <img src="../assets/images/logo.png" alt="Логотип">
                     </a>
                 </div>
                 <div class="col-auto d-none d-lg-flex">
@@ -53,7 +53,7 @@
                                     </ul>
                                 </div>
                             </li>
-                            <li class="header__menu-item"><a href="../current-projects.html">Текущие проекты</a></li>
+                            <li class="header__menu-item"><a href="./current-projects.html">Текущие проекты</a></li>
                             <li class="header__menu-item submenu">
                                 <span>Программы</span>
                                 <div class="submenu__items">
@@ -72,7 +72,7 @@
                                 <span>Отчеты</span>
                                 <div class="submenu__items">
                                     <ul>
-                                        <li><a href="../reports.html">Годовые отчеты</a></li>
+                                        <li><a href="./reports.html">Годовые отчеты</a></li>
                                     </ul>
                                 </div>
                             </li>
@@ -112,49 +112,120 @@
             <div class="my-container">
                 <div class="breadcrumbs">
                     <ul class="breadcrumbs__path">
-                        <li class="breadcrumbs__path-item fz-s"><a href="../../index.html">Главная</a></li>
-                        <li class="breadcrumbs__path-item fz-s">Календарь событий</li>
+                        <li class="breadcrumbs__path-item fz-s"><a href="../index.html">Главная</a></li>
+                        <li class="breadcrumbs__path-item fz-s">Текущие проекты</li>
                     </ul>
                 </div>
             </div>
         </section>
 
-        <section class="pb-large event-calendar">
+        <section class="pb-large current-projects">
             <div class="my-container">
-                <h1 class="inner-h1">Календарь событий</h1>
-                <div class="event-calendar__event-cards">
-                    <a href="#" class="event-calendar__card">
-                        <div class="event-calendar__card-inner">
-                            <div class="event-calendar__card-img-wrap">
-                                <img src="../../assets/images/pages/event-calendar/card-1.png" alt="#">
-                            </div>
-                            <div class="event-calendar__card-body">
-                                <div class="event-calendar__card-texts">
-                                    <h3>Сбор гуманитарной помощи на СВО</h3>
-                                    <p>Объявляем акцию по сбору гуманитарной помощи для участников СВО. Регион отправил в Донбасс уже несколько десятков тонн груза Объявляем акцию по сбору гуманитарной помощи для участников СВО. Регион отправил в Донбасс уже несколько десятков тонн груза</p>
+                <header>
+                    <h1 class="inner-h1">Текущие проекты</h1>
+                    <div class="flex wrap current-projects__tabs">
+                        <button class="btnTab btn_color-blue active">Все</button> 
+                        <button class="btnTab btn_color-blue">Участники СВО</button>
+                        <button class="btnTab btn_color-blue">Дети</button>
+                        <button class="btnTab btn_color-blue">Пожилые люди</button>
+                        <button class="btnTab btn_color-blue">Больные люди</button>
+                        <button class="btnTab btn_color-blue">Малоимущие семьи</button>
+                    </div>
+                </header>
+                <div class="flex wrap current-projects__cards">
+                    <div class="current-projects__card">
+                        <div class="flex flex-column current-projects__card-inner">
+                            <div class="current-projects__card-image">
+                                <img src="../assets/images/pages/main/current-projects/card-img-1.jpg" alt="#">
+                                <div class="fz-m font-medium current-projects__card-city">г. <span>Краснодар</span>
                                 </div>
-                                <div class="event-calendar__event-date">
-                                    15.09.2025
+                            </div>
+                            <div class="flex flex-column current-projects__card-body">
+                                <h3>Сбор средств на покупку мебели для&nbsp;кризисного центра «Мать&nbsp;и&nbsp;дитя»
+                                </h3>
+                                <div class="flex flex-column range-item current-projects__price-info"
+                                    data-total="300000" data-collected="75000">
+                                    <div class="h3 range-item__main-number"><span>300.000</span>₽</div>
+                                    <div class="range-item__line"></div>
+                                    <div class="fz-m font-medium range-item__second-number">Собрано:
+                                        </span>75.000</span>₽</div>
+                                </div>
+                                <div class="flex current-projects__btns">
+                                    <button class="btn">Сделать пожертвование</button>
+                                    <a href="#" class="btn btn_color-blue">Подробнее</a>
                                 </div>
                             </div>
                         </div>
-                    </a>
-                    <a href="#" class="event-calendar__card">
-                        <div class="event-calendar__card-inner">
-                            <div class="event-calendar__card-img-wrap">
-                                <img src="../../assets/images/pages/event-calendar/card-2.png" alt="#">
-                            </div>
-                            <div class="event-calendar__card-body">
-                                <div class="event-calendar__card-texts">
-                                    <h3>Посещение центра реабилитации во Внуково</h3>
-                                    <p>Наша команда посетила реабилитационный центр во Внуково, чтобы лично увидеть, как меняется жизнь людей, получивших шанс, дальше продолжение</p>
+                    </div>
+                    <div class="current-projects__card">
+                        <div class="flex flex-column current-projects__card-inner">
+                            <div class="current-projects__card-image">
+                                <img src="../assets/images/pages/main/current-projects/card-img-2.jpg" alt="#">
+                                <div class="fz-m font-medium current-projects__card-city">г. <span>Краснодар</span>
                                 </div>
-                                <div class="event-calendar__event-date">
-                                    04.09.2025
+                            </div>
+                            <div class="flex flex-column current-projects__card-body">
+                                <h3>Сбор средств на инвалидной коляски для Ольги из Краснодара</h3>
+                                <div class="flex flex-column range-item current-projects__price-info" data-total="68500"
+                                    data-collected="45300">
+                                    <div class="h3 range-item__main-number"><span>68.500</span>₽</div>
+                                    <div class="range-item__line"></div>
+                                    <div class="fz-m font-medium range-item__second-number">Собрано:
+                                        </span>45.300</span>₽</div>
+                                </div>
+                                <div class="flex current-projects__btns">
+                                    <button class="btn">Сделать пожертвование</button>
+                                    <a href="#" class="btn btn_color-blue">Подробнее</a>
                                 </div>
                             </div>
                         </div>
-                    </a>
+                    </div>
+                    <div class="current-projects__card">
+                        <div class="flex flex-column current-projects__card-inner">
+                            <div class="current-projects__card-image">
+                                <img src="../assets/images/pages/main/current-projects/card-img-1.jpg" alt="#">
+                                <div class="fz-m font-medium current-projects__card-city">г. <span>Краснодар</span>
+                                </div>
+                            </div>
+                            <div class="flex flex-column current-projects__card-body">
+                                <h3>Сбор продуктов для малообеспеченных</h3>
+                                <div class="flex flex-column range-item current-projects__price-info"
+                                    data-total="300000" data-collected="75000">
+                                    <div class="h3 range-item__main-number"><span>300.000</span>₽</div>
+                                    <div class="range-item__line"></div>
+                                    <div class="fz-m font-medium range-item__second-number">Собрано:
+                                        </span>75.000</span>₽</div>
+                                </div>
+                                <div class="flex current-projects__btns">
+                                    <button class="btn">Сделать пожертвование</button>
+                                    <a href="#" class="btn btn_color-blue">Подробнее</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="current-projects__card">
+                        <div class="flex flex-column current-projects__card-inner">
+                            <div class="current-projects__card-image">
+                                <img src="../assets/images/pages/main/current-projects/card-img-1.jpg" alt="#">
+                                <div class="fz-m font-medium current-projects__card-city">г. <span>Краснодар</span>
+                                </div>
+                            </div>
+                            <div class="flex flex-column current-projects__card-body">
+                                <h3>Гуманитарная помощь</h3>
+                                <div class="flex flex-column range-item current-projects__price-info"
+                                    data-total="300000" data-collected="75000">
+                                    <div class="h3 range-item__main-number"><span>68.500</span>₽</div>
+                                    <div class="range-item__line"></div>
+                                    <div class="fz-m font-medium range-item__second-number">Собрано:
+                                        </span>45.300</span>₽</div>
+                                </div>
+                                <div class="flex current-projects__btns">
+                                    <button class="btn">Сделать пожертвование</button>
+                                    <a href="#" class="btn btn_color-blue">Подробнее</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -165,8 +236,7 @@
         <div class="my-container">
             <div class="flex flex-column footer__inner">
                 <div class="col-auto">
-                    <a href="../../index.html" class="footer__logo-link"><img src="../../assets/images/logo.png"
-                            alt=""></a>
+                    <a href="../index.html" class="footer__logo-link"><img src="../assets/images/logo.png" alt=""></a>
                 </div>
                 <div class="col-auto flex footer__contacts">
                     <div class="footer__address">Адрес: г. Краснодар, Рашпилевская&nbsp;86</div>
@@ -195,14 +265,14 @@
                                 <li class="footer__menu-item"><a href="../programs/program4.html">Программа №4</a></li>
                                 <li class="footer__menu-item"><a href="../programs/program5.html">Программа №5</a></li>
                                 <li class="footer__menu-item"><a href="../programs/program6.html">Программа №6</a></li>
-                                <li class="footer__menu-item"><a href="../programs/program7.html">Программа №7</a></li>
+                                <li class="footer__menu-item"><a href="../programs/program7.html">Программа №6</a></li>
                             </ul>
                         </ul>
                         <ul class="footer__menu-wrap">
                             <span class="footer__menu-title">О фонде</span>
                             <ul class="footer__menu-items">
                                 <li class="footer__menu-item"><a href="./found-mission.html">Миссия фонда</a></li>
-                                <li class="footer__menu-item"><a href="#">История</a></li>
+                                <li class="footer__menu-item"><a href="./current-projects.html">Текущие проекты</a></li>
                                 <li class="footer__menu-item"><a href="./organization-sovet.html">Совет организации</a>
                                 </li>
                                 <li class="footer__menu-item"><a href="./team.html">Команда</a></li>
@@ -225,7 +295,7 @@
                             <span class="footer__menu-title">Отчеты</span>
                             <ul class="footer__menu-items">
                                 <li class="footer__menu-item"><a href="#">Ежемесячные отчеты</a></li>
-                                <li class="footer__menu-item"><a href="../reports.html">Годовые отчеты</a></li>
+                                <li class="footer__menu-item"><a href="./reports.html">Годовые отчеты</a></li>
                                 <li class="footer__menu-item"><a href="#">Отчеты в минюст</a></li>
                                 <li class="footer__menu-item"><a href="#">Аудиторские проверки</a></li>
                                 <li class="footer__menu-item"><a href="#">Программа №5</a></li>
@@ -252,22 +322,15 @@
 
 
     <!-- СКРИПТЫ БИБЛИОТЕК -->
-    <script src="../../assets/libs/swiper/swiper-bundle.min.js"></script>
+    <script src="../assets/libs/swiper/swiper-bundle.min.js"></script>
 
     <script src="https://api-maps.yandex.ru/2.1/?apikey=f028c4f8-776d-4ba3-b079-94a909b9cca1&lang=ru_RU"></script>
 
 
     <!-- ОБЩИЕ СКРИПТЫ -->
-    <script src="../../assets/scripts/header.js"></script>
-    <script src="../../assets/scripts/map.js"></script>
-    <script src="../../assets/scripts/range.js"></script>
-    <script src="../../assets/scripts/cut-text.js"></script>
-
-
-    <!-- скрипт среза текста в карточках(если будет удобно, можно перенести вызов в файл cut-text.js) -->
-    <script>
-        cutTextForSymbols(".event-calendar__card-texts p", 123)
-    </script>
+    <script src="../assets/scripts/header.js"></script>
+    <script src="../assets/scripts/map.js"></script>
+    <script src="../assets/scripts/range.js"></script>
 </body>
 
 </html>

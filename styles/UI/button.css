@@ -60,6 +60,55 @@
     color: var(--color-blue);
 }
 
+.btnTab {
+    padding: 8.5px 18px;
+    background: transparent;
+    border: 2px solid var(--color-orange);
+    font-family: "Inter Tight";
+    font-size: var(--fz-m);
+    line-height: 150%;
+    color: var(--color-orange);
+    border-radius: 1.2rem;
+}
+
+@media (max-width: 768px) {
+    .btnTab {
+        font-size: var(--fz-xs);
+        padding: 8.5px 18.9px;
+    }
+}
+
+.btnTab:hover {
+    background: var(--color-orange);
+    border-color: var(--color-orange);
+    color: var(--color-white);
+}
+
+.btnTab.active {
+    background: var(--color-orange);
+    border-color: var(--color-orange);
+    font-weight: 500;
+    color: var(--color-white);
+}
+
+.btnTab.btn_color-blue.btnTab {
+    background: transparent;
+    border-color: var(--color-blue);
+    color: var(--color-blue);
+}
+
+.btnTab.btn_color-blue:hover {
+    background: var(--color-blue);
+    border-color: var(--color-blue);
+    color: var(--color-white);
+}
+
+.btnTab.btn_color-blue.active {
+    background: var(--color-blue);
+    border-color: var(--color-blue);
+    color: var(--color-white);
+}
+
 .btn_oval {
     border-radius: 1000px;
 }
