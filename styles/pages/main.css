@@ -1449,6 +1449,8 @@
     color: #303030;
 }
 
+
+/* ТУТ ОБРЕЗКА ТЕКСТА */
 .news__card-desc {
     font-size: var(--fz-xs);
     color: #303030;

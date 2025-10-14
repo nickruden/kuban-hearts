@@ -1,4 +1,11 @@
-// МОЖНО ВМЕСТО CSS ОБРЕЗКИ ТЕКСТА ИСПОЛЬЗОВАТЬ ЭТОТ СКРИПТ, ДЛЯ БОЛЬШЕЙ ПОДДЕРЖКИ (НО НАГРУЗКА БУДЕТ НЕМНОГО БОЛЬШЕ НА САЙТ СООТВЕТСТВЕННО)
+// == НЕОБЯЗАТЕЛЬНЫЙ СКРИПТ ==
+
+// МОЖНО ВМЕСТО CSS ОБРЕЗКИ ТЕКСТА ИСПОЛЬЗОВАТЬ ЭТОТ СКРИПТ, ДЛЯ БОЛЬШЕЙ ПОДДЕРЖКИ(ОН ТУТ НА ВСЯКИЙ СЛУЧАЙ)
+
+
+// ЕСЛИ ЕГО ИСПОЛЬЗОВАТЬ, НАДО БУДЕТ УДАЛИТЬ В styles/pages/main.css И В styles/pages/news.css И В styles/pages/programs.css БЛОК СТИЛЕЙ ПОД НАДПИСЬЮ - ТУТ ОБРЕЗКА ТЕКСТА
+// КАК ИСПОЛЬЗОВАТЬ НАПИСАНО НИЖЕ
+
 function truncateText(selector, lines) {
   const elements = document.querySelectorAll(selector);
 
@@ -12,7 +19,6 @@ function truncateText(selector, lines) {
     el.textContent = text;
 
     while (el.scrollHeight > maxHeight && text.length > 0) {
-      // убираем последнее слово
       text = text.replace(/\s*\S+\s*$/, "");
       el.textContent = text + "…";
     }
@@ -27,10 +33,8 @@ function cutTextForSymbols(selector, count) {
     let text = el.textContent.trim();
 
     if (text.length > maxLength) {
-      // обрезаем черновик до count
       let truncated = text.slice(0, maxLength);
 
-      // ищем крайний пробел, чтобы не отрезать слово
       let lastSpace = truncated.lastIndexOf(" ");
       if (lastSpace > 0) {
         truncated = truncated.slice(0, lastSpace);
@@ -46,3 +50,6 @@ function cutTextForSymbols(selector, count) {
 // вот тут вызывайте функцию для каждого блока, в котором надо обрезать текст
 // параметры truncateText("класс обёртка текста", "кол-во строк, которые должны быть видны до обрезки");
 truncateText(".news__card-desc", 3);
+
+// параметры cutTextForSymbols("класс обёртка текста", "кол-во символов, которые останутся до обрезки");
+cutTextForSymbols(".event-calendar__card-texts p", 123);

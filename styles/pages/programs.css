@@ -285,6 +285,7 @@
     color: #303030;
 }
 
+/* ТУТ ОБРЕЗКА ТЕКСТА */
 .history__card-desc {
     font-size: var(--fz-xs);
     color: #303030;
