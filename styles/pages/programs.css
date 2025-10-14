@@ -1466,3 +1466,119 @@
     margin-top: auto;
     width: 238px;
 }
+
+
+/* ПРОГРАММА 7  */
+/* БЛОК - БЛИЖАЙШИЕ СОБЫТИЯ */
+.pb-large {}
+
+.upcoming-events {}
+
+.upcoming-events__cards {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.upcoming-events__card {
+    padding: 2.5rem;
+    border-radius: 1.6rem;
+    position: relative;
+    min-height: 351px;
+    overflow: hidden;
+}
+
+@media (max-width: 769px) {
+    .upcoming-events__card {
+        padding: 2rem;
+        border-radius: 1.4rem;
+        box-shadow: 0px 0px 21.9px 0px #0000000D;
+        min-height: 503px;
+    }
+}
+
+.upcoming-events__card-bg-img-wrap {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+@media (max-width: 769px) {
+    .upcoming-events__card-bg-img-wrap {
+        top: auto;
+        height: 314px;
+        bottom: 0;
+    }
+}
+
+.upcoming-events__card-bg-img-wrap::after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-color: #F9F9F940;
+}
+
+@media (max-width: 769px) {
+    .upcoming-events__card-bg-img-wrap::after {
+        background-color: transparent;
+    }
+}
+
+.upcoming-events__card-bg-img {
+    width: 100%;
+    height: 100%;
+    transform: scaleX(-1);
+}
+
+.upcoming-events__card-inner {
+    max-width: 338px;
+    gap: 1.5rem;
+    position: relative;
+    z-index: 5;
+}
+
+@media (max-width: 769px) {
+    .upcoming-events__card-inner {
+        max-width: 400px;
+        gap: 1rem;
+    }
+}
+
+.upcoming-events__card-title {
+    font-size: var(--fz-m);
+    font-weight: 500;
+    line-height: 150%;
+}
+
+@media (max-width: 769px) {
+    .upcoming-events__card-title {
+        font-size: var(--fz-xs);
+    }
+}
+
+.upcoming-events__desc {
+    line-height: 150%;
+    margin-bottom: 2rem;
+}
+
+@media (max-width: 769px) {
+    .upcoming-events__desc {
+        line-height: 150%;
+        margin-bottom: 1rem;
+    }
+}
+
+.upcoming-events .btn {
+    max-width: 307px;
+    width: 100%;
+}
+
+.btn_color-blue {}
