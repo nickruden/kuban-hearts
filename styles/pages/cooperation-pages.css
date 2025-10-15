@@ -1,0 +1,677 @@
+.hero-section {}
+
+.hero-section.no-ribbon .decor-ribbon {
+    display: none;
+}
+
+@media (max-width: 800px) {
+    .hero-section.no-ribbon-mobile .decor-ribbon {
+        display: none;
+    }
+}
+
+.hero-section .my-container {
+    padding-top: 3.5rem;
+    padding-bottom: 6.2rem;
+    gap: 4rem;
+}
+
+.hero-section.no-ribbon .my-container {
+    padding-bottom: 0px !important;
+}
+
+@media (max-width: 992px) {
+    .hero-section .my-container {
+        flex-direction: column;
+        padding-bottom: 4rem;
+        gap: 4rem;
+    }
+}
+
+@media (max-width: 800px) {
+    .hero-section.no-ribbon-mobile .my-container {
+        padding-bottom: 0rem;
+    }
+}
+
+@media (max-width: 575px) {
+    .hero-section .my-container {
+        gap: 3rem;
+        padding-bottom: 3.5rem;
+        padding-top: 2rem;
+    }
+}
+
+.hero-section__body {
+    max-width: 580px;
+    flex-basis: 50%;
+}
+
+@media (max-width: 992px) {
+    .hero-section__body {
+        max-width: 700px;
+        flex-basis: 100%;
+    }
+}
+
+@media (max-width: 769px) {
+    .hero-section__body {
+        max-width: 580px;
+    }
+}
+
+.hero-section .breadcrumbs {
+    padding-top: 0rem;
+    padding-bottom: 4.5rem;
+}
+
+@media (max-width: 992px) {
+    .hero-section .breadcrumbs {
+        padding-bottom: 3rem;
+    }
+}
+
+@media (max-width: 575px) {
+    .hero-section .breadcrumbs {
+        padding-bottom: 1.5rem;
+    }
+}
+
+.hero-section__body h1 {
+    margin-bottom: 1.7rem;
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .hero-section__body h1 {
+        font-size: 5rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .hero-section__body h1 {
+        margin-bottom: 2.5rem;
+    }
+}
+
+.hero-section__info {
+    margin-top: auto;
+    gap: 3.5rem;
+}
+
+@media (max-width: 1199px) {
+    .hero-section__info {
+        gap: 1.5rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .hero-section__info {
+        gap: 2.5rem;
+    }
+}
+
+.hero-section__buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+@media (max-width: 769px) {
+    .hero-section__buttons {
+        gap: 1.5rem;
+    }
+}
+
+.hero-section__buttons .btn {
+    padding-right: 4.5rem;
+    padding-left: 4.5rem;
+}
+
+@media (max-width: 769px) {
+    .hero-section__buttons .btn {
+        min-width: 0px;
+        padding-right: 1.8rem;
+        padding-left: 1.8rem;
+    }
+}
+
+.hero-section__img-wrap {
+    border-radius: 1.6rem;
+    max-width: 580px;
+    max-height: 347px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 1199px) {
+    .hero-section__img-wrap {
+        max-width: 450px;
+        min-height: 300px;
+    }
+}
+
+@media (max-width: 992px) {
+    .hero-section__img-wrap {
+        max-width: none;
+        display: flex;
+        align-items: center;
+        min-height: 0px;
+    }
+}
+
+@media (max-width: 575px) {
+    .hero-section__img-wrap {
+        height: 301px;
+    }
+}
+
+.hero-section__img-wrap img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* БЛОК - ПРЕИМУЩЕСТВА РАБОТЫ В ФОНДЕ */
+.work-advantages {}
+
+.work-advantages__content {
+    display: flex;
+    gap: 4rem;
+}
+
+@media (max-width: 992px) {
+    .work-advantages__content {
+        flex-direction: column;
+        gap: 3rem;
+    }
+}
+
+.work-advantages__items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem 4rem;
+    grid-auto-rows: 1fr;
+}
+
+@media (max-width: 1199px) {
+    .work-advantages__items {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 992px) {
+    .work-advantages__items {
+        gap: 2rem 3rem;
+    }
+}
+
+@media (max-width:769px) {
+    .work-advantages__items {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 575px) {
+    .work-advantages__items {
+        gap: 1.5rem 3rem;
+    }
+}
+
+.work-advantages__item {
+    padding: 2rem 1rem 2rem 2rem;
+    overflow: hidden;
+    border-radius: 1.2rem;
+    background: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+@media (max-width:769px) {
+    .work-advantages__item {
+        padding: 1.5rem 5px 1.5rem 1.5rem;
+        overflow: hidden;
+        border-radius: 1.2rem;
+        background: var(--color-white);
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+
+.work-advantages__item-title {
+    font-size: var(--fz-m);
+    font-weight: 500;
+    line-height: 150%;
+}
+
+@media (max-width: 769px) {
+    .work-advantages__item-title {
+        font-size: var(--fz-xs);
+    }
+}
+
+@media (max-width: 575px) {
+    .work-advantages__item-title {
+        max-width: 230px;
+    }
+}
+
+.work-advantages__item p {
+    font-size: var(--fz-xs);
+    line-height: 150%;
+}
+
+/* .work-advantages__item.image-item {
+    grid-row: 1 / span 2;
+    grid-column: 4;
+    padding: 0px;
+}
+
+@media (max-width: 1199px) {
+    .work-advantages__item.image-item {
+        grid-column: 3;
+    }
+}
+
+@media (max-width: 992px) {
+    .work-advantages__item.image-item {
+        grid-row: 3 / span 2;
+        grid-column: 2;
+    }
+}
+
+@media (max-width: 769px) {
+    .work-advantages__item.image-item {
+        grid-row: auto;
+        grid-column: auto;
+    }
+} */
+
+.work-advantages__image-wrap {
+    border-radius: 1.2rem;
+    overflow: hidden;
+    max-width: 270px;
+    width: 100%;
+}
+
+@media (max-width: 992px) {
+    .work-advantages__image-wrap {
+        height: 400px;
+        max-width: none;
+    }
+}
+
+@media (max-width: 769px) {
+    .work-advantages__image-wrap {
+        height: 330px;
+    }
+}
+
+.work-advantages__image-wrap img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* БЛОК - ЧТО ДЕЛАЮТ НЯНИ ФОНДА */
+.what-they-doing {}
+
+.what-they-doing__items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem 4rem;
+}
+
+@media (max-width: 992px) {
+    .what-they-doing__items {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem 3rem;
+    }
+}
+
+@media (max-width: 769px) {
+    .what-they-doing__items {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 575px) {
+    .what-they-doing__items {
+        grid-template-columns: 1fr;
+        gap: 1.5rem 3rem;
+    }
+}
+
+.what-they-doing__item {
+    padding: 2rem;
+    font-size: var(--fz-m);
+    font-weight: 500;
+    line-height: 150%;
+    background: var(--color-white);
+    min-height: 180px;
+    position: relative;
+}
+
+@media (max-width: 1199px) {
+    .what-they-doing__item {
+        min-height: 145px;
+    }
+}
+
+@media (max-width: 769px) {
+    .what-they-doing__item {
+        padding: 1.5rem;
+        font-size: var(--fz-xs);
+    }
+}
+
+.what-they-doing__item p {
+    max-width: 135px;
+    position: relative;
+    z-index: 5;
+}
+
+.what-they-doing__img-wrap {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 5px;
+    z-index: 1;
+}
+
+@media (max-width: 1199px) {
+    .what-they-doing__img-wrap {
+        max-width: 60%;
+    }
+}
+
+@media (max-width: 575px) {
+    .what-they-doing__img-wrap {
+        max-width: 43%;
+        height: 120px;
+    }
+}
+
+.what-they-doing__item img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+/* БЛОК - КАК СТАТЬ НЯНЕЙ */
+.how-to-become {}
+
+.how-to-become .my-container {
+    gap: 4rem;
+    justify-content: space-between;
+}
+
+@media (max-width: 992px) {
+    .how-to-become .my-container {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 575px) {
+    .how-to-become .my-container {
+        gap: 3.5rem;
+    }
+}
+
+.how-to-become__body {}
+
+.how-to-become__description {
+    display: flex;
+    flex-direction: column;
+    line-height: 150%;
+    max-width: 500px;
+    margin-bottom: 3.5rem;
+}
+
+@media (max-width: 992px) {
+    .how-to-become__description {
+        max-width: 700px;
+    }
+}
+
+@media (max-width: 575px) {
+    .how-to-become__description {
+        margin-bottom: 2.5rem;
+    }
+}
+
+.how-to-become__description ul,
+.how-to-become__description li {
+    font-size: var(--fz-xs);
+    line-height: 150%;
+}
+
+.how-to-become__body .btn {
+    padding-right: 4.5rem;
+    padding-left: 4.5rem;
+}
+
+@media (max-width: 769px) {
+    .how-to-become__body .btn {
+        min-width: 0px;
+        padding-right: 1.8rem;
+        padding-left: 1.8rem;
+    }
+}
+
+.how-to-become__img-wrap {
+    overflow: hidden;
+    border-radius: 1.2rem;
+    max-width: 480px;
+    max-height: 430px;
+}
+
+@media (max-width: 992px) {
+    .how-to-become__img-wrap {
+        overflow: hidden;
+        border-radius: 1.2rem;
+        max-width: none;
+        height: 430px;
+    }
+}
+
+@media (max-width: 769px) {
+    .how-to-become__img-wrap {
+        max-height: 350px;
+    }
+}
+
+@media (max-width: 575px) {
+    .how-to-become__img-wrap {
+        max-height: 250px;
+    }
+}
+
+.how-to-become__img-wrap img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* БЛОК - КОМУ НУЖНЫ НАСТАВНИКИ */
+.who-need {}
+
+.who-need__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 500px;
+    gap: 4rem;
+}
+
+@media (max-width: 1199px) {
+    .who-need__content {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .who-need__content {
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+    }
+}
+
+@media (max-width: 769px) {
+    .who-need__content {
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 575px) {
+    .who-need__content {
+        grid-template-columns: 1fr;
+        grid-auto-rows: 1fr 1fr auto;
+    }
+}
+
+.who-need__card {
+    padding: 1rem;
+    border-radius: 1.6rem;
+    background-color: var(--color-white);
+    box-shadow: 0px 0px 21.9px 0px rgba(0, 0, 0, 0.05);
+}
+
+@media (max-width: 769px) {
+    .who-need__card {
+        border-radius: 1.4rem;
+    }
+}
+
+.who-need__card-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.who-need__card__img-wrap {
+    border-radius: 8px;
+    width: 100%;
+    height: 272px;
+}
+
+.who-need__card__img-wrap img {
+    width: 100%;
+    height: 100%;
+}
+
+.who-need__card-texts {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: var(--fz-m);
+    padding: 0px 1rem 1rem;
+}
+
+@media (max-width: 769px) {
+    .who-need__card-texts {
+        font-size: var(--fz-xs);
+    }
+}
+
+.who-need__banner {}
+
+@media (max-width: 992px) {
+    .who-need__banner {
+        grid-column: span 2;
+    }
+}
+
+@media (max-width: 575px) {
+    .who-need__banner {
+        grid-column: span 1;
+    }
+}
+
+
+/* БЛОК - КТО МОЖЕТ СТАТЬ ДОНОРОМ ФОНДА */
+.who-can-become {}
+
+.who-can-become__items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem;
+}
+
+@media (max-width: 1199px) {
+    .who-can-become__items {
+        gap: 3rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .who-can-become__items {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 769px) {
+    .who-can-become__items {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+    }
+}
+
+.who-can-become__item {
+    border-radius: 1.6rem;
+    background-color: var(--color-white);
+    padding: 1rem;
+    box-shadow: 0px 0px 21.9px 0px rgba(0, 0, 0, 0.05);
+}
+
+@media (max-width: 769px) {
+    .who-can-become__item {
+        border-radius: 1.4rem;
+    }
+}
+
+.who-can-become__item-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.who-can-become__item-img-wrap {
+    border-radius: 8px;
+    height: 272px;
+}
+
+.who-can-become__item-img-wrap img {
+    width: 100%;
+    height: 100%;
+}
+
+.who-can-become__texts {
+    padding: 0px 1rem 1rem;
+    font-size: var(--fz-m);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    line-height: 150%;
+}
+
+@media (max-width: 769px) {
+    .who-can-become__texts {
+        font-size: var(--fz-xs);
+    }
+}
+
+.who-can-become__texts ul,
+.who-can-become__texts ol {
+    font-size: var(--fz-xs);
+    line-height: 150%;
+}
+
+@media (max-width: 769px) { 
+    .who-can-become__texts ul,
+    .who-can-become__texts ol {
+        font-size: var(--fz-s);
+    }
+}
