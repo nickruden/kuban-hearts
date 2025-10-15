@@ -93,6 +93,12 @@
     }
 }
 
+@media (max-width: 575px) {
+    .hero-section__body h1 {
+        font-size: 3.2rem;
+    }
+}
+
 .hero-section__info {
     margin-top: auto;
     gap: 3.5rem;
@@ -669,7 +675,8 @@
     line-height: 150%;
 }
 
-@media (max-width: 769px) { 
+@media (max-width: 769px) {
+
     .who-can-become__texts ul,
     .who-can-become__texts ol {
         font-size: var(--fz-s);
