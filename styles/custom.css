@@ -605,3 +605,28 @@ main>*:first-child {
   background-size: contain;
   margin-right: 1rem;
 }
+
+
+.orange-bg {
+  background-color: var(--color-orange);
+}
+
+.orange-bg * {
+  color: var(--color-white);
+}
+
+.orange-bg .btn {
+  color: var(--color-orange);
+  border-color: var(--color-white);
+  background-color: var(--color-white);
+}
+
+.orange-bg .btn:hover {
+  color: var(--color-white);
+  background-color: var(--color-orange);
+}
+
+
+.shadowed {
+  box-shadow: 0px 0px 21.9px rgba(0, 0, 0, 0.05);
+}
