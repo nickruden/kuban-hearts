@@ -22,10 +22,11 @@
     <link rel="stylesheet" href="../styles/components/footer.css">
     <link rel="stylesheet" href="../styles/components/breadcrumbs.css">
     <link rel="stylesheet" href="../styles/components/project-cards.css">
+    <link rel="stylesheet" href="../styles/components/sections/reviews.css">
 
 
     <!-- СТИЛИ СТРАНИЦЫ -->
-    <link rel="stylesheet" href="../styles/pages/current-projects.css">
+    <link rel="stylesheet" href="../styles/pages/client-page.css">
 </head>
 
 <body>
@@ -122,27 +123,115 @@
     <main class="main">
         <section class="hero-section">
             <div class="my-container">
-                <div class="breadcrumbs">
-                    <ul class="breadcrumbs__path">
-                        <li class="breadcrumbs__path-item fz-s"><a href="../index.html">Главная</a></li>
-                        <li class="breadcrumbs__path-item fz-s">Текущие проекты</li>
-                    </ul>
-                </div>
+                
             </div>
         </section>
 
+        <section class="pb-large needy-get">
+            <div class="my-container">
+                <h2 class="inner-h2">На пожертвования <br> <span class="color-blue">нуждающиеся получают</span></h2>
+                <div class="needy-get__items">
+                    <div class="needy-get__item img-item"><img src="../assets/images/pages/client-page/needy-get/img-1.jpg" alt="#"></div>
+                    <div class="needy-get__item">
+                        <div class="needy-get__item-icon">
+                            <img src="../assets/images/pages/client-page/needy-get/icon-1.png" alt="#">
+                        </div>
+                        <p>Лечение и реабилитацию</p>
+                    </div>
+                    <div class="needy-get__item img-item"><img src="../assets/images/pages/client-page/needy-get/img-2.jpg" alt="#"></div>
+                    <div class="needy-get__item">
+                        <div class="needy-get__item-icon">
+                            <img src="../assets/images/pages/client-page/needy-get/icon-2.png" alt="#">
+                        </div>
+                        <p>Оплату хирургических операций и обследований</p>
+                    </div>
+                    <div class="needy-get__item img-item"><img src="../assets/images/pages/client-page/needy-get/img-3.jpg" alt="#"></div>
+                    <div class="needy-get__item">
+                        <div class="needy-get__item-icon">
+                            <img src="../assets/images/pages/client-page/needy-get/icon-3.png" alt="#">
+                        </div>
+                        <p>Лекарства</p>
+                    </div>
+                    <div class="needy-get__item img-item"><img src="../assets/images/pages/client-page/needy-get/img-4.jpg" alt="#"></div>
+                </div>
+                <button class="btn">Помочь арине</button>
+            </div>
+        </section>
+        <section class="pb-large thanks-section hidden">
+            <div class="flex flex-column items-center my-container text-center thanks-section__container">
+                <h2>2500</h2>
+                <p class="fz-m color-lightGray">Человек получили помощь за&nbsp;2024 год</p>
+                <div class="bg-item_small d-none d-lg-flex"><span class="fz-s">Новороссийк</span></div>
+                <div class="bg-item"><span class="fz-s">Краснодар</span></div>
+                <div class="bg-item_small"><span class="fz-s">Анапа</span></div>
+                <div class="bg-item_big"><span class="fz-s">Геленджик</span></div>
+                <div class="bg-item_small d-none d-lg-flex"><span class="fz-s">Краснодар</span></div>
+                <div class="bg-item_small"><span class="fz-s">Сочи</span></div>
+                <div class="bg-item d-none d-lg-flex"><span class="fz-s">Краснодар</span></div>
+                <div class="bg-item_small"><span class="fz-s">Адлер</span></div>
+                <div class="bg-item"><span class="fz-s">Краснодар</span></div>
+                <div class="bg-item_small"><span class="fz-s">Абинск</span></div>
+                <div class="bg-item"><span class="fz-s">Ейск</span></div>
+            </div>
+        </section>
+        <section class="pb-large reviews">
+            <div class="my-container">
+                <h2 class="inner-h2">Слова благодарности</h2>
+                <div class="reviews__cards">
+                    <div class="reviews__card">
+                        <div class="reviews__card-inner">
+                            <div class="reviews__author">
+                                <div class="reviews__author-img-wrap">
+                                    <img src="" alt="#">
+                                </div>
+                                <h3>Евгений</h3>
+                            </div>
+                            <p>Никогда не думал, что столкнусь с такой бедой. Диагноз прозвучал как приговор. Но
+                                благодаря фонду я понял, что не одинок в этой борьбе. Они помогли мне найти лучшего
+                                специалиста, организовали второе мнение, помогли с документами. Отдельное спасибо за
+                                группы поддержки — там я встретил людей, которые понимают меня как никто другой. Сейчас
+                                я в ремиссии, и это во многом благодаря помощи фонда.</p>
+                        </div>
+                    </div>
+                    <div class="reviews__card">
+                        <div class="reviews__card-inner">
+                            <div class="reviews__author">
+                                <div class="reviews__author-img-wrap">
+                                    <img src="" alt="#">
+                                </div>
+                                <h3>Елена</h3>
+                            </div>
+                            <p>Я мама двоих детей, и когда узнала о своём диагнозе, думала, что не справлюсь. Фонд стал
+                                для меня настоящей опорой. Они не только помогли с оплатой лечения, но и взяли на себя
+                                часть бытовых забот — организовали доставку продуктов, помогли с транспортом. Особенно
+                                хочу отметить работу социальных работников — они всегда на связи, готовы помочь в любой
+                                ситуации. Благодаря фонду я смогла сосредоточиться на лечении и верить в выздоровление.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="reviews__card">
+                        <div class="reviews__card-inner">
+                            <div class="reviews__author">
+                                <div class="reviews__author-img-wrap">
+                                    <img src="" alt="#">
+                                </div>
+                                <h3>Александр</h3>
+                            </div>
+                            <p>В моём возрасте сложно справляться с такими проблемами, но фонд окружил меня заботой и
+                                вниманием. Они помогли с диагностикой, нашли лучших врачей, организовали лечение.
+                                Особенно хочу отметить юридическую поддержку — помогли разобраться с льготами и
+                                пособиями. Теперь я знаю, что даже в такой сложной ситуации есть люди, готовые прийти на
+                                помощь.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <section class="pb-large current-projects">
             <div class="my-container">
                 <header>
-                    <h1 class="inner-h1">Текущие проекты</h1>
-                    <div class="flex wrap current-projects__tabs">
-                        <button class="btnTab btn_color-blue active">Все</button> 
-                        <button class="btnTab btn_color-blue">Участники СВО</button>
-                        <button class="btnTab btn_color-blue">Дети</button>
-                        <button class="btnTab btn_color-blue">Пожилые люди</button>
-                        <button class="btnTab btn_color-blue">Больные люди</button>
-                        <button class="btnTab btn_color-blue">Малоимущие семьи</button>
-                    </div>
+                    <h2 class="inner-h2 mb-0">Этим людям нужна помощь</h2>
+                    <p class="fz-m-fixed color-lightGray">У каждого из них своя трагичная история...</p>
                 </header>
                 <div class="flex wrap current-projects__cards">
                     <div class="current-projects__card">
@@ -164,7 +253,7 @@
                                 </div>
                                 <div class="flex current-projects__btns">
                                     <button class="btn">Сделать пожертвование</button>
-                                    <a href="./current-projects.html" class="btn btn_color-blue">Подробнее</a>
+                                    <a href="#" class="btn btn_color-blue">Подробнее</a>
                                 </div>
                             </div>
                         </div>
@@ -187,7 +276,7 @@
                                 </div>
                                 <div class="flex current-projects__btns">
                                     <button class="btn">Сделать пожертвование</button>
-                                    <a href="./current-projects.html" class="btn btn_color-blue">Подробнее</a>
+                                    <a href="#" class="btn btn_color-blue">Подробнее</a>
                                 </div>
                             </div>
                         </div>
@@ -210,7 +299,7 @@
                                 </div>
                                 <div class="flex current-projects__btns">
                                     <button class="btn">Сделать пожертвование</button>
-                                    <a href="./current-projects.html" class="btn btn_color-blue">Подробнее</a>
+                                    <a href="#" class="btn btn_color-blue">Подробнее</a>
                                 </div>
                             </div>
                         </div>
@@ -233,7 +322,7 @@
                                 </div>
                                 <div class="flex current-projects__btns">
                                     <button class="btn">Сделать пожертвование</button>
-                                    <a href="./current-projects.html" class="btn btn_color-blue">Подробнее</a>
+                                    <a href="#" class="btn btn_color-blue">Подробнее</a>
                                 </div>
                             </div>
                         </div>

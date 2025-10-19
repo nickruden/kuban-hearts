@@ -332,6 +332,10 @@ main>*:first-child {
   margin-bottom: 3.5rem;
 }
 
+.mb-0 {
+  margin-bottom: 0rem;
+}
+
 
 /* ВИДИМОСТЬ ЭЛЕМЕНТОВ И РАБОТА С РАЗРЕШЕНИЯМИ */
 .d-none {
@@ -629,4 +633,9 @@ main>*:first-child {
 
 .shadowed {
   box-shadow: 0px 0px 21.9px rgba(0, 0, 0, 0.05);
+}
+
+
+.color-blue {
+  color: var(--color-blue);
 }
