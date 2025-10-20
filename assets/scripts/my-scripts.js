@@ -62,14 +62,27 @@ document.addEventListener("DOMContentLoaded", () => {
   const rangeItems = document.querySelectorAll(".range-item");
 
   rangeItems.forEach((item) => {
-    const total = parseInt(item.getAttribute("data-total"), 10);
-    const collected = parseInt(item.getAttribute("data-collected"), 10);
-    const percent = Math.min((collected / total) * 100, 100);
+    const clean = (val) => val.replace(/[\s.,]/g, "");
+
+    const total = parseInt(clean(item.getAttribute("data-total") || "0"), 10);
+    const collected = parseInt(clean(item.getAttribute("data-collected") || "0"), 10);
+    const percent = total > 0 ? Math.min((collected / total) * 100, 100) : 0;
 
     const line = item.querySelector(".range-item__line");
     line.style.setProperty("--percent", percent + "%");
+
+    if (item.classList.contains("show-percent")) {
+      let percentLabel = item.querySelector(".range-item__percent");
+      if (!percentLabel) {
+        percentLabel = document.createElement("div");
+        percentLabel.classList.add("range-item__percent");
+        line.appendChild(percentLabel);
+      }
+      percentLabel.textContent = `${Math.round(percent)}%`;
+    }
   });
 });
+
 
 
 // Открытие и разделение аккордиона
@@ -121,8 +134,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Проходим по всем аккордионам
   accordions.forEach((accordion) => {
-    // Если это не мобильное меню — делим на 2 части
-    if (!accordion.classList.contains("mobile-menu__menu")) {
+    if (!accordion.classList.contains("mobile-menu__menu") && !accordion.classList.contains("type_v2")) {
+      console.log(accordion.classList.contains("type_v2"));
       const items = Array.from(accordion.querySelectorAll(".my-accordion__item"));
       if (items.length > 0) {
         const colLeft = document.createElement("div");
