@@ -28,9 +28,9 @@ Fancybox.bind("[data-fancybox]", {
 });
 
 
-// маска телефона
+// Маска телефона
 document.querySelectorAll('[type="tel"]').forEach(function(input) {
-  new IMask(input, {
+  const mask = new IMask(input, {
     mask: '+{7} (000) 000 00 00',
     prepare: function(appended, masked) {
       if (appended === '8' && masked.value === '') {
@@ -38,6 +38,21 @@ document.querySelectorAll('[type="tel"]').forEach(function(input) {
       }
       return appended;
     },
+  });
+
+  // при фокусе вставляем +7
+  input.addEventListener('focus', function() {
+    if (!mask.unmaskedValue) {
+      mask.value = '+7 (';
+    }
+  });
+
+  // при потере фокуса очищаем поле, когда номер неполный
+  input.addEventListener('blur', function() {
+    const digits = mask.unmaskedValue.replace(/\D/g, '');
+    if (digits.length < 11) {
+      mask.value = '';
+    }
   });
 });
 
@@ -57,52 +72,29 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-// открытие и разделение аккордиона
+// Открытие и разделение аккордиона
 document.addEventListener("DOMContentLoaded", function () {
-  // разделение на части
-  const accordion = document.querySelector(".my-accordion");
-  if (!accordion) return;
+  // Берем все аккордионы на странице
+  const accordions = document.querySelectorAll(".my-accordion");
 
-  const items = Array.from(accordion.querySelectorAll(".my-accordion__item"));
-
-  if (items.length === 0) return;
-
-  const colLeft = document.createElement("div");
-  colLeft.classList.add("my-accordion-col");
-
-  const colRight = document.createElement("div");
-  colRight.classList.add("my-accordion-col");
-
-  const middle = Math.ceil(items.length / 2);
-
-  items.forEach((item, index) => {
-    if (index < middle) {
-      colLeft.appendChild(item);
-    } else {
-      colRight.appendChild(item);
-    }
-  });
-
-  accordion.innerHTML = "";
-  accordion.appendChild(colLeft);
-  accordion.appendChild(colRight);
-
-  
-  // логика открытия аккордиона
+  // Функция инициализации аккордеона
   function initAccordion(accordionElement) {
     const headers = accordionElement.querySelectorAll(".my-accordion-header");
 
     headers.forEach((header) => {
       const item = header.closest(".my-accordion__item");
+      const content = header.nextElementSibling;
 
+      // При загрузке — если активен, открыть
       if (header.classList.contains("active")) {
-        const content = header.nextElementSibling;
         content.style.maxHeight = content.scrollHeight + "px";
         item.classList.add("open");
       } else {
         item.classList.remove("open");
+        content.style.maxHeight = null;
       }
 
+      // Обработчик клика
       header.addEventListener("click", function () {
         headers.forEach((h) => {
           if (h !== header) {
@@ -127,25 +119,53 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  const accordions = document.querySelectorAll(".my-accordion");
+  // Проходим по всем аккордионам
   accordions.forEach((accordion) => {
+    // Если это не мобильное меню — делим на 2 части
+    if (!accordion.classList.contains("mobile-menu__menu")) {
+      const items = Array.from(accordion.querySelectorAll(".my-accordion__item"));
+      if (items.length > 0) {
+        const colLeft = document.createElement("div");
+        colLeft.classList.add("my-accordion-col");
+
+        const colRight = document.createElement("div");
+        colRight.classList.add("my-accordion-col");
+
+        const middle = Math.ceil(items.length / 2);
+
+        items.forEach((item, index) => {
+          if (index < middle) {
+            colLeft.appendChild(item);
+          } else {
+            colRight.appendChild(item);
+          }
+        });
+
+        accordion.innerHTML = "";
+        accordion.appendChild(colLeft);
+        accordion.appendChild(colRight);
+      }
+    }
+
+    // Инициализация логики открытия
     initAccordion(accordion);
   });
 });
 
 
+
 // модальное окно
 document.addEventListener("DOMContentLoaded", function () {
-  const modalOpeners = document.querySelectorAll("[data-open-modal]");
+  const modalOpeners = document.querySelectorAll("[data-modal-open]");
 
   modalOpeners.forEach((opener) => {
     opener.addEventListener("click", function (e) {
       e.preventDefault();
 
-      let modalId = opener.getAttribute("data-open-modal");
+      let modalId = opener.getAttribute("data-modal-open");
       if (modalId.startsWith("#")) modalId = modalId.slice(1);
 
-      const modal = document.getElementById(modalId);
+      const modal = document.querySelector(`[data-modal-id="${modalId}"]`);
 
       document.body.style.overflow = "hidden";
       modal.style.display = "flex";

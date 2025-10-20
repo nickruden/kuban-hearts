@@ -139,6 +139,7 @@ input::placeholder {
   color: inherit;
 }
 
+input[type="radio"],
 input[type="checkbox"],
 button {
   cursor: pointer;

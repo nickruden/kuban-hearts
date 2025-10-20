@@ -1,0 +1,68 @@
+input,
+textarea {
+    padding: 1.5rem;
+    border: 1px solid rgba(37, 37, 37, 0.1);
+    border-radius: 1.2rem;
+    font-family: "Inter Tight";
+    font-size: var(--fz-m);
+    font-weight: 400;
+    line-height: 150%;
+    height: 100%;
+    width: 100%;
+    background: transparent;
+}
+
+@media (max-width: 769px) {
+
+    input,
+    textarea {
+        font-family: "Inter Tight";
+        font-size: var(--fz-xs);
+    }
+}
+
+textarea {
+    resize: none;
+    min-height: 109px;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: rgba(37, 37, 37, 0.3);
+}
+
+.tel-input-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    position: relative;
+    padding: 1.5rem;
+    border: 1px solid rgba(37, 37, 37, 0.1);
+    border-radius: 1.2rem;
+}
+
+.tel-input-wrapper .icon {
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='18' viewBox='0 0 24 18' fill='none'><path fill-rule='evenodd' clip-rule='evenodd' d='M0 0H24V18H0V0Z' fill='white'/><path fill-rule='evenodd' clip-rule='evenodd' d='M0 6H24V18H0V6Z' fill='%230039A6'/><path fill-rule='evenodd' clip-rule='evenodd' d='M0 12H24V18H0V12Z' fill='%23D52B1E'/></svg>");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 18px;
+}
+
+.tel-input-wrapper input {
+    padding: 0px;
+    border: none;
+    flex: 1;
+}
+
+.input-line {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+@media (max-width: 769px) {
+    .input-line {
+        gap: 1rem;
+    }
+}

@@ -21,7 +21,13 @@
     <link rel="stylesheet" href="../styles/components/header.css">
     <link rel="stylesheet" href="../styles/components/footer.css">
     <link rel="stylesheet" href="../styles/components/breadcrumbs.css">
+    <link rel="stylesheet" href="../styles/components/donate-banner.css">
+    <link rel="stylesheet" href="../styles/components/my-accordion.css">
     <link rel="stylesheet" href="../styles/components/project-cards.css">
+    <link rel="stylesheet" href="../styles/components/my-modal.css">
+    <link rel="stylesheet" href="../styles/components/feedback-form.css">
+
+    <link rel="stylesheet" href="../styles/components/sections/reviews.css">
 
 
     <!-- СТИЛИ СТРАНИЦЫ -->
@@ -114,7 +120,85 @@
                     </button>
                 </div>
             </div>
-            <div class="mobile-menu"></div>
+            <div class="mobile-menu">
+                <div class="flex flex-column mobile-menu__contacts">
+                    <div class="col-auto">
+                        <div class="mobile-menu__address">Адрес: г. Краснодар, Рашпилевская&nbsp;86</div>
+                    </div>
+                    <div class="flex col-auto mobile-menu__phone">
+                        <a href="tel:+79649062340" class="mobile-contact no-icon">+7 964 906-23-40</a>
+                        <div class="flex mobile-menu__cmd">
+                            <div class="soc-link__wrap">
+                                <a href="#" class="soc-link__tg"></a>
+                            </div>
+                            <div class="soc-link__wrap">
+                                <a href="#" class="soc-link__wa"></a>
+                            </div>
+                            <div class="soc-link__wrap">
+                                <a href="#" class="soc-link__vk"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <a href="mailto:serdcekubani@mail.ru" class="mobile-menu__email">serdcekubani@mail.ru</a>
+                    </div>
+                </div>
+                <nav class="mobile-menu__nav">
+                    <ul class="mobile-menu__menu my-accordion">
+                        <li class="my-accordion__item open">
+                            <span class="my-accordion-header active">О фонде</span>
+                            <div class="flex flex-column my-accordion-content">
+                                <ul>
+                                    <li><a href="./about/found-mission.html">Миссия фонда</a></li>
+                                    <li><a href="#">История</a></li>
+                                    <li><a href="./about/organization-sovet.html">Совет организации</a></li>
+                                    <li><a href="./about/team.html">Команда</a></li>
+                                    <li><a href="./about/vacancies.html">Вакансии</a></li>
+                                    <li><a href="./about/event-calendar.html">Календарь событий</a></li>
+                                    <li><a href="./about/partners.html">Парнеры и доноры</a></li>
+                                    <li><a href="./about/documents.html">Документы</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="mobile-menu__menu-item">
+                            <a href="./current-projects.html">Текущие проекты</a>
+                        </li>
+                        <li class="my-accordion__item">
+                            <h3 class="my-accordion-header">Программы</h3>
+                            <div class="flex flex-column my-accordion-content">
+                                <ul>
+                                    <li><a href="./programs/program1.html">Программа 1</a></li>
+                                    <li><a href="./programs/program2.html">Программа 2</a></li>
+                                    <li><a href="./programs/program3.html">Программа 3</a></li>
+                                    <li><a href="./programs/program4.html">Программа 4</a></li>
+                                    <li><a href="./programs/program5.html">Программа 5</a></li>
+                                    <li><a href="./programs/program6.html">Программа 6</a></li>
+                                    <li><a href="./programs/program7.html">Программа 7</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="my-accordion__item">
+                            <h3 class="my-accordion-header">Отчеты</h3>
+                            <div class="flex flex-column my-accordion-content">
+                                <ul>
+                                    <li><a href="./reports.html">Годовые отчеты</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="my-accordion__item">
+                            <h3 class="my-accordion-header">Сотрудничество</h3>
+                            <div class="flex flex-column my-accordion-content">
+                                <ul>
+                                    <li><a href="./cooperation/become-donor.html">Стать донором</a></li>
+                                    <li><a href="./cooperation/become-volunteer.html">Стать волонтером</a></li>
+                                    <li><a href="./cooperation/become-mentor.html">Стать наставником</a></li>
+                                    <li><a href="./cooperation/become-nanny.html">Стать няней</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
 
