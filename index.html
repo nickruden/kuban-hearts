@@ -7,6 +7,7 @@
     <title>Сердце кубани</title>
 
 
+    <!-- НА ЭТОЙ СТРАНИЦЕ ПОДКЛЮЧЕНО АБСОЛЮТНО ВСЁ ЧТО ЕСТЬ -->
     <!-- БИБЛИОТЕКИ -->
     <link rel="stylesheet" href="./assets/libs/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="./assets/libs/fancybox/fancybox.css">
@@ -18,6 +19,8 @@
 
     <link rel="stylesheet" href="./styles/UI/button.css">
     <link rel="stylesheet" href="./styles/UI/inputs.css">
+    <link rel="stylesheet" href="./styles/UI/checkbox.css">
+    <link rel="stylesheet" href="./styles/UI/range.css">
 
     <link rel="stylesheet" href="./styles/components/header.css">
     <link rel="stylesheet" href="./styles/components/footer.css">
@@ -52,7 +55,6 @@
                                 <div class="submenu__items">
                                     <ul>
                                         <li><a href="./pages/about/found-mission.html">Миссия фонда</a></li>
-                                        <li><a href="#">История</a></li>
                                         <li><a href="./pages/about/organization-sovet.html">Совет организации</a></li>
                                         <li><a href="./pages/about/team.html">Команда</a></li>
                                         <li><a href="./pages/about/vacancies.html">Вакансии</a></li>
@@ -91,8 +93,7 @@
                                 <div class="submenu__items">
                                     <ul>
                                         <li><a href="./pages/cooperation/become-donor.html">Стать донором</a></li>
-                                        <li><a href="./pages/cooperation/become-volunteer.html">Стать волонтером</a>
-                                        </li>
+                                        <li><a href="./pages/cooperation/become-volunteer.html">Стать волонтером</a></li>
                                         <li><a href="./pages/cooperation/become-mentor.html">Стать наставником</a></li>
                                         <li><a href="./pages/cooperation/become-nanny.html">Стать няней</a></li>
                                     </ul>
@@ -153,7 +154,6 @@
                             <div class="flex flex-column my-accordion-content">
                                 <ul>
                                     <li><a href="./pages/about/found-mission.html">Миссия фонда</a></li>
-                                    <li><a href="#">История</a></li>
                                     <li><a href="./pages/about/organization-sovet.html">Совет организации</a></li>
                                     <li><a href="./pages/about/team.html">Команда</a></li>
                                     <li><a href="./pages/about/vacancies.html">Вакансии</a></li>
@@ -193,8 +193,7 @@
                             <div class="flex flex-column my-accordion-content">
                                 <ul>
                                     <li><a href="./pages/cooperation/become-donor.html">Стать донором</a></li>
-                                    <li><a href="./pages/cooperation/become-volunteer.html">Стать волонтером</a>
-                                    </li>
+                                    <li><a href="./pages/cooperation/become-volunteer.html">Стать волонтером</a></li>
                                     <li><a href="./pages/cooperation/become-mentor.html">Стать наставником</a></li>
                                     <li><a href="./pages/cooperation/become-nanny.html">Стать няней</a></li>
                                 </ul>
@@ -660,8 +659,7 @@
         <div class="my-container">
             <div class="flex flex-column footer__inner">
                 <div class="col-auto">
-                    <a href="./index.html" class="footer__logo-link"><img loading="lazy" src="./assets/images/logo.png"
-                            alt=""></a>
+                    <a href="./index.html" class="footer__logo-link"><img loading="lazy" src="./assets/images/logo.png" alt=""></a>
                 </div>
                 <div class="col-auto flex footer__contacts">
                     <div class="footer__address">Адрес: г. Краснодар, Рашпилевская&nbsp;86</div>
@@ -684,50 +682,35 @@
                         <ul class="footer__menu-wrap">
                             <span class="footer__menu-title">Программы</span>
                             <ul class="footer__menu-items">
-                                <li class="footer__menu-item"><a href="./pages/programs/program1.html">Программа №1</a>
-                                </li>
-                                <li class="footer__menu-item"><a href="./pages/programs/program2.html">Программа №2</a>
-                                </li>
-                                <li class="footer__menu-item"><a href="./pages/programs/program3.html">Программа №3</a>
-                                </li>
-                                <li class="footer__menu-item"><a href="./pages/programs/program4.html">Программа №4</a>
-                                </li>
-                                <li class="footer__menu-item"><a href="./pages/programs/program5.html">Программа №5</a>
-                                </li>
-                                <li class="footer__menu-item"><a href="./pages/programs/program6.html">Программа №6</a>
-                                </li>
-                                <li class="footer__menu-item"><a href="./pages/programs/program7.html">Программа №6</a>
-                                </li>
+                                <li class="footer__menu-item"><a href="./pages/programs/program1.html">Программа №1</a></li>
+                                <li class="footer__menu-item"><a href="./pages/programs/program2.html">Программа №2</a></li>
+                                <li class="footer__menu-item"><a href="./pages/programs/program3.html">Программа №3</a></li>
+                                <li class="footer__menu-item"><a href="./pages/programs/program4.html">Программа №4</a></li>
+                                <li class="footer__menu-item"><a href="./pages/programs/program5.html">Программа №5</a></li>
+                                <li class="footer__menu-item"><a href="./pages/programs/program6.html">Программа №6</a></li>
+                                <li class="footer__menu-item"><a href="./pages/programs/program7.html">Программа №6</a></li>
                             </ul>
                         </ul>
                         <ul class="footer__menu-wrap">
                             <span class="footer__menu-title">О фонде</span>
                             <ul class="footer__menu-items">
-                                <li class="footer__menu-item"><a href="./pages/about/found-mission.html">Миссия
-                                        фонда</a></li>
-                                <li class="footer__menu-item"><a href="#">История</a></li>
-                                <li class="footer__menu-item"><a href="./pages/about/organization-sovet.html">Совет
-                                        организации</a></li>
+                                <li class="footer__menu-item"><a href="./pages/about/found-mission.html">Миссия фонда</a></li>
+                                <li class="footer__menu-item"><a href="./pages/current-projects.html">Текущие проекты</a></li>
+                                <li class="footer__menu-item"><a href="./pages/about/organization-sovet.html">Совет организации</a></li>
                                 <li class="footer__menu-item"><a href="./pages/about/team.html">Команда</a></li>
                                 <li class="footer__menu-item"><a href="./pages/about/vacancies.html">Вакансии</a></li>
-                                <li class="footer__menu-item"><a href="./pages/about/event-calendar.html">Календарь
-                                        событий</a></li>
-                                <li class="footer__menu-item"><a href="./pages/about/partners.html">Парнеры и доноры</a>
-                                </li>
+                                <li class="footer__menu-item"><a href="./pages/about/event-calendar.html">Календарь событий</a></li>
+                                <li class="footer__menu-item"><a href="./pages/about/partners.html">Парнеры и доноры</a></li>
                                 <li class="footer__menu-item"><a href="./pages/about/documents.html">Документы</a></li>
                             </ul>
                         </ul>
                         <ul class="footer__menu-wrap">
                             <span class="footer__menu-title">Сотрудничество</span>
                             <ul class="footer__menu-items">
-                                <li class="footer__menu-item"><a href="./pages/cooperation/become-donor.html">Стать
-                                        донором</a></li>
-                                <li class="footer__menu-item"><a href="./pages/cooperation/become-volunteer.html">Стать
-                                        волонтером</a></li>
-                                <li class="footer__menu-item"><a href="./pages/cooperation/become-mentor.html">Стать
-                                        наставником</a></li>
-                                <li class="footer__menu-item"><a href="./pages/cooperation/become-nanny.html">Стать
-                                        няней</a></li>
+                                <li class="footer__menu-item"><a href="./pages/cooperation/become-donor.html">Стать донором</a></li>
+                                <li class="footer__menu-item"><a href="./pages/cooperation/become-volunteer.html">Стать волонтером</a></li>
+                                <li class="footer__menu-item"><a href="./pages/cooperation/become-mentor.html">Стать наставником</a></li>
+                                <li class="footer__menu-item"><a href="./pages/cooperation/become-nanny.html">Стать няней</a></li>
                             </ul>
                         </ul>
                         <ul class="footer__menu-wrap">
@@ -751,8 +734,7 @@
                             </ul>
                         </ul>
                     </nav>
-                    <div class="map-wrap">
-                    </div>
+                    <div class="map-wrap"></div>
                 </div>
             </div>
         </div>
